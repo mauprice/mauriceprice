@@ -39,6 +39,7 @@ Route::post('/contact', [ContactController::class, 'submit']);
 Route::post('/myinterest', [ContactController::class, 'myinterest'])->name('myinterest');
 
 Route::get('/beyond_death', [SiteController::class, 'beyondDeath'])->name('beyondDeath');
+Route::get('/the_question_that_cannot_be_answered', [SiteController::class, 'theQuestionThatCannotBeAnswered'])->name('theQuestionThatCannotBeAnswered');
 Route::get('/hidden_wisdom', [SiteController::class, 'hiddenWisdom'])->name('hiddenWisdom');
 Route::get('/a_profound_teaching', [SiteController::class, 'aProfoundTeaching'])->name('aProfoundTeaching');
 Route::get('/why_christianity_matters', [SiteController::class, 'WhyChristianityMatters'])->name('WhyChristianityMatters');

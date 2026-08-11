@@ -36,11 +36,23 @@
       "@type": "ItemList",
       "name": "Books by Maurice Price",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 9,
+      "numberOfItems": 10,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
+          "item": {
+            "@type": "Book",
+            "name": "The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose",
+            "author": { "@type": "Person", "name": "Maurice Price" },
+            "image": "https://mauriceprice.net/images/the_question_that_cannot_be_answered_cover.jpg",
+            "url": "https://mauriceprice.net/the_question_that_cannot_be_answered",
+            "description": "Why the search for purpose is built on a mistaken assumption, and an invitation to step outside the endless search and discover the life already here."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
           "item": {
             "@type": "Book",
             "name": "Beyond Death: The Architecture of Immortality",
@@ -52,7 +64,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 3,
           "item": {
             "@type": "Book",
             "name": "God's Infinite Design",
@@ -64,7 +76,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "item": {
             "@type": "Book",
             "name": "The Mind Heals the Body",
@@ -76,7 +88,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@type": "Book",
             "name": "Hidden Wisdom",
@@ -88,7 +100,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "Book",
             "name": "A Profound Teaching",
@@ -100,7 +112,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@type": "Book",
             "name": "This Isn't Living",
@@ -112,7 +124,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@type": "Book",
             "name": "The Blueprint of Reality",
@@ -124,7 +136,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@type": "Book",
             "name": "The Divergence",
@@ -136,7 +148,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "item": {
             "@type": "Book",
             "name": "Why Christianity Matters",
@@ -172,11 +184,23 @@
     <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
+                <img src="{{url('/images/the_question_that_cannot_be_answered_cover.png')}}" alt="The Question That Cannot Be Answered book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
+                <h4 class="mt-2">The Question That Cannot Be Answered</h4>
+                <p class="small text-muted">Why the Mind Will Never Find Your Purpose</p>
+                <div class="mt-auto">
+                    <span class="badge bg-success mb-2">New Release</span><br>
+                    <a href="/the_question_that_cannot_be_answered" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="https://www.amazon.com.au/dp/B0HDLNG326" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/beyond_death_cover.png')}}" alt="Beyond Death: The Architecture of Immortality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
                 <h4 class="mt-2">Beyond Death</h4>
                 <p class="small text-muted">The Architecture of Immortality</p>
                 <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/beyond_death" class="btn btn-primary mt-2">Learn More</a>
                     <a href="https://www.amazon.com.au/dp/B0GZGHPNFS" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
@@ -193,7 +217,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/the_mind_heals_the_body_3d.png')}}" alt="The Mind Heals the Body book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -204,9 +230,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png')}}" alt="The Blueprint of Reality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -228,7 +252,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/a_profound_teaching_kindle.png')}}" alt="A Profound Teaching book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -239,9 +265,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/This_isnt_living_book_covers.jpg')}}" alt="This Isn't Living book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">

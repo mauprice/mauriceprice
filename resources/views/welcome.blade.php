@@ -255,16 +255,34 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 1 – Beyond Death (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #0a1a14, #1a2e20);">
+   <!-- Slide 0 – The Question That Cannot Be Answered (New Release) -->
+<div class="carousel-item mh active" style="background: linear-gradient(135deg, #12141c, #262b3d);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
       <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
+      <h1 class="display-5 fw-bold text-white">The Question That Cannot Be Answered</h1>
+      <p class="lead mb-4" style="color:#e8e8e8;">Why the Mind Will Never Find Your Purpose</p>
+      <p class="mb-4" style="color:#cccccc;">What if the search for purpose is built on a mistaken assumption? An invitation to step outside the endless search and discover the life already here.</p>
+      <a href="{{ url('/the_question_that_cannot_be_answered') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#12141c; font-weight:700;">Discover More</a>
+      <a href="https://www.amazon.com.au/dp/B0HDLNG326" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="img-fluid slider-book">
+    </div>
+  </div>
+</div>
+
+   <!-- Slide 1 – Beyond Death -->
+<div class="carousel-item mh" style="background: linear-gradient(135deg, #0a1a14, #1a2e20);">
+  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <div class="col-md-7">
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
       <h1 class="display-5 fw-bold text-white">Beyond Death</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">The Architecture of Immortality</p>
       <p class="mb-4" style="color:#cccccc;">What if death is not the end… but a misunderstanding? A bold exploration of consciousness, biology, physics, and ancient wisdom.</p>
@@ -480,6 +498,27 @@
     </section>
 
     <section class="container my-5">
+
+    <!-- Row 0: The Question That Cannot Be Answered (New Release) -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 d-flex">
+            <a href="/the_question_that_cannot_be_answered" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
+                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
+                    <h2 class="mt-1">The Question That Cannot Be Answered</h2>
+                    <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="book-cover mb-3">
+                    <h3>Why the Mind Will Never Find Your Purpose</h3>
+                    <p class="mt-2 tj">
+                        <em>What if the question "What is my purpose?" cannot be answered</em> — not because the answer is hidden, but because the question begins with a mistaken assumption? We are taught that somewhere there is a role, calling, or identity that will finally make us complete. We search, strive, and become, only to discover that the promised fulfilment never lasts.
+                    </p>
+                    <p class="mt-2 tj">
+                        This book is not another guide to finding the perfect career or life mission. It is an invitation to step outside the endless search and discover the life already here.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <!-- Row 1: Beyond Death + God's Infinite Design -->
     <div class="row text-center align-items-stretch mb-4">
