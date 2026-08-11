@@ -56,6 +56,13 @@
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
+    @if($errors->any())
+        <div class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <p class="mb-0">{{ $error }}</p>
+            @endforeach
+        </div>
+    @endif
     <div class="row justify-content-center">
         <div class="col-md-8">
             <form action="{{ url('/contact') }}" method="POST">
@@ -74,7 +81,7 @@
                     <label for="message" class="form-label">Your Message</label>
                     <textarea id="message" name="message" class="form-control" rows="6" required></textarea>
                 </div>
-                <div class="g-recaptcha mb-3" data-sitekey="6LeEZ4IrAAAAAILv6V8yY9l15YBn4xkPDHUq8ahu"></div>
+                <div class="g-recaptcha mb-3" data-sitekey="6LeeZoIrAAAAAO7I-xRS-ajV4NnB5JdxMOuuHsqZ"></div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
 

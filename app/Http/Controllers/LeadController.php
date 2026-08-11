@@ -45,10 +45,10 @@ class LeadController extends Controller
         $request->validate($validationRules);
 
         // 3. 🤖 Google reCAPTCHA Verification (Crucial for live forms)
-        // Note: Using env('NOCAPTCHA_SECRET') based on your provided code, 
+        // Note: Using config('services.nocaptcha.secret') based on your provided code, 
         // ensure this is the correct key in your .env file.
         $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
-            'secret' => env('NOCAPTCHA_SECRET'),
+            'secret' => config('services.nocaptcha.secret'),
             'response' => $request->input('g-recaptcha-response'),
             'remoteip' => $request->ip(),
         ]);

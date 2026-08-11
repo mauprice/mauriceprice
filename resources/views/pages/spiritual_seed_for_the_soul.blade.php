@@ -135,10 +135,12 @@
             <div class="mb-3">
               <label for="name" class="form-label">First Name</label>
               <input type="text" id="name" name="name" class="form-control" required />
+@error('name') <div class="text-danger small mt-1">{{ $message }}</div> @enderror
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Best Email for Delivery</label>
               <input type="email" id="email" name="email" class="form-control" required />
+@error('email') <div class="text-danger small mt-1">{{ $message }}</div> @enderror
             </div>
 
             <!-- Consent -->
@@ -147,6 +149,7 @@
               <label class="form-check-label" for="consent">
                 Yes, I want the FREE Guide and Maurice's occasional insights.
               </label>
+@error('consent') <div class="text-danger small mt-1">{{ $message }}</div> @enderror
             </div>
 
             <!-- Hidden metadata -->
@@ -160,7 +163,7 @@
             </div>
 
             <!-- reCAPTCHA -->
-            <div class="g-recaptcha mb-3" data-sitekey="6LeEZ4IrAAAAAILv6V8yY9l15YBn4xkPDHUq8ahu"></div>
+            <div class="g-recaptcha mb-3" data-sitekey="6LeeZoIrAAAAAO7I-xRS-ajV4NnB5JdxMOuuHsqZ"></div>
 
             <div class="d-grid">
               <button type="submit" class="btn btn-primary btn-lg" onclick="gtag('event','lead_submit', { ebook: 'Spiritual Seeds'});">Send me the eBook</button>
