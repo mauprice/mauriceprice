@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Official website of Maurice Price, spiritual author and teacher. Discover books that guide you to awaken, heal, and remember the eternal truth within.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Maurice Price – Spiritual Author" />
+    <meta property="og:description" content="Discover books and teachings to help you awaken, heal, and remember your eternal self." />
+    <meta property="og:image" content="{{ url('/images/hero.jpg') }}" />
+    <meta property="og:url" content="https://mauriceprice.net/home" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Maurice Price – Spiritual Author" />
+    <meta name="twitter:description" content="Books and teachings to guide you back to the truth within." />
+    <meta name="twitter:image" content="{{ url('/images/hero.jpg') }}" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Maurice Price",
+        "url": "https://mauriceprice.net",
+        "sameAs": [
+            "https://lightofvictoryeverlasting.com"
+        ],
+        "jobTitle": "Spiritual Author",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Light of Victory Everlasting"
+        }
+    }
+    </script>
+
+    <title>Maurice Price &mdash; Spiritual Author | Awaken, Heal, Remember</title>
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="{{ url('css/app.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{url('images/hero.jpg')}}) no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 3rem;
+            color: #007bff;
+        }
+        .footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .apt-bc {
+            height: 42%;
+            width: fit-content;
+            margin: 0 auto;
+            margin-bottom: 0px;
+            display: block;
+        }
+        .tj{
+            text-align: justify;
+        }
+        .spacer20{
+            height: 20px;
+            width: 100%;
+            display: block;
+        }
+        .gap25{
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    @include('partials.navigation')
+
+    <section class="hero-section">
+        <div class="container">
+            <h1 class="display-3">Maurice Price – Spiritual Author & Teacher</h1>
+            <h5  class="display-6">Awaken. Heal. Remember</h5>
+            <div class="spacer20"></div>
+            <p class="lead">Books and teachings to guide you back to the eternal truth within.</p>
+        </div>
+    </section>
+
+    <section class="container my-5 text-center">
+        <h2 class="mb-3">Welcome to MauricePrice.Net</h2>
+        <p class="lead">
+            I'm Maurice Price — author, mystic, and explorer of consciousness. Through words, teachings, and silence, I help others awaken to their eternal nature. Whether you're searching for peace, clarity, or deeper purpose, you're in the right place.
+        </p>
+    </section>
+
+    <section class="container my-5">
+    <!-- First Row -->
+    <div class="row text-center align-items-stretch">
+        <!-- The Blueprint of Reality -->
+        <div class="col-md-6 d-flex">
+            <a href="/the_blueprint_of_reality" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
+                    <h3 class="mt-3">The Blueprint of Reality</h3>
+                    <img src="{{url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png')}}" alt="Book Cover" class="img-fluid mb-3">
+                    <h2>The Hidden Mechanics<br>of Manifestation</h2>
+                    <p class="mt-2">                       
+                        A sacred manual for reshaping your reality from the inside out. <br><br>This is not just a book — it's a revelation for the awakened mind, a guide for those ready to master the unseen laws of creation and live as conscious co-creators with the universe.
+                    </p>
+                    <button class="btn btn-success mt-auto" disabled>Now Available</button>
+                </div>
+            </a>
+        </div>
+
+        <!-- Hidden Wisdom -->
+          <div class="col-md-6 d-flex">
+            <a href="/this_isnt_living" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
+                    <h3 class="mt-3">This Isn't Living<br>Wake up before it's too late.</h3>
+                    <img src="{{url('/images/This_isnt_living_book_covers.jpg')}}" alt="Book Cover" class="img-fluid mb-3">
+                    <p class="mt-2 tj">
+                        A heartfelt call to break free from the illusions of modern life, this book weaves memoir, philosophy, and spiritual insight into a powerful guide for awakening.
+                    </p>
+                    <p class="mt-2 tj">
+                        Maurice Price exposes the quiet suffering beneath our routines—and shows how to rediscover peace, purpose, and the courage to live as your true self.
+                    </p>
+                </div>
+            </a>
+        </div>        
+    </div>
+
+    <!-- Second Row -->
+    <div class="row text-center align-items-stretch gap25">
+        <!-- A Profound Teaching -->
+        <div class="col-md-6 d-flex">
+            <a href="/a_profound_teaching" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
+                    <h3 class="mt-3">A Profound Teaching</h3>
+                    <img src="{{url('/images/a_profound_teaching_front_cover.png')}}" alt="Book Cover" class="img-fluid mb-3 apt-bc">
+                    <p class="mt-2 tj">
+                        Blending ancient wisdom, quantum theory, and lived spiritual experience, this transformative work reveals the truth behind identity, death, and consciousness. Maurice Price guides readers beyond surface reality to discover the eternal self hidden beneath the illusion of form.
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <!-- This Isn't Living -->
+        <div class="col-md-6 d-flex">
+            <a href="/hidden_wisdom" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
+                    <h3 class="mt-3">Hidden Wisdom<br>Interpretations of the<br>Gospel of Thomas</h3>
+                    <img src="{{url('/images/Hidden_wisdom_interpretations_Gospel_of_thomas.jpg')}}" alt="Book Cover" class="img-fluid mb-3">
+                    <p class="mt-2 tj">
+                        A mystical exploration of one of the most enigmatic early Christian texts, this book unpacks the Gospel of Thomas with fresh insight. Maurice Price offers a contemplative journey beyond doctrine, revealing the hidden teachings of Jesus that point directly to awakening and divine union.
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+    <section class="bg-white py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">What Readers Are Saying</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"A Profound Teaching stirred something ancient in me — a remembering."</p>
+                        <footer class="blockquote-footer">Emily R.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"This Isn't Living put into words what I’ve silently felt for years. Life-changing."</p>
+                        <footer class="blockquote-footer">Jason T.</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Hidden Wisdom reads like a quiet conversation with the eternal. Stunning."</p>
+                        <footer class="blockquote-footer">Ava M.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container text-center">
+            <h2>Ready to Get Started?</h2>
+            <p class="lead">Contact us today to learn more about how we can help you.</p>
+            <a href="/contact" class="btn btn-success btn-lg">Contact Us</a>
+        </div>
+    </section>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">&copy; 2025 Maurice Price. <a href="https://lightofvictoryeverlasting.com/" target="_blank">Light of Victory Everlasting.</a> All rights reserved.</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</body>
+</html>

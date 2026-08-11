@@ -1,0 +1,59 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class SiteController extends Controller
+{
+     public function home()
+    {
+        return view('welcome');
+    }
+
+    public function about()
+    {
+        return view('pages.about');
+    }
+
+    public function contact()
+    {
+        return view('pages.contact');
+    }
+    public function books()
+    {
+        return view('pages.books');
+    }
+    public function talks()
+    {
+        return view('pages.talks');
+    }
+
+    public function hiddenWisdom()
+    {
+        return view('pages.hidden_wisdom_interpretations_of_the_gospel_of_thomas');
+    }
+    public function aProfoundTeaching()
+    {
+        return view('pages.a_profound_teaching');
+    }
+    public function thisIsntLiving()
+    {
+        return view('pages.this_isnt_living');
+    }
+    public function theBlueprintOfReality()
+    {
+        return view('pages.the_blueprint_of_reality');
+    }
+    public function deep_meditation(){
+        return view('pages.deep_meditation');
+    }
+
+    public function manifestation(){
+        return view('pages.manifestation');
+    }
+
+    public function bpr_landing(){
+        return view('pages.bpr_landing');
+    }
+}

@@ -1,0 +1,23 @@
+# Robots.txt for mauriceprice.net
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /dashboard
+Disallow: /profile
+Disallow: /login
+Disallow: /register
+Disallow: /password/
+Disallow: /admin/
+
+# Allow search engines to crawl all public content
+Allow: /books
+Allow: /about
+Allow: /contact
+Allow: /articles
+
+# Sitemap location
+Sitemap: https://mauriceprice.net/sitemap.xml
+
+# Crawl delay (optional, helps with server load)
+Crawl-delay: 1

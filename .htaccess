@@ -1,0 +1,13 @@
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# --- NEW RULE TO BYPASS LARAVEL FOR STATIC FILES ---
+# If the requested URI matches the /downloads folder, serve it directly and stop.
+RewriteCond %{REQUEST_URI} ^/downloads/ [NC]
+RewriteRule ^ - [L]
+# --------------------------------------------------
+
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
