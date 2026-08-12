@@ -57,7 +57,7 @@
 <section class="bpr-hero">
     <div class="container">
         <h1 class="display-4">The Blueprint of Reality</h1>
-        <p class="lead">Unlock the Hidden Laws of Manifestation — Step Into the Life You Were Designed to Create.</p>
+        <p class="lead">Unlock the Hidden Laws of Manifestation: Step Into the Life You Were Designed to Create.</p>
     </div>
 </section>
 
@@ -68,7 +68,7 @@
                 <img src="{{ url('images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png') }}" alt="The Blueprint of Reality by Maurice Price" class="author-image mb-4">
                 
                 <h2>Upcoming Seminar / Workshop</h2>
-                <p>Join Maurice Price for an immersive, small-group workshop exploring the transformational principles of <em>The Blueprint of Reality</em>. Discover how energy, thought, and consciousness shape your reality — and how to align your life with these universal mechanics.</p>
+                <p>Join Maurice Price for an immersive, small-group workshop exploring the transformational principles of <em>The Blueprint of Reality</em>. Discover how energy, thought, and consciousness shape your reality, and how to align your life with these universal mechanics.</p>
                 
                 <div class="interest-section">
                     <h3>Register Your Interest</h3>
@@ -106,14 +106,14 @@
                 <h2>Inside the Blueprint of Reality Workshop</h2>
                 <p>Through this empowering event, you'll discover:</p>
                 <ul>
-                    <li><strong>The Energetic Architecture of Reality:</strong> Reality is a dynamic, intelligent field shaped by vibration — learn to align with it.</li>
+                    <li><strong>The Energetic Architecture of Reality:</strong> Reality is a dynamic, intelligent field shaped by vibration: learn to align with it.</li>
                     <li><strong>Your Role as Co-Creator:</strong> Thoughts, emotions, and beliefs act as a "vibrational broadcast" that reality reflects.</li>
                     <li><strong>Clearing Your Inner Whiteboard:</strong> Rewrite limiting beliefs and subconscious patterns to change your results.</li>
                     <li><strong>The Laws Governing Manifestation:</strong> Align with the universal principles that influence all creation.</li>
                     <li><strong>Transforming Resistance:</strong> Dissolve fear and doubt to increase coherence, alignment, and success.</li>
                     <li><strong>Embodiment:</strong> Move beyond theory into living as the energetic signal of your desired reality.</li>
                 </ul>
-                <p>This workshop is your opportunity to become the conscious architect of your life — no longer a passive participant, but an intentional creator.</p>
+                <p>This workshop is your opportunity to become the conscious architect of your life, no longer a passive participant, but an intentional creator.</p>
                 <a href="{{ url('/the_blueprint_of_reality') }}" class="btn btn-primary mt-3">Learn More</a>
                 <br><br>
                 <img src="{{ url('images/seminar1.jpg') }}" alt="Maurice Price Seminar" class="author-image">
@@ -125,7 +125,7 @@
                    
                 </blockquote>
                 <blockquote class="blockquote">
-                    <p class="mb-0">“The Blueprint of Reality is deeply spiritual yet practical — finally, real tools for conscious living.”</p>
+                    <p class="mb-0">“The Blueprint of Reality is deeply spiritual yet practical: finally, real tools for conscious living.”</p>
                     
                 </blockquote>
             </div>

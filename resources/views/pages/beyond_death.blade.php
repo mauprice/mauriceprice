@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Beyond Death: The Architecture of Immortality by Maurice Price — a bold exploration of consciousness, biology, physics, and ancient wisdom that challenges the belief that mortality is a fixed and unavoidable law.">
+    <meta name="description" content="Beyond Death: The Architecture of Immortality by Maurice Price, a bold exploration of consciousness, biology, physics, and ancient wisdom that challenges the belief that mortality is a fixed and unavoidable law.">
 
     <title>Beyond Death: The Architecture of Immortality – Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/beyond_death/" />
@@ -100,7 +100,7 @@
       <h2>About the Book</h2>
       <p><em>What if death is not the end… but a misunderstanding?</em></p>
       <p>In <em>Beyond Death: The Architecture of Immortality</em>, Maurice Price takes you on a bold and thought-provoking journey into the nature of human existence. Blending insights from consciousness, biology, physics, and ancient spiritual traditions, this book challenges the deeply rooted belief that mortality is a fixed and unavoidable law.</p>
-      <p>Rather than offering doctrine or blind belief, this work invites inquiry. It explores a radical possibility: that what we call death may be the result of a deeper disconnect — an interruption in the natural continuity of awareness.</p>
+      <p>Rather than offering doctrine or blind belief, this work invites inquiry. It explores a radical possibility: that what we call death may be the result of a deeper disconnect: an interruption in the natural continuity of awareness.</p>
       <h3 class="mt-4">Inside, you will explore:</h3>
       <ul>
         <li>The hidden assumptions behind our belief in mortality</li>
@@ -117,7 +117,7 @@
     <div class="col-12">
       <h2>Who This Book Is For</h2>
       <p>For those who have ever felt that life is more than what we see… For those who sense something has been forgotten… This is not a promise of living forever in the conventional sense. It is an exploration of what it truly means to exist.</p>
-      <p>If you are drawn to the deepest questions of consciousness, identity, and the mystery of life itself — this book is an invitation to look again.</p>
+      <p>If you are drawn to the deepest questions of consciousness, identity, and the mystery of life itself, this book is an invitation to look again.</p>
     </div>
   </div>
 

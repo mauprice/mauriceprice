@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Why Christianity Matters by Maurice Price reveals the transformative arc from Genesis to Christ—and why this story still heals, anchors, and reorients modern life. Kindle, paperback, and hardcover.">
+    <meta name="description" content="Why Christianity Matters by Maurice Price reveals the transformative arc from Genesis to Christ, and why this story still heals, anchors, and reorients modern life. Kindle, paperback, and hardcover.">
 
     <title>Why Christianity Matters – The Transformative Story | Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/why_christianity_matters/" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Why Christianity Matters – The Transformative Story from Genesis to Christ" />
-    <meta property="og:description" content="Discover how the biblical story—from creation and fall to redemption in Christ—transforms the way we see God, ourselves, and the world." />
+    <meta property="og:description" content="Discover how the biblical story, from creation and fall to redemption in Christ, transforms the way we see God, ourselves, and the world." />
     <meta property="og:image" content="https://mauriceprice.net/images/Why_christianity_matters.jpg" />
     <meta property="og:url" content="https://mauriceprice.net/why_christianity_matters" />
     <meta property="og:type" content="book" />
@@ -18,7 +18,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Why Christianity Matters – Maurice Price" />
-    <meta name="twitter:description" content="The transformative story from Genesis to Christ—told for the seeking heart and the modern world." />
+    <meta name="twitter:description" content="The transformative story from Genesis to Christ, told for the seeking heart and the modern world." />
     <meta name="twitter:image" content="https://mauriceprice.net/images/Why_christianity_matters.jpg" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +44,7 @@
       "name": "Why Christianity Matters",
       "alternateName": "The Transformative Story from Genesis to Christ",
       "author": {"@type": "Person", "name": "Maurice Price", "url": "https://mauriceprice.net"},
-      "description": "A clear, compelling journey through Scripture that traces the arc from creation and fall to redemption in Christ—and shows why this story still heals, anchors, and reorients modern life.",
+      "description": "A clear, compelling journey through Scripture that traces the arc from creation and fall to redemption in Christ, and shows why this story still heals, anchors, and reorients modern life.",
       "image": "https://mauriceprice.net/images/Why_christianity_matters.jpg",
       "publisher": {"@type": "Organization", "name": "Light of Victory Everlasting"},
       "inLanguage": "en",
@@ -97,13 +97,13 @@
     </div>
     <div class="col-md-6">
       <h2>About the Book</h2>
-      <p><em>Why Christianity Matters</em> is a concise, powerful walk through the biblical narrative—from creation and the fracture of the human heart to the promise, incarnation, cross, and resurrection. It shows how the entire arc of Scripture converges in Jesus Christ—and why that changes everything about how we live, love, suffer, and hope today.</p>
+      <p><em>Why Christianity Matters</em> is a concise, powerful walk through the biblical narrative: from creation and the fracture of the human heart to the promise, incarnation, cross, and resurrection. It shows how the entire arc of Scripture converges in Jesus Christ, and why that changes everything about how we live, love, suffer, and hope today.</p>
       <p>Instead of abstract theology, Maurice Price offers a clear, heart-centered telling of the gospel as a living story: God creates in love, humanity falls into separation, and Christ restores us to communion. Along the way, the book addresses modern doubts with gentleness, reveals the coherence of the Old and New Testaments, and invites readers into the simple, beautiful center of the faith.</p>
       <ul>
         <li>See Genesis as the doorway, not the destination.</li>
         <li>Understand covenant as God’s unbroken pursuit of the human heart.</li>
         <li>Encounter Christ as the fulfillment of Israel’s hope and the healer of the human condition.</li>
-        <li>Learn why the resurrection is not just an event in history, but a new creation breaking in—now.</li>
+        <li>Learn why the resurrection is not just an event in history, but a new creation breaking in, now.</li>
       </ul>
       <a href="{{$url}}" target="_blank" rel="noopener" class="btn btn-primary mt-4">Available on Amazon</a>
     </div>
@@ -112,7 +112,7 @@
   <div class="row mt-5">
     <div class="col-12">
       <h2>Who This Book Is For</h2>
-      <p>Seekers, skeptics, and believers who long for a faith that is intellectually honest, spiritually alive, and pastorally gentle. If you’ve wondered how the parts of the Bible fit together—or how Christianity speaks to a fractured, anxious age—this book is for you.</p>
+      <p>Seekers, skeptics, and believers who long for a faith that is intellectually honest, spiritually alive, and pastorally gentle. If you’ve wondered how the parts of the Bible fit together, or how Christianity speaks to a fractured, anxious age, this book is for you.</p>
     </div>
   </div>
 

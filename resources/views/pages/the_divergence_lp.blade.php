@@ -135,7 +135,7 @@
             </div>
             <div class="col-lg-5">
                 <h2 class="h4">Watch the 93-second overview</h2>
-                <p class="mb-3">AI is rewriting reality — this is the moment humanity must choose its path.</p>
+                <p class="mb-3">AI is rewriting reality. This is the moment humanity must choose its path.</p>
                 <a class="btn-cta" href="{{$url}}" target="_blank" rel="noopener">Get the book and understand the choices.</a>
                 
             </div>

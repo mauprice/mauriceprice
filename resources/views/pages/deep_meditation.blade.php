@@ -62,7 +62,7 @@
             <img src="{{ url('/images/deep_meditation.jpg') }}" style="width:100%" alt="Deep Meditation">
             <div style="max-width: 1600px; margin: 2rem auto; padding: 1.5rem; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                 <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem; color: #333;">Entering the Depths: A Guide to Deep Meditation</h1>
-                <p style="text-align: center; font-style: italic; color: #555; margin-bottom: 2rem;">"Be still, and know that I am God." — Psalm 46:10</p>
+                <p style="text-align: center; font-style: italic; color: #555; margin-bottom: 2rem;">"Be still, and know that I am God." (Psalm 46:10)</p>
                 <p style="margin-bottom: 1.5rem; line-height: 1.6;">Deep meditation isn't about reaching for something external; it's a gentle return to the profound essence that has always resided within you. It's the art of <i><b>resting in awareness itself</b></i>, meticulously peeling back layers of noise, tension, and identity. What remains is an expansive stillness, pure presence, and an unmistakable sense of divine union. This journey is not about acquisition but rather a sacred act of remembering your true nature.</p>
 
                 <hr style="margin: 2.5rem 0; border: 0; border-top: 1px solid #eee;">
@@ -117,7 +117,7 @@
                 <p style="margin-bottom: 1.5rem; line-height: 1.6;">As the initial layers of thought begin to quiet, a profound shift often occurs. You are no longer “doing” meditation; you are simply <b>being</b>.</p>
                 <ul style="list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1.5rem; line-height: 1.6;">
                     <li><b>Boundary dissolution:</b> Allow your awareness to widen, as if you are merging with the vast space that surrounds you. Feel the boundaries of your individual self begin to dissolve.</li>
-                    <li><b>Divine unity field:</b> Sense the presence of the divine unity field—that invisible yet ever-present stillness within which all of existence arises and subsides.</li>
+                    <li><b>Divine unity field:</b> Sense the presence of the divine unity field: that invisible yet ever-present stillness within which all of existence arises and subsides.</li>
                     <li><b>Floating in presence:</b> Experience yourself floating effortlessly in pure presence, where nothing is lacking, nothing needs to be added, and nothing is missing.</li>
                 </ul>
                 <p style="margin-bottom: 1.5rem; line-height: 1.6;">This isn't a product of your imagination; it is a profound act of remembrance, a re-cognition of your inherent boundlessness.</p>
@@ -129,7 +129,7 @@
                 <ul style="list-style-type: disc; margin-left: 1.5rem; margin-bottom: 1.5rem; line-height: 1.6;">
                     <li><b>Embrace the Divine:</b> Feel the palpable Presence of God, or the Universal Source, dwelling both within you and pervading everything around you.</li>
                     <li><b>Effortless surrender:</b> Let go of all striving, all effort, all agenda. Simply rest in this boundless embrace.</li>
-                    <li><b>Subtle sensations:</b> You may begin to experience subtle, delightful sensations—a sense of profound lightness, warmth, expansive spaciousness, unadulterated joy, or deep awe.</li>
+                    <li><b>Subtle sensations:</b> You may begin to experience subtle, delightful sensations: a sense of profound lightness, warmth, expansive spaciousness, unadulterated joy, or deep awe.</li>
                 </ul>
                 <p style="margin-bottom: 1.5rem; line-height: 1.6;">Remain in this sacred space for as long as you feel intuitively called. The depth of this stillness will expand incrementally with consistent practice, gradually transforming into a sanctuary that remains with you, sustaining you, even long after you open your eyes.</p>
 
@@ -148,7 +148,7 @@
                 <hr style="margin: 2.5rem 0; border: 0; border-top: 1px solid #eee;">
 
                 <h2 style="font-size: 1.8rem; margin-bottom: 1rem; color: #333;">Final Thoughts: The Eternal Return</h2>
-                <p style="margin-bottom: 1.5rem; line-height: 1.6;">Meditation is not an escape from life; it is a profound and enriching return—to God, to your authentic Self, and to the eternal now. The more consistently you sit in this sacred practice, the less you will find yourself chasing external gratification. The more you surrender to this inner journey, the more you will effortlessly remember: you are already, always, one with the Source of all creation.</p>
+                <p style="margin-bottom: 1.5rem; line-height: 1.6;">Meditation is not an escape from life; it is a profound and enriching return: to God, to your authentic Self, and to the eternal now. The more consistently you sit in this sacred practice, the less you will find yourself chasing external gratification. The more you surrender to this inner journey, the more you will effortlessly remember: you are already, always, one with the Source of all creation.</p>
                 <p style="margin-bottom: 1.5rem; line-height: 1.6;">Let this practice become your daily offering, your quiet revolution, and your ever-open doorway into the timeless depths of your own being.</p>
             </div>
         </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose by Maurice Price — an exploration of why the search for purpose is built on a mistaken assumption, and an invitation to discover the life already here.">
+    <meta name="description" content="The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose by Maurice Price, an exploration of why the search for purpose is built on a mistaken assumption, and an invitation to discover the life already here.">
 
     <title>The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose – Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/the_question_that_cannot_be_answered/" />
@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@MauricePriceNet" />
     <meta name="twitter:title" content="The Question That Cannot Be Answered – Maurice Price" />
-    <meta name="twitter:description" content="Why the mind will never find your purpose — and why that was never the point. A new book from Maurice Price." />
+    <meta name="twitter:description" content="Why the mind will never find your purpose, and why that was never the point. A new book from Maurice Price." />
     <meta name="twitter:image" content="https://mauriceprice.net/images/the_question_that_cannot_be_answered_cover.jpg" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -99,7 +99,7 @@
     </div>
     <div class="col-md-6">
       <h2>About the Book</h2>
-      <p><em>What if the question "What is my purpose?" cannot be answered — not because the answer is hidden, but because the question begins with a mistaken assumption?</em></p>
+      <p><em>What if the question "What is my purpose?" cannot be answered, not because the answer is hidden, but because the question begins with a mistaken assumption?</em></p>
       <p>We are taught that somewhere there is a role, calling, achievement, or spiritual identity that will finally make us complete. We search, strive, and become, only to discover that the promised fulfilment never lasts. The identity changes, but the one who is searching remains.</p>
       <p><em>The Question That Cannot Be Answered</em> explores the limits of the thinking mind, the belief that something is missing, and the difference between having a practical purpose and needing one to justify your existence.</p>
       <p>This is not another guide to finding the perfect career or life mission. It is an invitation to step outside the endless search and discover the life already here. Purpose may give your life direction, but it was never meant to give your life its value.</p>
@@ -111,7 +111,7 @@
     <div class="col-12">
       <h2>Who This Book Is For</h2>
       <p>For anyone who has chased achievement, identity, or calling only to find the fulfilment doesn't last. For anyone quietly exhausted by the search for "what I'm meant to do." This book is for those ready to question the question itself.</p>
-      <p>If you sense that something is missing but suspect the missing thing was never the point — this book is an invitation to look again.</p>
+      <p>If you sense that something is missing but suspect the missing thing was never the point, this book is an invitation to look again.</p>
     </div>
   </div>
 

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spiritual Seeds for the Soul – Free eBook</title>
-    <meta name="description" content="Get your free copy of Spiritual Seeds for the Soul — 30 daily wisdom seeds to plant in your mind. Download the eBook and join Maurice Price for occasional insights." />
+    <meta name="description" content="Get your free copy of Spiritual Seeds for the Soul: 30 daily wisdom seeds to plant in your mind. Download the eBook and join Maurice Price for occasional insights." />
 
     <link rel="canonical" href="{{ url('/spiritual-seeds') }}" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -83,7 +83,7 @@
   <div class="container">
     <span class="badge badge-free rounded-pill px-3 py-2 mb-3">Free eBook</span>
     <h1 class="display-4 fw-bold mb-3">Spiritual Seeds for the Soul</h1>
-    <p class="sub lead">30 daily wisdom seeds to plant in your heart—germinating clarity, peace, and a deeper walk with the Divine.</p>
+    <p class="sub lead">30 daily wisdom seeds to plant in your heart, germinating clarity, peace, and a deeper walk with the Divine.</p>
     <div class="mt-4">
       <a href="#download" class="btn btn-light btn-lg me-2">Get the eBook</a>
       <a href="#whats-inside" class="btn btn-outline-light btn-lg">See What's Inside</a>
@@ -100,7 +100,7 @@
       <div class="col-lg-8">
         <h2 class="h1 mb-3">What you'll receive</h2>
         <ul class="list-unstyled fs-5">
-          <li class="mb-2"><span class="feature-icon me-2"><svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 2 6 12l-4-4"/></svg></span>30 beautifully crafted <strong>daily seeds</strong>—one for each day of the month.</li>
+          <li class="mb-2"><span class="feature-icon me-2"><svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 2 6 12l-4-4"/></svg></span>30 beautifully crafted <strong>daily seeds</strong>, one for each day of the month.</li>
           <li class="mb-2"><span class="feature-icon me-2"><svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 2 6 12l-4-4"/></svg></span>A gentle <strong>How to Use</strong> guide to make them take root.</li>
           <li class="mb-2"><span class="feature-icon me-2"><svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 2 6 12l-4-4"/></svg></span>Direct download in <strong>PDF</strong> (plus optional <strong>ePub</strong>).</li>
           <li class="mb-2"><span class="feature-icon me-2"><svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16"><path d="M16 2 6 12l-4-4"/></svg></span>Occasional wisdom notes from Maurice (no spam, unsubscribe anytime).</li>
@@ -178,7 +178,7 @@
 
   <section class="container py-4">
     <div class="text-center text-muted small">
-      <em>“The mind is the bridge between the unseen and the seen — the soil where seeds of wisdom take root.”</em>
+      <em>“The mind is the bridge between the unseen and the seen: the soil where seeds of wisdom take root.”</em>
     </div>
   </section>
 </main>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Discover the spiritual and existential choice of our time — The Divergence. A powerful new book by Maurice Price about awakening in the age of illusion.">
+    <meta name="description" content="Discover the spiritual and existential choice of our time: The Divergence. A powerful new book by Maurice Price about awakening in the age of illusion.">
     <link rel="canonical" href="https://mauriceprice.net/the-divergence/" />
     <title>The Divergence – Awakening in the Age of Illusion</title>
     <meta property="og:title" content="The Divergence – Awakening in the Age of Illusion" />

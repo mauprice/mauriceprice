@@ -134,14 +134,14 @@
       </div>
       <div class="col-md-6">
         <h2 class="h3">Your Body Was Made to Heal</h2>
-        <p class="mb-3">In this transformative book, Maurice Price reveals how the mind, spirit, and body are not separate—but one unified field of divine intelligence. Healing is not something we wait for, it is something we remember.</p>
+        <p class="mb-3">In this transformative book, Maurice Price reveals how the mind, spirit, and body are not separate, but one unified field of divine intelligence. Healing is not something we wait for, it is something we remember.</p>
 
         <h3 class="h5 mt-4">What you’ll discover inside</h3>
         <ul class="mb-3">
           <li><strong>The seed of sickness:</strong> how fear, trauma, and belief patterns disrupt the body’s natural coherence.</li>
           <li><strong>Speaking to the cells:</strong> communicating directly with your body’s inner intelligence to activate healing.</li>
           <li><strong>Stillness as medicine:</strong> meditation, silence, and divine alignment to restore energetic order.</li>
-          <li><strong>Faith-based healing:</strong> why belief—beyond placebo—is the substance of wholeness.</li>
+          <li><strong>Faith-based healing:</strong> why belief, beyond placebo, is the substance of wholeness.</li>
         </ul>
 
         <blockquote class="mb-4">Your mind is not the enemy. It is the doorway to divine restoration.</blockquote>
@@ -224,7 +224,7 @@
 <section class="section section-dark">
   <div class="container maxw-720 text-center">
     <h2 class="h4 mb-3">A sacred return to inner truth</h2>
-    <p class="mb-4">Modern medicine often treats symptoms. This book invites you deeper—to the root cause, and to the sacred knowing that health is not earned, it is remembered.</p>
+    <p class="mb-4">Modern medicine often treats symptoms. This book invites you deeper, to the root cause, and to the sacred knowing that health is not earned, it is remembered.</p>
     <a class="btn-cta" href="{{$url}}" target="_blank" rel="noopener">Begin the Return</a>
   </div>
 </section>

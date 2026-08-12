@@ -6,17 +6,17 @@
     <meta name="description" content="Join Maurice Price's exclusive 20-person Blueprint of Reality Workshop in Brisbane. One fully catered day to unlock your inner power and step into a life of genuine joy, purpose, and satisfaction.">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Blueprint of Reality Workshop Brisbane — Stop Surviving, Start Living Fully</title>
+    <title>Blueprint of Reality Workshop Brisbane: Stop Surviving, Start Living Fully</title>
     <link rel="canonical" href="https://mauriceprice.net/bpr-workshop" />
 
-    <meta property="og:title" content="Blueprint of Reality Workshop — Stop Surviving, Start Living Fully" />
+    <meta property="og:title" content="Blueprint of Reality Workshop: Stop Surviving, Start Living Fully" />
     <meta property="og:description" content="Limited to 20 people. Discover how to unlock the power already within you and step out of quiet desperation into a life of joy and purpose." />
     <meta property="og:image" content="https://mauriceprice.net/images/MauricePrice.jpg" />
     <meta property="og:url" content="https://mauriceprice.net/bpr-workshop" />
     <meta property="og:type" content="event" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Blueprint of Reality Workshop — Stop Surviving, Start Living Fully" />
+    <meta name="twitter:title" content="Blueprint of Reality Workshop: Stop Surviving, Start Living Fully" />
     <meta name="twitter:description" content="Limited to 20 people. Unlock the power already within you." />
     <meta name="twitter:image" content="https://mauriceprice.net/images/MauricePrice.jpg" />
 
@@ -476,8 +476,8 @@
             to Live in <span>Quiet Desperation</span>
         </h1>
         <p class="hero-sub">
-            There is a power already alive inside you&nbsp;&mdash; waiting to be switched on.
-            In one immersive, fully catered day, you won't just learn how to access it &mdash;
+            There is a power already alive inside you, waiting to be switched on.
+            In one immersive, fully catered day, you won't just learn how to access it:
             you will practise it, live, in a room of twenty people on the same journey.
         </p>
         <p style="margin-bottom: 1.6rem;">
@@ -485,7 +485,7 @@
             <span style="color: #d0cce8; font-size: 0.92rem;">&nbsp; Based on the book rated <strong style="color: var(--gold-light);">5.0 on
             <u><a href="https://www.goodreads.com/book/show/235696591-the-blueprint-of-reality" target="_blank" rel="noopener" style="color: var(--gold-light);">Goodreads</a></u></strong></span>
         </p>
-        <div class="hero-seats">Brisbane &mdash; The First Live Teaching of This Material &mdash; Strictly Limited to 20 Seats</div>
+        <div class="hero-seats">Brisbane: The First Live Teaching of This Material, Strictly Limited to 20 Seats</div>
         <br>
         <a href="#register" class="btn-gold">Yes, I Want to Change My Life</a>
     </div>
@@ -501,17 +501,17 @@
                 <h2 class="text-center">Does This Sound Familiar?</h2>
                 <div class="gold-divider"></div>
 
-                <p>You've worked hard. You've chased the goals society handed you &mdash; the career, the status, the things. And maybe you got some of them. But something is still missing.</p>
+                <p>You've worked hard. You've chased the goals society handed you: the career, the status, the things. And maybe you got some of them. But something is still missing.</p>
 
                 <p>You wake up and go through the motions. You do what's expected. You smile when you're supposed to. But underneath it all is a quiet, persistent voice whispering: <em>Is this really it?</em></p>
 
                 <div class="pull-quote">
-                    "The mass of men lead lives of quiet desperation and go to the grave with the song still in them." &mdash; Henry David Thoreau
+                    "The mass of men lead lives of quiet desperation and go to the grave with the song still in them." (Henry David Thoreau)
                 </div>
 
-                <p>More money doesn't fix it. A new job doesn't fix it. A new relationship doesn't fix it &mdash; because the source of that emptiness isn't out there. It never was.</p>
+                <p>More money doesn't fix it. A new job doesn't fix it. A new relationship doesn't fix it, because the source of that emptiness isn't out there. It never was.</p>
 
-                <p>The relentless pursuit of things &mdash; wealth, status, recognition &mdash; often brings exactly what most people are trying to escape: <strong>stress, worry, grief, illness, and emotional turmoil.</strong> The more you chase, the heavier life feels.</p>
+                <p>The relentless pursuit of things, wealth, status, recognition, often brings exactly what most people are trying to escape: <strong>stress, worry, grief, illness, and emotional turmoil.</strong> The more you chase, the heavier life feels.</p>
 
                 <p>But here is the truth that changes everything: <strong>you were designed for far more than this.</strong> The power to live fully, love deeply, and create a life of genuine satisfaction and joy is not something you need to find. <em>It is already within you.</em> You simply need to learn how to switch it on.</p>
             </div>
@@ -527,20 +527,20 @@
         <h2>The Half of Manifestation No One Talks About</h2>
         <div class="gold-divider"></div>
         <p>
-            Everything popular culture calls "manifestation" &mdash; the vision boards, the affirmations,
-            the positive thinking &mdash; is only half the process. The visible half. The unseen half,
+            Everything popular culture calls "manifestation," the vision boards, the affirmations,
+            the positive thinking, is only half the process. The visible half. The unseen half,
             where creation actually begins, is the part that has never been properly explained.
             That's why it works for a while, then stops. That's why you can believe completely and still stay stuck.
         </p>
         <br>
         <p>
-            Reality isn't fixed &mdash; it's feedback. Change the signal, and the mirror changes too.
+            Reality isn't fixed: it's feedback. Change the signal, and the mirror changes too.
             You are not waiting for life to happen; life is waiting for your signal to stabilise.
-            This workshop reveals the unseen half of the process &mdash; and in one day, you will learn to hold the pen.
+            This workshop reveals the unseen half of the process, and in one day, you will learn to hold the pen.
         </p>
         <br>
         <p style="color: var(--gold-light); font-style: italic;">
-            I didn't uncover this in books. It began the day I died &mdash; and found I was still aware. My story is below.
+            I didn't uncover this in books. It began the day I died, and found I was still aware. My story is below.
         </p>
         <br>
         <a href="#register" class="btn-gold">Claim My Seat at the Workshop</a>
@@ -553,7 +553,7 @@
 <section class="benefits-section">
     <div class="container">
         <div class="section-title">
-            <h2>What You Will Uncover &mdash; and Actually Do</h2>
+            <h2>What You Will Uncover and Actually Do</h2>
             <div class="gold-divider"></div>
             <p>This is not a day of sitting and listening. Every teaching is paired with a live exercise, guided practice, or meditation you experience in the room.</p>
         </div>
@@ -563,7 +563,7 @@
                 <div class="benefit-card">
                     <span class="benefit-icon">&#129504;</span>
                     <h4>See What You've Been Broadcasting</h4>
-                    <p>Through the Whiteboard of Creation exercise, you'll uncover the recurring thoughts, fears, and inner stories you've been unconsciously projecting &mdash; and see, often for the first time, why your life looks the way it does.</p>
+                    <p>Through the Whiteboard of Creation exercise, you'll uncover the recurring thoughts, fears, and inner stories you've been unconsciously projecting, and see, often for the first time, why your life looks the way it does.</p>
                 </div>
             </div>
 
@@ -571,15 +571,15 @@
                 <div class="benefit-card">
                     <span class="benefit-icon">&#9997;&#65039;</span>
                     <h4>Rewrite the Beliefs That Keep You Small</h4>
-                    <p>You'll identify your three core limiting beliefs &mdash; "I'm not good enough," "it's too late," "it never works out" &mdash; bring them into the light, and rewrite them, live, in the room. Every belief is a lens. Change the lens, and a new world appears.</p>
+                    <p>You'll identify your three core limiting beliefs: "I'm not good enough," "it's too late," "it never works out," bring them into the light, and rewrite them, live, in the room. Every belief is a lens. Change the lens, and a new world appears.</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="benefit-card">
                     <span class="benefit-icon">&#127775;</span>
-                    <h4>Learn to Lift Your State &mdash; On Demand</h4>
-                    <p>Master the 4-step recalibration practice: shift from anxiety, worry, or doubt into peace, trust, and clarity in minutes &mdash; a skill that dissolves the stress and emotional turmoil you've been carrying, any time you need it.</p>
+                    <h4>Learn to Lift Your State: On Demand</h4>
+                    <p>Master the 4-step recalibration practice: shift from anxiety, worry, or doubt into peace, trust, and clarity in minutes: a skill that dissolves the stress and emotional turmoil you've been carrying, any time you need it.</p>
                 </div>
             </div>
 
@@ -587,15 +587,15 @@
                 <div class="benefit-card">
                     <span class="benefit-icon">&#128142;</span>
                     <h4>Discover Who You Are Beneath the Story</h4>
-                    <p>In guided identity work, you'll ask: who am I without the old roles and labels &mdash; the fixer, the failure, the outsider? What remains is the true self: whole, calm, and grounded. From there, you can live fully and love without fear.</p>
+                    <p>In guided identity work, you'll ask: who am I without the old roles and labels: the fixer, the failure, the outsider? What remains is the true self: whole, calm, and grounded. From there, you can live fully and love without fear.</p>
                 </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
                 <div class="benefit-card">
                     <span class="benefit-icon">&#9889;</span>
-                    <h4>Put It to the Test &mdash; Within 48 Hours</h4>
-                    <p>You won't be asked to take anything on faith. You'll set a real intention during the workshop and run a personal experiment over the following 24&ndash;48 hours &mdash; then watch what shows up.</p>
+                    <h4>Put It to the Test: Within 48 Hours</h4>
+                    <p>You won't be asked to take anything on faith. You'll set a real intention during the workshop and run a personal experiment over the following 24&ndash;48 hours, then watch what shows up.</p>
                 </div>
             </div>
 
@@ -619,13 +619,13 @@
             <div class="col-lg-9">
                 <h2 class="text-center mb-1">The Journey of the Day</h2>
                 <div class="gold-divider"></div>
-                <p class="text-center text-muted mb-5">One full day, carefully structured &mdash; teaching, guided meditation, live exercises, catered lunch and breaks, and a closing circle</p>
+                <p class="text-center text-muted mb-5">One full day, carefully structured: teaching, guided meditation, live exercises, catered lunch and breaks, and a closing circle</p>
 
                 <div class="unfold-item">
                     <div class="unfold-num">1</div>
                     <div class="unfold-text">
                         <h4>What Reality Actually Is</h4>
-                        <p>The morning opens by dismantling the biggest illusion of all: that reality is solid, fixed, and happening <em>to</em> you. Drawing on the double-slit experiment, the placebo effect, HeartMath research, and the words of Einstein, Tesla, and Planck, you'll see that reality is energy &mdash; responsive, listening, and waiting for your signal. We settle in with two minutes of still awareness.</p>
+                        <p>The morning opens by dismantling the biggest illusion of all: that reality is solid, fixed, and happening <em>to</em> you. Drawing on the double-slit experiment, the placebo effect, HeartMath research, and the words of Einstein, Tesla, and Planck, you'll see that reality is energy: responsive, listening, and waiting for your signal. We settle in with two minutes of still awareness.</p>
                     </div>
                 </div>
 
@@ -633,7 +633,7 @@
                     <div class="unfold-num">2</div>
                     <div class="unfold-text">
                         <h4>The Whiteboard of Creation</h4>
-                        <p>Every day you write messages onto the whiteboard of your reality &mdash; not in ink, but in energy &mdash; and the Field mirrors them back without judgment. In this guided exercise you'll read your own whiteboard, identify what's been unconsciously written there, and rewrite it.</p>
+                        <p>Every day you write messages onto the whiteboard of your reality, not in ink, but in energy, and the Field mirrors them back without judgment. In this guided exercise you'll read your own whiteboard, identify what's been unconsciously written there, and rewrite it.</p>
                     </div>
                 </div>
 
@@ -641,7 +641,7 @@
                     <div class="unfold-num">3</div>
                     <div class="unfold-text">
                         <h4>The Universal Laws &amp; Your Living Frequency</h4>
-                        <p>Creation follows order, not chaos. You'll learn the seven universal laws that govern all creation, understand the broadcast loop &mdash; intention, field, feedback &mdash; and map where you've been living on the emotional frequency scale. Then you'll set a real intention and release it into the field as a personal 48-hour experiment.</p>
+                        <p>Creation follows order, not chaos. You'll learn the seven universal laws that govern all creation, understand the broadcast loop: intention, field, feedback, and map where you've been living on the emotional frequency scale. Then you'll set a real intention and release it into the field as a personal 48-hour experiment.</p>
                     </div>
                 </div>
 
@@ -649,7 +649,7 @@
                     <div class="unfold-num">4</div>
                     <div class="unfold-text">
                         <h4>What Blocks the Signal</h4>
-                        <p>Fear contracts. Doubt cancels. Overthinking scatters. In the afternoon you'll learn exactly how resistance distorts your signal &mdash; and practise the art of letting go: not as giving up, but as removing the static that's been preventing your life from arriving.</p>
+                        <p>Fear contracts. Doubt cancels. Overthinking scatters. In the afternoon you'll learn exactly how resistance distorts your signal, and practise the art of letting go: not as giving up, but as removing the static that's been preventing your life from arriving.</p>
                     </div>
                 </div>
 
@@ -657,7 +657,7 @@
                     <div class="unfold-num">5</div>
                     <div class="unfold-text">
                         <h4>Who You Really Are</h4>
-                        <p>You don't manifest what you want &mdash; you manifest who you believe you are. In deep guided identity work, you'll set down the old roles and labels and meet the self beneath the story: whole, unchanging, already enough. Then, in the Future Self Broadcast, you'll step into the version of you who already lives the life you're creating.</p>
+                        <p>You don't manifest what you want: you manifest who you believe you are. In deep guided identity work, you'll set down the old roles and labels and meet the self beneath the story: whole, unchanging, already enough. Then, in the Future Self Broadcast, you'll step into the version of you who already lives the life you're creating.</p>
                     </div>
                 </div>
 
@@ -665,7 +665,7 @@
                     <div class="unfold-num">6</div>
                     <div class="unfold-text">
                         <h4>Walking Forward as the Blueprint</h4>
-                        <p>The day closes with integration: seven daily practices for maintaining a high frequency, your first frequency-aligned action, an open sharing circle, and your 30-Day Alignment Plan from the workbook. You walk out not with notes &mdash; with a new way of being.</p>
+                        <p>The day closes with integration: seven daily practices for maintaining a high frequency, your first frequency-aligned action, an open sharing circle, and your 30-Day Alignment Plan from the workbook. You walk out not with notes, but with a new way of being.</p>
                     </div>
                 </div>
             </div>
@@ -683,13 +683,13 @@
                 <img src="{{ url('images/MauricePrice.jpg') }}" alt="Maurice Price" class="about-img" style="max-width:280px;">
             </div>
             <div class="col-md-8">
-                <span class="book-badge">A 30-Year Search &mdash; Shared With You in One Day</span>
+                <span class="book-badge">A 30-Year Search: Shared With You in One Day</span>
                 <h2>Why I Can Teach You This</h2>
-                <p style="font-size:1.1rem; color:#fff;"><em>"Thirty years ago, I had a near-death experience. I found myself fully aware &mdash; perceiving, thinking, existing &mdash; without my body."</em></p>
-                <p>When I came back, nothing else held any interest for me. Not career, not possessions, not the life I had been living. Only one question consumed me: <em>how did I exist without a body &mdash; and how do I get back to that place?</em></p>
-                <p>That question became a thirty-year search behind the veil. And what I found was beyond anything I could have imagined: the physical world is a projection, arising from a vast and unfathomable consciousness &mdash; a consciousness that we all <em>are</em>. We are not separate beings struggling alone. We are like nodes on a grand network, each of us a living point of awareness within one field.</p>
+                <p style="font-size:1.1rem; color:#fff;"><em>"Thirty years ago, I had a near-death experience. I found myself fully aware, perceiving, thinking, existing, without my body."</em></p>
+                <p>When I came back, nothing else held any interest for me. Not career, not possessions, not the life I had been living. Only one question consumed me: <em>how did I exist without a body, and how do I get back to that place?</em></p>
+                <p>That question became a thirty-year search behind the veil. And what I found was beyond anything I could have imagined: the physical world is a projection, arising from a vast and unfathomable consciousness: a consciousness that we all <em>are</em>. We are not separate beings struggling alone. We are like nodes on a grand network, each of us a living point of awareness within one field.</p>
                 <p style="font-size:1.05rem; color: var(--gold-light); font-style: italic; border-left: 3px solid var(--gold); padding-left: 1rem; margin-bottom: 1.5rem;">"If you can write it down in a coherent way for others to understand, you can teach it."</p>
-                <p>That search has so far produced <strong>ten published books</strong> &mdash; on consciousness, on what lies beyond death, on the mind's power to heal the body, and on the hidden wisdom running through the world's deepest teachings. <em>The Blueprint of Reality</em> is where it all comes together: the practical mechanics of how consciousness shapes your life.</p>
+                <p>That search has so far produced <strong>ten published books</strong>: on consciousness, on what lies beyond death, on the mind's power to heal the body, and on the hidden wisdom running through the world's deepest teachings. <em>The Blueprint of Reality</em> is where it all comes together: the practical mechanics of how consciousness shapes your life.</p>
                 <p>What took me thirty years and ten books to uncover, I will share with you in a single day.</p>
                 <div class="ratio ratio-16x9 mt-4 mb-4" style="border-radius:10px; overflow:hidden; box-shadow:0 12px 40px rgba(0,0,0,0.5);">
                     <iframe src="https://www.youtube-nocookie.com/embed/PwT8PRgj6KQ" title="Maurice Price introduces The Blueprint of Reality" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -719,19 +719,19 @@
             <div class="col-md-4">
                 <div class="testimonial-card">
                     <p>"This isn't just another manifestation book. It's a master key. Maurice Price bridges science and spirituality in a way that feels both profound and practical. For the first time, I understand <em>why</em> manifestation works and how to align with it consciously."</p>
-                    <span class="attribution">Oliver Cox &mdash; &#9733;&#9733;&#9733;&#9733;&#9733; Goodreads review</span>
+                    <span class="attribution">Oliver Cox, &#9733;&#9733;&#9733;&#9733;&#9733; Goodreads review</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="testimonial-card">
                     <p>"I've read countless books on the law of attraction, but The Blueprint of Reality goes deeper. Instead of endless affirmations and wishful thinking, Maurice shows how to embody the frequency of what you desire. Highly recommended for anyone who feels stuck on the hamster wheel of repeating patterns."</p>
-                    <span class="attribution">Liam Cooper &mdash; &#9733;&#9733;&#9733;&#9733;&#9733; Goodreads review</span>
+                    <span class="attribution">Liam Cooper, &#9733;&#9733;&#9733;&#9733;&#9733; Goodreads review</span>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="testimonial-card">
-                    <p>"Not gonna lie, I was skeptical when this book was recommended in the group, but I'm so glad I gave it a chance. It bridges quantum physics and spirituality in such a clear way. Since reading it, I've noticed synchronicities everywhere &mdash; like the universe is confirming I'm on the right track."</p>
-                    <span class="attribution">Chloe Wayne &mdash; &#9733;&#9733;&#9733;&#9733;&#9733; Goodreads review</span>
+                    <p>"Not gonna lie, I was skeptical when this book was recommended in the group, but I'm so glad I gave it a chance. It bridges quantum physics and spirituality in such a clear way. Since reading it, I've noticed synchronicities everywhere, like the universe is confirming I'm on the right track."</p>
+                    <span class="attribution">Chloe Wayne, &#9733;&#9733;&#9733;&#9733;&#9733; Goodreads review</span>
                 </div>
             </div>
         </div>
@@ -755,21 +755,21 @@
                     </div>
                     <div class="detail-row">
                         <span class="detail-label">Seats</span>
-                        <span class="detail-value"><strong>Strictly 20 participants &mdash; no exceptions.</strong> Beyond 20, it becomes a lecture instead of a workshop. The cap exists so Maurice can work personally with every single attendee.</span>
+                        <span class="detail-value"><strong>Strictly 20 participants, no exceptions.</strong> Beyond 20, it becomes a lecture instead of a workshop. The cap exists so Maurice can work personally with every single attendee.</span>
                     </div>
                     <div class="detail-row">
                         <span class="detail-label">Duration</span>
-                        <span class="detail-value">One full immersive day &mdash; morning and afternoon teaching sessions, guided meditations, live exercises, catered lunch and refreshment breaks, and a closing sharing circle</span>
+                        <span class="detail-value">One full immersive day: morning and afternoon teaching sessions, guided meditations, live exercises, catered lunch and refreshment breaks, and a closing sharing circle</span>
                     </div>
                     <div class="detail-row">
                         <span class="detail-label">Everything Included</span>
                         <span class="detail-value">
-                            This is a fully catered event &mdash; you bring nothing but yourself:
+                            This is a fully catered event; you bring nothing but yourself:
                             <ul class="mt-2 mb-0" style="padding-left: 1.2rem;">
                                 <li>Your own copy of <em>The Blueprint of Reality</em> (the book)</li>
-                                <li>The companion <em>Workbook</em> &mdash; 60+ pages of exercises, journals, and your 30-Day Alignment Plan</li>
-                                <li>All materials &mdash; pens, journals, everything you need</li>
-                                <li>Full catering &mdash; lunch and refreshments throughout the day</li>
+                                <li>The companion <em>Workbook</em>: 60+ pages of exercises, journals, and your 30-Day Alignment Plan</li>
+                                <li>All materials: pens, journals, everything you need</li>
+                                <li>Full catering: lunch and refreshments throughout the day</li>
                                 <li>A full day of teaching, guided meditations, live exercises, and the closing sharing circle</li>
                             </ul>
                         </span>
@@ -784,7 +784,7 @@
                     </div>
                     <div class="detail-row">
                         <span class="detail-label">Date &amp; Location</span>
-                        <span class="detail-value">Held in <strong>Brisbane</strong>, on a <strong>Saturday</strong> for your convenience. Mark the Saturdays you could attend in the form below &mdash; the final date and venue will be set by what works for the group, and you'll be notified as soon as it's confirmed.</span>
+                        <span class="detail-value">Held in <strong>Brisbane</strong>, on a <strong>Saturday</strong> for your convenience. Mark the Saturdays you could attend in the form below; the final date and venue will be set by what works for the group, and you'll be notified as soon as it's confirmed.</span>
                     </div>
                 </div>
             </div>
@@ -801,13 +801,13 @@
             <div class="col-lg-8">
                 <div class="register-box">
                     <h2>Reserve Your Seat</h2>
-                    <p class="lead">This is the first &mdash; and possibly only &mdash; live teaching of this material, limited to 20 people. Tell us which Saturdays work for you, and we'll confirm the date with you directly.</p>
+                    <p class="lead">This is the first, and possibly only, live teaching of this material, limited to 20 people. Tell us which Saturdays work for you, and we'll confirm the date with you directly.</p>
 
                     <div class="seats-counter">
                         <div class="num">20</div>
-                        <div class="label">Seats Per Workshop &mdash; First Come, First Served</div>
+                        <div class="label">Seats Per Workshop: First Come, First Served</div>
                         <p class="mt-2 mb-0" style="color:#ccc8e8; font-size:0.85rem; line-height:1.6;">
-                            Why only 20? Because real transformation needs personal attention &mdash; and with
+                            Why only 20? Because real transformation needs personal attention, and with
                             every seat fully catered and all materials provided, this is an intimate event,
                             not a seminar hall. When the 20 seats are taken, registration closes.
                         </p>
@@ -881,7 +881,7 @@
                         </div>
 
                         <button type="button" class="btn-gold w-100 text-center" id="ws_submit" style="font-size:1.05rem; padding:1rem;">
-                            Yes &mdash; Reserve My Seat Now
+                            Yes, Reserve My Seat Now
                         </button>
 
                         <div class="success-msg" id="ws_success">
@@ -889,7 +889,7 @@
                         </div>
 
                         <p class="mt-3 text-center" style="color:#888; font-size:0.8rem;">
-                            We respect your privacy completely. No spam &mdash; ever.
+                            We respect your privacy completely. No spam, ever.
                         </p>
                     </form>
                 </div>

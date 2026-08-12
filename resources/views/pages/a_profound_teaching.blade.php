@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Profound Teaching by Maurice Price offers a transformative journey beyond death, identity, and illusion—into the eternal self. Now available in Kindle, paperback, and hardcover.">
+    <meta name="description" content="A Profound Teaching by Maurice Price offers a transformative journey beyond death, identity, and illusion, into the eternal self. Now available in Kindle, paperback, and hardcover.">
 
     <title>A Profound Teaching – Realizing the Eternal Self | Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/a_profound_teaching/" />
@@ -123,7 +123,7 @@
         </div>
         <div class="col-md-6">
             <h2>About the Book</h2>
-            <p> <em>A Profound Teaching</em> is not merely a book — it is a doorway, a gentle yet piercing invitation to awaken from the trance of separation and remember the truth of who you are. Written for those who sense there is more to this life than appearances suggest, this work is both a map and a mirror: a map for the soul’s journey inward, and a mirror reflecting the still, boundless presence that has always been within. </p> <p> Drawing from a wellspring of mystical insight, the principles of quantum physics, and the hard-won wisdom of lived experience, Maurice Price leads the reader into the depths of consciousness itself. Each chapter dissolves another layer of illusion — the illusions of time, death, ego, and identity — until only the unshakable essence remains: awareness itself. This is not knowledge to accumulate, but truth to remember. </p> <p> With clarity, compassion, and poetic precision, <em>A Profound Teaching</em> speaks to the silent knowing that lives beyond words. It does not argue or persuade — it gently reminds. For the seeker who has grown tired of grasping, for the mystic who hears the whisper beneath the noise, and for the one who stands on the edge of surrender, this book offers what the world cannot: the still voice of eternity. </p> <p> If you are ready to look beyond belief and touch the infinite — not as an idea, but as the ground of your being — this book is for you. </p>
+            <p> <em>A Profound Teaching</em> is not merely a book: it is a doorway, a gentle yet piercing invitation to awaken from the trance of separation and remember the truth of who you are. Written for those who sense there is more to this life than appearances suggest, this work is both a map and a mirror: a map for the soul’s journey inward, and a mirror reflecting the still, boundless presence that has always been within. </p> <p> Drawing from a wellspring of mystical insight, the principles of quantum physics, and the hard-won wisdom of lived experience, Maurice Price leads the reader into the depths of consciousness itself. Each chapter dissolves another layer of illusion, the illusions of time, death, ego, and identity, until only the unshakable essence remains: awareness itself. This is not knowledge to accumulate, but truth to remember. </p> <p> With clarity, compassion, and poetic precision, <em>A Profound Teaching</em> speaks to the silent knowing that lives beyond words. It does not argue or persuade: it gently reminds. For the seeker who has grown tired of grasping, for the mystic who hears the whisper beneath the noise, and for the one who stands on the edge of surrender, this book offers what the world cannot: the still voice of eternity. </p> <p> If you are ready to look beyond belief and touch the infinite, not as an idea, but as the ground of your being, this book is for you. </p>
 
             <a href="{{$url}}" target="_blank" class="btn btn-primary mt-4">Available on Amazon</a>
            
@@ -134,13 +134,13 @@
             <div class="col-12">
                <h2>About the Title</h2>
                 <p>
-                The title <em>A Profound Teaching</em> carries a dual meaning — one immediate, the other more ancient and symbolic. On the surface, it points to the central purpose of the book: to offer deep spiritual insight, a teaching that penetrates beyond the surface of life into its eternal core. But there is another layer.
+                The title <em>A Profound Teaching</em> carries a dual meaning: one immediate, the other more ancient and symbolic. On the surface, it points to the central purpose of the book: to offer deep spiritual insight, a teaching that penetrates beyond the surface of life into its eternal core. But there is another layer.
                 </p>
                 <p>
-                The title is also a subtle homage to the <em>Tao Te Ching</em>, one of the world’s oldest and most revered spiritual texts. In Chinese, <em>Te</em> can be translated as “virtue,” “power,” or “integrity,” while <em>Ching</em> means “classic” or “scripture.” Together, <em>Te Ching</em> refers to the classic of the Way and its embodied expression — a sacred teaching on how to live in alignment with the eternal Tao, the Way of all things.
+                The title is also a subtle homage to the <em>Tao Te Ching</em>, one of the world’s oldest and most revered spiritual texts. In Chinese, <em>Te</em> can be translated as “virtue,” “power,” or “integrity,” while <em>Ching</em> means “classic” or “scripture.” Together, <em>Te Ching</em> refers to the classic of the Way and its embodied expression: a sacred teaching on how to live in alignment with the eternal Tao, the Way of all things.
                 </p>
                 <p>
-                In this light, <em>A Profound Teaching</em> may also be read as <em>A Profound Te Ching</em> — a modern expression of timeless wisdom. It offers not a new doctrine, but a living transmission. It invites the reader to not merely understand, but to become the teaching — to live from the eternal self in a world of change.
+                In this light, <em>A Profound Teaching</em> may also be read as <em>A Profound Te Ching</em>: a modern expression of timeless wisdom. It offers not a new doctrine, but a living transmission. It invites the reader to not merely understand, but to become the teaching, to live from the eternal self in a world of change.
                 </p>
             </div>
         <div class="row mt-5">

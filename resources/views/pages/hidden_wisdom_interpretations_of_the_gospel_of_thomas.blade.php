@@ -124,19 +124,19 @@
             </p>
 
             <p>
-                These 114 sayings, attributed to Jesus, come from a time before the church had the chance to package, systematize, or define Him. They belong to the raw edge of truth — a time when revelation came not through creeds, but through inner knowing.
+                These 114 sayings, attributed to Jesus, come from a time before the church had the chance to package, systematize, or define Him. They belong to the raw edge of truth: a time when revelation came not through creeds, but through inner knowing.
             </p>
 
             <p>
-                So begins the Gospel of Thomas — not with a lineage or miracle, but with a riddle. In <strong>Hidden Wisdom</strong>, Maurice Price takes this ancient spiritual challenge seriously, guiding the reader beyond the surface of language into the luminous depths where the eternal self waits to be remembered.
+                So begins the Gospel of Thomas, not with a lineage or miracle, but with a riddle. In <strong>Hidden Wisdom</strong>, Maurice Price takes this ancient spiritual challenge seriously, guiding the reader beyond the surface of language into the luminous depths where the eternal self waits to be remembered.
             </p>
 
             <p>
-                This is not a book of religious instruction, but of sacred invitation. Each logion is approached not merely as a saying to be interpreted, but as a living threshold — a doorway into direct spiritual realization. With years of meditative stillness and revelatory insight behind each page, Maurice brings forth the silent truth encoded within these lines — a truth not to be believed, but to be known inwardly.
+                This is not a book of religious instruction, but of sacred invitation. Each logion is approached not merely as a saying to be interpreted, but as a living threshold: a doorway into direct spiritual realization. With years of meditative stillness and revelatory insight behind each page, Maurice brings forth the silent truth encoded within these lines: a truth not to be believed, but to be known inwardly.
             </p>
 
             <p>
-                For the seeker disillusioned with dogma and the mystic yearning for what lies beyond the veil, <em>Hidden Wisdom</em> opens a forgotten gospel as a mirror to the soul. It speaks to the part of us that was never born and cannot die — the part that, once glimpsed, makes ordinary life feel like only the surface of something far more eternal.
+                For the seeker disillusioned with dogma and the mystic yearning for what lies beyond the veil, <em>Hidden Wisdom</em> opens a forgotten gospel as a mirror to the soul. It speaks to the part of us that was never born and cannot die: the part that, once glimpsed, makes ordinary life feel like only the surface of something far more eternal.
             </p>
             <p class="mt-4">
                 Available in <strong>Kindle</strong>, <strong>Paperback</strong>, and <strong>Hardcover</strong> (USA only).

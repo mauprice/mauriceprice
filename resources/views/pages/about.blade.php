@@ -112,16 +112,16 @@
         <div class="col-md-8">
             <h2>Who I Am</h2>
             <p>
-            I am Maurice Price — a writer, philosopher, and spiritual teacher whose life was forever changed by a profound near-death experience. That moment beyond form revealed an eternal truth that sent me on a 25-year journey into the heart of consciousness, the mystery of life, and the illusion of death.
+            I am Maurice Price, a writer, philosopher, and spiritual teacher whose life was forever changed by a profound near-death experience. That moment beyond form revealed an eternal truth that sent me on a 25-year journey into the heart of consciousness, the mystery of life, and the illusion of death.
             </p>
             <p>
-            For most of that time, I remained silent about what I was discovering. Not because I had nothing to say — but because I refused to teach what I had not lived. I needed to walk it, be refined by it, and come to know for myself what cannot be grasped by intellect alone. I have spent these years in quiet inquiry, deep meditation, and unrelenting honesty — not seeking to become a teacher, but to become true.
+            For most of that time, I remained silent about what I was discovering. Not because I had nothing to say, but because I refused to teach what I had not lived. I needed to walk it, be refined by it, and come to know for myself what cannot be grasped by intellect alone. I have spent these years in quiet inquiry, deep meditation, and unrelenting honesty, not seeking to become a teacher, but to become true.
             </p>
             <p>
-            Now, I feel the time has come to share what has revealed itself — not as dogma, but as a mirror for those who are searching. What I write is not offered as absolute truth, but as the lived testimony of one who asked the same questions you may be asking now: Who am I? Why am I here? What is this life, and what lies beyond it?
+            Now, I feel the time has come to share what has revealed itself, not as dogma, but as a mirror for those who are searching. What I write is not offered as absolute truth, but as the lived testimony of one who asked the same questions you may be asking now: Who am I? Why am I here? What is this life, and what lies beyond it?
             </p>
             <p>
-            With a background in computer programming and systems thinking, I bring clarity and logic into the deepest philosophical and spiritual territories. I write to awaken. Not to persuade, but to remind — that what you seek is not outside you, and never was.
+            With a background in computer programming and systems thinking, I bring clarity and logic into the deepest philosophical and spiritual territories. I write to awaken. Not to persuade, but to remind, that what you seek is not outside you, and never was.
             </p>
             <p>
             My books explore mysticism, scripture, suffering, self-realization, and the subtle but powerful movement of grace. They are for seekers, wanderers, and those who have heard a deeper calling behind the noise of the world.

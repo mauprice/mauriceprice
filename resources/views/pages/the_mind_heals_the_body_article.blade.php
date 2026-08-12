@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Your body is not separate from your mind — every thought, belief, and emotion can either weaken or strengthen your health.">
+    <meta name="description" content="Your body is not separate from your mind: every thought, belief, and emotion can either weaken or strengthen your health.">
     <link rel="canonical" href="https://mauriceprice.net/mind_heals_body/" />
     <title>How the Mind Heals the Body</title>
     <!-- Open Graph -->
     <meta property="og:title" content="How the Mind Heals the Body" />
-    <meta property="og:description" content="Your body is not separate from your mind — every thought, belief, and emotion can either weaken or strengthen your health." />
+    <meta property="og:description" content="Your body is not separate from your mind: every thought, belief, and emotion can either weaken or strengthen your health." />
     <meta property="og:image" content="{{ url('/images/the_mind_heals_the_body_3d.png') }}" />
     <meta property="og:url" content="https://mauriceprice.net/mind_heals_body" />
     <meta property="og:type" content="article" />
@@ -16,7 +16,7 @@
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="How the Mind Heals the Body" />
-    <meta name="twitter:description" content="Your body is not separate from your mind — every thought, belief, and emotion can either weaken or strengthen your health." />
+    <meta name="twitter:description" content="Your body is not separate from your mind: every thought, belief, and emotion can either weaken or strengthen your health." />
     <meta name="twitter:image" content="{{ url('/images/the_mind_heals_the_body_3d.png') }}" />
 
 
@@ -45,7 +45,7 @@
         "name": "Maurice Price",
         "url": "https://mauriceprice.net"
     },
-    "description": "Your body is not separate from your mind — every thought, belief, and emotion can either weaken or strengthen your health.",
+    "description": "Your body is not separate from your mind: every thought, belief, and emotion can either weaken or strengthen your health.",
     "image": "https://mauriceprice.net/images/the_mind_heals_the_body_3d.png",
     "publisher": {
         "@type": "Organization",
@@ -61,8 +61,8 @@
             <img src="{{ url('/images/The_Mind_Heals_the_body_banner1.jpg') }}" style="width:100%" alt="How the Mind Heals the Body">
             <div style="max-width: 1600px; margin: 2rem auto; padding: 1.5rem; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
                 <h1 style="font-size: 2.5rem; text-align: center; margin-bottom: 1.5rem; color: #333;">Unlocking the Body’s Healing Power Through the Mind</h1>
-                <p style="text-align: center; font-style: italic; color: #555; margin-bottom: 2rem;">"As a man thinks in his heart, so is he." — Proverbs 23:7</p>
-                <p style="margin-bottom: 1.5rem; line-height: 1.6;">The mind and body are not separate entities — they are two expressions of the same divine intelligence. Every thought you think sends a cascade of biochemical messages throughout your system, shaping your health in subtle yet powerful ways. Learning to direct your mind toward healing is not wishful thinking; it is activating a God-given design that has been within you from the beginning.</p>
+                <p style="text-align: center; font-style: italic; color: #555; margin-bottom: 2rem;">"As a man thinks in his heart, so is he." (Proverbs 23:7)</p>
+                <p style="margin-bottom: 1.5rem; line-height: 1.6;">The mind and body are not separate entities: they are two expressions of the same divine intelligence. Every thought you think sends a cascade of biochemical messages throughout your system, shaping your health in subtle yet powerful ways. Learning to direct your mind toward healing is not wishful thinking; it is activating a God-given design that has been within you from the beginning.</p>
 
                 <hr style="margin: 2.5rem 0; border: 0; border-top: 1px solid #eee;">
 
@@ -121,7 +121,7 @@
                 <hr>
 
                 <h2>Final Thoughts: You Are the Cure</h2>
-                <p>The mind is not just an observer of health — it is an active participant in creating it. When your thoughts, emotions, and faith align with the truth of your divine design, healing becomes not only possible, but inevitable. You were created whole; this journey is simply a return to that wholeness.</p>
+                <p>The mind is not just an observer of health: it is an active participant in creating it. When your thoughts, emotions, and faith align with the truth of your divine design, healing becomes not only possible, but inevitable. You were created whole; this journey is simply a return to that wholeness.</p>
             </div>
         </div>
         <footer class="footer mt-auto py-3">

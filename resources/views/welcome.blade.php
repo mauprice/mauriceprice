@@ -55,7 +55,7 @@
     }
     </script>
 
-    <title>Maurice Price &mdash; Spiritual Author | Awaken, Heal, Remember</title>
+    <title>Maurice Price: Spiritual Author | Awaken, Heal, Remember</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <link rel="canonical" href="https://mauriceprice.net/" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -407,7 +407,7 @@
     <div class="col-md-7">
       <h1 class="display-5 fw-bold text-dark">The Divergence</h1>
       <p class="lead text-secondary mb-4">
-        Awakening in the Age of Illusion — a profound exploration of the split between truth and technology, soul and simulation.
+        Awakening in the Age of Illusion: a profound exploration of the split between truth and technology, soul and simulation.
       </p>
       <a href="/the_divergence" class="btn btn-primary btn-lg">Learn More</a>
     </div>
@@ -425,7 +425,7 @@
     <div class="col-md-7">
       <h1 class="display-5 fw-bold text-dark">A Profound Teaching</h1>
       <p class="lead text-secondary mb-4">
-        Transcend the illusions of identity, death, and separation — and awaken to the timeless truth of who you truly are.
+        Transcend the illusions of identity, death, and separation, and awaken to the timeless truth of who you truly are.
       </p>
       <a href="/a_profound_teaching" class="btn btn-dark btn-lg">Learn More</a>
     </div>
@@ -443,7 +443,7 @@
     <div class="col-md-7">
       <h1 class="display-5 fw-bold text-dark">This Isn't Living</h1>
       <p class="lead text-secondary mb-4">
-        Wake up before it's too late — a heartfelt call to break free from illusion, rediscover your soul, and live from truth and purpose.
+        Wake up before it's too late: a heartfelt call to break free from illusion, rediscover your soul, and live from truth and purpose.
       </p>
       <a href="/this_isnt_living" class="btn btn-primary btn-lg">Learn More</a>
     </div>
@@ -461,7 +461,7 @@
     <div class="col-md-7">
       <h1 class="display-5 fw-bold text-dark">Hidden Wisdom</h1>
       <p class="lead text-secondary mb-4">Interpretations of the Gospel of Thomas</p>
-      <p class="lead text-secondary mb-4">A contemplative journey into one of Christianity's most mysterious texts — uncovering the timeless, inner teachings of Jesus that point directly to awakening and divine union.</p>
+      <p class="lead text-secondary mb-4">A contemplative journey into one of Christianity's most mysterious texts: uncovering the timeless, inner teachings of Jesus that point directly to awakening and divine union.</p>
       <a href="/the_mind_heals_the_body_lp" class="btn btn-outline-dark btn-lg">Learn More</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
@@ -509,7 +509,7 @@
                     <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="book-cover mb-3">
                     <h3>Why the Mind Will Never Find Your Purpose</h3>
                     <p class="mt-2 tj">
-                        <em>What if the question "What is my purpose?" cannot be answered</em> — not because the answer is hidden, but because the question begins with a mistaken assumption? We are taught that somewhere there is a role, calling, or identity that will finally make us complete. We search, strive, and become, only to discover that the promised fulfilment never lasts.
+                        <em>What if the question "What is my purpose?" cannot be answered</em>, not because the answer is hidden, but because the question begins with a mistaken assumption? We are taught that somewhere there is a role, calling, or identity that will finally make us complete. We search, strive, and become, only to discover that the promised fulfilment never lasts.
                     </p>
                     <p class="mt-2 tj">
                         This book is not another guide to finding the perfect career or life mission. It is an invitation to step outside the endless search and discover the life already here.
@@ -566,7 +566,7 @@
                     <img src="{{ url('/images/the_mind_heals_the_body_3d.png') }}" alt="The Mind Heals the Body book cover" class="book-cover mb-3">
                     <h3>Awaken The Healing Power Within</h3>
                     <p class="mt-2 tj">
-                        <em>The Mind Heals the Body</em> is a clear and compassionate guide to the mind–body connection and the hidden mechanics of healing. It reveals how belief, attention, and intention shape biology—moving you from chasing symptoms to true restoration.
+                        <em>The Mind Heals the Body</em> is a clear and compassionate guide to the mind–body connection and the hidden mechanics of healing. It reveals how belief, attention, and intention shape biology, moving you from chasing symptoms to true restoration.
                     </p>
                     <p class="mt-2 tj">
                         Maurice Price draws from spiritual wisdom, scripture, and modern insights into consciousness to show that healing is not found outside yourself but awakened within. Through stillness, visualization, forgiveness, and alignment, you'll learn how to release fear, restore balance, and hold the frequency of health.
@@ -585,13 +585,13 @@
                     <img src="{{url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png')}}" alt="The Blueprint of Reality Book Cover" class="book-cover mb-3">
                     <h3>The Hidden Mechanics of Manifestation</h3>
                     <p class="mt-2 tj">
-                        A sacred manual for manifesting your desired future through the hidden science of reality. This book invites you beyond surface-level teachings to discover how reality truly functions beneath the veil—where energy, intention, and consciousness converge.
+                        A sacred manual for manifesting your desired future through the hidden science of reality. This book invites you beyond surface-level teachings to discover how reality truly functions beneath the veil, where energy, intention, and consciousness converge.
                     </p>
                     <p class="tj">
-                        Drawing from both quantum principles and spiritual insight, *The Blueprint of Reality* reveals how your thoughts are not passive— they are creative forces. Learn to align your internal state with your desired outcome, activate the frequency of your future, and live as the embodied expression of your vision.
+                        Drawing from both quantum principles and spiritual insight, *The Blueprint of Reality* reveals how your thoughts are not passive: they are creative forces. Learn to align your internal state with your desired outcome, activate the frequency of your future, and live as the embodied expression of your vision.
                     </p>
                     <p class="tj">
-                        Whether you're just awakening to your creative potential or deepening your existing practice, this book offers a powerful framework for conscious creation. It's not about wishful thinking—it's about becoming the architect of your own life through alignment, coherence, and the sacred science of manifestation.
+                        Whether you're just awakening to your creative potential or deepening your existing practice, this book offers a powerful framework for conscious creation. It's not about wishful thinking: it's about becoming the architect of your own life through alignment, coherence, and the sacred science of manifestation.
                     </p>
                     <div class="btn btn-primary mt-auto">Learn More...</div>
                 </div>
@@ -622,10 +622,10 @@
                     <h2 class="mt-3">A Profound Teaching</h2>
                     <img src="{{url('/images/a_profound_teaching_kindle.png')}}" alt="A Profound Teaching Book Cover" class="book-cover mb-3">
                     <p class="mt-2 tj">
-                        Blending ancient wisdom, quantum theory, and lived spiritual experience, *A Profound Teaching* is a powerful invitation to transcend the illusions of identity, death, and separation—and step into the timeless truth of who you really are.
+                        Blending ancient wisdom, quantum theory, and lived spiritual experience, *A Profound Teaching* is a powerful invitation to transcend the illusions of identity, death, and separation, and step into the timeless truth of who you really are.
                     </p>
                     <p class="tj">
-                        Through clear insight and gentle guidance, Maurice Price opens the reader to a direct encounter with the eternal self—the aspect of you untouched by birth or decay. This book is not just read, it is experienced. It serves as a bridge between form and formlessness, intellect and intuition, science and soul.
+                        Through clear insight and gentle guidance, Maurice Price opens the reader to a direct encounter with the eternal self: the aspect of you untouched by birth or decay. This book is not just read, it is experienced. It serves as a bridge between form and formlessness, intellect and intuition, science and soul.
                     </p>
                     <p class="tj">
                         For the seeker, the mystic, and the awakening soul, this is a call to return to what has never left. More than a philosophy, it is a living transmission of peace, stillness, and sacred remembrance.
@@ -667,10 +667,10 @@
                         A mystical exploration of one of the most enigmatic early Christian texts, this book unpacks the Gospel of Thomas with fresh insight. Maurice Price offers a contemplative journey beyond doctrine, revealing the hidden teachings of Jesus that point directly to awakening and divine union.
                     </p>
                     <p class="tj">
-                        In *Hidden Wisdom*, ancient sayings once shrouded in mystery are brought to life through a lens of spiritual clarity and experiential insight. Rather than analyzing from the outside, the book invites the reader inward—to contemplate each verse as a doorway to presence, inner stillness, and the sacred remembrance of who and what we truly are.
+                        In *Hidden Wisdom*, ancient sayings once shrouded in mystery are brought to life through a lens of spiritual clarity and experiential insight. Rather than analyzing from the outside, the book invites the reader inward, to contemplate each verse as a doorway to presence, inner stillness, and the sacred remembrance of who and what we truly are.
                     </p>
                     <p class="tj">
-                        This is not a scholarly critique, but a spiritual transmission. Ideal for mystics, seekers, and contemplatives, it offers a mapless invitation to go beyond the surface and enter the silence behind the words—a silence where truth is known, not taught.
+                        This is not a scholarly critique, but a spiritual transmission. Ideal for mystics, seekers, and contemplatives, it offers a mapless invitation to go beyond the surface and enter the silence behind the words: a silence where truth is known, not taught.
                     </p>
                     <div class="btn btn-primary mt-auto">Learn More...</div>
                 </div>
@@ -687,10 +687,10 @@
                     <img src="{{url('/images/Why_christianity_matters_600.png')}}" alt="Why Christianity Matters Book Cover" class="book-cover mb-3">
                     <h3>The Transformative Story from Genesis to Christ</h3>
                     <p class="mt-2 tj">
-                        <em>Why Christianity Matters</em> unveils the timeless arc of God's plan—from creation and the fall to redemption in Christ. It reveals why this story remains the cornerstone of hope, renewal, and divine purpose in the modern world.
+                        <em>Why Christianity Matters</em> unveils the timeless arc of God's plan: from creation and the fall to redemption in Christ. It reveals why this story remains the cornerstone of hope, renewal, and divine purpose in the modern world.
                     </p>
                     <p class="tj">
-                        In this powerful exploration, Maurice Price bridges ancient Scripture with contemporary understanding. Each page uncovers how humanity's journey mirrors the journey of the soul—from separation to reunion, from darkness to light, from death to resurrection.
+                        In this powerful exploration, Maurice Price bridges ancient Scripture with contemporary understanding. Each page uncovers how humanity's journey mirrors the journey of the soul: from separation to reunion, from darkness to light, from death to resurrection.
                     </p>
                     <p class="tj">
                         A book for seekers, believers, and the questioning alike, *Why Christianity Matters* restores faith as a living experience of truth, not tradition. It's an invitation to rediscover the beauty, coherence, and transformative love that flow through the entire biblical story.
@@ -709,7 +709,7 @@
                         <em>Spiritual Seeds for the Soul</em> invites readers to cultivate a deeper inner life through contemplation and prayer. It offers practical guidance for nurturing the soul's growth in a fast-paced world.
                     </p>
                     <p class="tj">
-                        In this powerful exploration, Maurice Price bridges ancient Scripture with contemporary understanding. Each page uncovers how humanity's journey mirrors the journey of the soul—from separation to reunion, from darkness to light, from death to resurrection.
+                        In this powerful exploration, Maurice Price bridges ancient Scripture with contemporary understanding. Each page uncovers how humanity's journey mirrors the journey of the soul: from separation to reunion, from darkness to light, from death to resurrection.
                     </p>
                     <p class="tj">
                         A book for seekers, believers, and the questioning alike, *Why Christianity Matters* restores faith as a living experience of truth, not tradition. It's an invitation to rediscover the beauty, coherence, and transformative love that flow through the entire biblical story.
@@ -729,7 +729,7 @@
                 <div class="col-md-4 mb-4">
                     <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
                         <blockquote class="blockquote mb-0">
-                            <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"A Profound Teaching stirred something ancient in me — a remembering."</p>
+                            <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"A Profound Teaching stirred something ancient in me, a remembering."</p>
                             <footer class="blockquote-footer mt-3" style="color: #1a252f; font-weight: 600; font-size: 1rem;">Emily R.</footer>
                         </blockquote>
                     </div>

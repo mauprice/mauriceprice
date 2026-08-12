@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Books That Awaken the Soul | Maurice Price</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the spiritual writings of Maurice Price — books that illuminate the path to awakening, wholeness, and true freedom.">
+    <meta name="description" content="Explore the spiritual writings of Maurice Price: books that illuminate the path to awakening, wholeness, and true freedom.">
     <link rel="canonical" href="https://mauriceprice.net/books" />
     <meta property="og:title" content="Books by Maurice Price – Awakening, Consciousness, and Spiritual Truth" />
     <meta property="og:description" content="Discover profound books that awaken the soul. Explore the journey of spiritual transformation." />
@@ -91,7 +91,7 @@
         <img src="/images/a_profound_teaching_cover.jpg" alt="A Profound Teaching">
         <div class="book-info">
             <h2>A Profound Teaching: Beyond Death to the Eternal Self</h2>
-            <p>Part mystical roadmap, part spiritual reflection — this book unveils the deeper self hidden beneath the illusion of identity.</p>
+            <p>Part mystical roadmap, part spiritual reflection, this book unveils the deeper self hidden beneath the illusion of identity.</p>
             <a href="https://mauriceprice.net/a-profound-teaching" class="cta-button">Read More</a>
         </div>
     </div>
