@@ -178,6 +178,15 @@
   overflow: hidden;
 }
 
+/* Reserve clearance so slide content (text/buttons) never sits under the indicator dots */
+#heroCarousel .container {
+  padding-bottom: 48px;
+}
+
+#heroCarousel .carousel-indicators {
+  margin-bottom: 0.5rem;
+}
+
 .slider-book {
   max-height: 380px;
   transition: transform 0.4s ease;
