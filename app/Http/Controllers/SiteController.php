@@ -169,6 +169,11 @@ class SiteController extends Controller
         return view('pages.discerning_gods_voice', compact('cc'));
     }
 
+    public function whyIWriteCode(Request $request){
+        $cc = $this->getCountryCode($request);
+        return view('pages.why_i_write_code', compact('cc'));
+    }
+
     public function manifestation(Request $request){
         $cc = $this->getCountryCode($request);
         return view('pages.manifestation', compact('cc'));

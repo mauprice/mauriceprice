@@ -67,6 +67,7 @@ Route::get('/deep_meditation', [SiteController::class, 'deep_meditation'])->name
 Route::get('/manifestation', [SiteController::class, 'manifestation'])->name('manifestation');
 Route::get('/divergence', [SiteController::class, 'divergence'])->name('divergence');
 Route::get('/discerning_gods_voice', [SiteController::class, 'discerning_gods_voice'])->name('discerning_gods_voice');
+Route::get('/why_i_write_code', [SiteController::class, 'whyIWriteCode'])->name('whyIWriteCode');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

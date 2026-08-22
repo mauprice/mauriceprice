@@ -161,6 +161,13 @@
     </url>
 
     <url>
+        <loc>{{ url('/why_i_write_code') }}</loc>
+        <lastmod>2026-08-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
         <loc>{{ url('/spiritual_seed_for_the_soul') }}</loc>
         <lastmod>2026-02-14</lastmod>
         <changefreq>monthly</changefreq>

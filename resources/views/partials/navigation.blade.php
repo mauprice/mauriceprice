@@ -100,6 +100,7 @@ src="https://www.facebook.com/tr?id=2207982119340635&ev=PageView&noscript=1"
                         <li><a class="dropdown-item" href="/divergence">The Divergence</a></li>
                         <li><a class="dropdown-item" href="/manifestation">Manifestation</a></li>
                         <li><a class="dropdown-item" href="/deep_meditation">Deep Meditation</a></li>
+                        <li><a class="dropdown-item" href="/why_i_write_code">Why I Write Code</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
