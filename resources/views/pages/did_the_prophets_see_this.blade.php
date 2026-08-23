@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times, a new book from Maurice Price placing ancient prophetic visions beside the events converging in our world today. Coming soon.">
+    <meta name="description" content="Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times, a new book from Maurice Price placing ancient prophetic visions beside the events converging in our world today. Available now on Amazon.">
 
     <title>Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times – Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/did_the_prophets_see_this/" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Did the Prophets See This? – Maurice Price" />
-    <meta property="og:description" content="Ancient visions. Modern machines. A world entering uncertainty. A sourced investigation of whether today's converging crises correspond to ancient prophetic visions. Coming soon." />
+    <meta property="og:description" content="Ancient visions. Modern machines. A world entering uncertainty. A sourced investigation of whether today's converging crises correspond to ancient prophetic visions. Available now on Amazon." />
     <meta property="og:image" content="https://mauriceprice.net/images/did_the_prophets_see_this_cover.jpg" />
     <meta property="og:url" content="https://mauriceprice.net/did_the_prophets_see_this" />
     <meta property="og:type" content="book" />
@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@MauricePriceNet" />
     <meta name="twitter:title" content="Did the Prophets See This? – Maurice Price" />
-    <meta name="twitter:description" content="Ancient visions. Modern machines. A world entering uncertainty. A new book from Maurice Price. Coming soon." />
+    <meta name="twitter:description" content="Ancient visions. Modern machines. A world entering uncertainty. A new book from Maurice Price. Available now on Amazon." />
     <meta name="twitter:image" content="https://mauriceprice.net/images/did_the_prophets_see_this_cover.jpg" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -52,7 +52,8 @@
       "offers": {
         "@type": "Offer",
         "priceCurrency": "AUD",
-        "availability": "https://schema.org/PreOrder"
+        "url": "https://www.amazon.com.au/dp/B0HG7M6VSK",
+        "availability": "https://schema.org/InStock"
       }
     }
     </script>
@@ -70,9 +71,19 @@
 <body>
 @include('partials.navigation')
 
+@php
+    if ($cc == 'AU') {
+        $url = 'https://www.amazon.com.au/dp/B0HG7M6VSK';
+    } elseif ($cc == 'GB') {
+        $url = 'https://www.amazon.co.uk/dp/B0HG7M6VSK';
+    } else {
+        $url = 'https://www.amazon.com/dp/B0HG7M6VSK';
+    }
+@endphp
+
 <section class="books-hero">
   <div class="container">
-    <div class="eyebrow mb-2">Coming Soon from Maurice Price</div>
+    <div class="eyebrow mb-2">A New Book from Maurice Price</div>
     <h1 class="display-4">Did the Prophets See This?</h1>
     <h2 class="text-muted">War, Famine, Earthquakes, AI and the Unfolding End Times</h2>
   </div>
@@ -89,8 +100,7 @@
       <p>Did they see nations rising against nations, wars spreading across regions, energy supplies collapsing, fertiliser disappearing, harvests failing, famine weakening populations and pestilence following close behind? Did they see great earthquakes occurring in different places? Did John witness swarms of autonomous machines, entities resembling locusts that ignored vegetation, targeted human beings and operated under a controlling intelligence, yet possessed no language with which to describe drones, robotics or artificial intelligence?</p>
       <p><em>Did the Prophets See This?</em> places those ancient descriptions beside the events unfolding in our world today. It follows the connections from war to energy scarcity, from energy scarcity to fertiliser shortages, from failed harvests to famine, and from famine to disease, unrest and technologically enforced control.</p>
       <p>Each event may have an ordinary explanation when considered alone. But when all of them are placed together, a larger pattern begins to emerge. Are they merely coincidences? Or are we beginning to see what the ancient prophets saw?</p>
-      <p class="mt-4"><strong>Available soon on Amazon.</strong></p>
-      <span class="btn btn-secondary disabled mt-2" aria-disabled="true">Coming Soon</span>
+      <a href="{{ $url }}" target="_blank" rel="noopener" class="btn btn-primary mt-4">Available on Amazon</a>
     </div>
   </div>
 
@@ -121,7 +131,7 @@
   <div class="row mt-5">
     <div class="col-12">
       <h2>Availability</h2>
-      <p class="mt-2"><em>Did the Prophets See This?</em> is currently in development and will be available soon in Kindle and paperback via Amazon. Check back here or watch the announcement on the <a href="/">home page</a> for the release date.</p>
+      <p class="mt-2"><em>Did the Prophets See This?</em> is available now in Kindle and paperback via Amazon. Availability may vary by region.</p>
     </div>
   </div>
 </section>

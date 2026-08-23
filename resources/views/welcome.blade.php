@@ -271,15 +271,16 @@
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – Did the Prophets See This? (Coming Soon) -->
+   <!-- Slide 0 – Did the Prophets See This? (New Release) -->
 <div class="carousel-item mh active" style="background: linear-gradient(135deg, #1a1108, #3d2b16);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
       <h1 class="display-5 fw-bold text-white">Did the Prophets See This?</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
       <p class="mb-4" style="color:#cccccc;">Ancient visions. Modern machines. A world entering uncertainty. This book places what the prophets saw beside the events converging in our world today, and asks: are they merely coincidences, or are we beginning to see what the ancient prophets saw?</p>
       <a href="{{ url('/did_the_prophets_see_this') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#1a1108; font-weight:700;">Discover More</a>
+      <a href="https://www.amazon.com.au/dp/B0HG7M6VSK" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="img-fluid slider-book">
@@ -525,12 +526,12 @@
 
     <section class="container my-5">
 
-    <!-- Row -1: Did the Prophets See This? (Coming Soon) -->
+    <!-- Row -1: Did the Prophets See This? (New Release) -->
     <div class="row text-center align-items-stretch mb-4">
         <div class="col-12 d-flex">
             <a href="/did_the_prophets_see_this" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-warning text-dark mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
                     <h2 class="mt-1">Did the Prophets See This?</h2>
                     <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="book-cover mb-3">
                     <h3>War, Famine, Earthquakes, AI and the Unfolding End Times</h3>
