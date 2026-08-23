@@ -265,13 +265,30 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – The Question That Cannot Be Answered (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #12141c, #262b3d);">
+   <!-- Slide 0 – Did the Prophets See This? (Coming Soon) -->
+<div class="carousel-item mh active" style="background: linear-gradient(135deg, #1a1108, #3d2b16);">
+  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <div class="col-md-7">
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h1 class="display-5 fw-bold text-white">Did the Prophets See This?</h1>
+      <p class="lead mb-4" style="color:#e8e8e8;">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
+      <p class="mb-4" style="color:#cccccc;">Ancient visions. Modern machines. A world entering uncertainty. This book places what the prophets saw beside the events converging in our world today, and asks: are they merely coincidences, or are we beginning to see what the ancient prophets saw?</p>
+      <a href="{{ url('/did_the_prophets_see_this') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#1a1108; font-weight:700;">Discover More</a>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="img-fluid slider-book">
+    </div>
+  </div>
+</div>
+
+   <!-- Slide 1 – The Question That Cannot Be Answered (New Release) -->
+<div class="carousel-item mh" style="background: linear-gradient(135deg, #12141c, #262b3d);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
       <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
@@ -507,6 +524,27 @@
     </section>
 
     <section class="container my-5">
+
+    <!-- Row -1: Did the Prophets See This? (Coming Soon) -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 d-flex">
+            <a href="/did_the_prophets_see_this" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
+                    <span class="badge bg-warning text-dark mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <h2 class="mt-1">Did the Prophets See This?</h2>
+                    <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="book-cover mb-3">
+                    <h3>War, Famine, Earthquakes, AI and the Unfolding End Times</h3>
+                    <p class="mt-2 tj">
+                        <em>Is this what the ancient prophets saw in their visions of the end times?</em> This book places prophetic visions already associated with recorded history beside the events converging in our world today: war, energy scarcity, fertiliser shortages, failed harvests, famine, disease, unrest and technological control.
+                    </p>
+                    <p class="mt-2 tj">
+                        A sourced, evidence-led investigation, without date-setting or demanding belief. Ancient visions. Modern machines. A world entering uncertainty.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <!-- Row 0: The Question That Cannot Be Answered (New Release) -->
     <div class="row text-center align-items-stretch mb-4">

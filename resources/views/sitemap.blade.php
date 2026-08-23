@@ -33,6 +33,13 @@
 
     <!-- Book Pages -->
     <url>
+        <loc>{{ url('/did_the_prophets_see_this') }}</loc>
+        <lastmod>2026-08-23</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>{{ url('/the_question_that_cannot_be_answered') }}</loc>
         <lastmod>2026-08-12</lastmod>
         <changefreq>monthly</changefreq>

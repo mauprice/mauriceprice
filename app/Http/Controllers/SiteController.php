@@ -196,6 +196,12 @@ class SiteController extends Controller
         return view('pages.the_question_that_cannot_be_answered', compact('cc'));
     }
 
+    public function didTheProphetsSeeThis(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.did_the_prophets_see_this', compact('cc'));
+    }
+
     public function bpr_landing(Request $request){
         $cc = $this->getCountryCode($request);
         return view('pages.bpr_landing', compact('cc'));
