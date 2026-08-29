@@ -289,11 +289,11 @@
   </div>
 </div>
 
-   <!-- Slide 1 – Did the Prophets See This? (New Release) -->
+   <!-- Slide 1 – Did the Prophets See This? -->
 <div class="carousel-item mh" style="background: linear-gradient(135deg, #1a1108, #3d2b16);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
       <h1 class="display-5 fw-bold text-white">Did the Prophets See This?</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
       <p class="mb-4" style="color:#cccccc;">Ancient visions. Modern machines. A world entering uncertainty. This book places what the prophets saw beside the events converging in our world today, and asks: are they merely coincidences, or are we beginning to see what the ancient prophets saw?</p>
@@ -306,11 +306,11 @@
   </div>
 </div>
 
-   <!-- Slide 1 – The Question That Cannot Be Answered (New Release) -->
+   <!-- Slide 1 – The Question That Cannot Be Answered -->
 <div class="carousel-item mh" style="background: linear-gradient(135deg, #12141c, #262b3d);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
       <h1 class="display-5 fw-bold text-white">The Question That Cannot Be Answered</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">Why the Mind Will Never Find Your Purpose</p>
       <p class="mb-4" style="color:#cccccc;">What if the search for purpose is built on a mistaken assumption? An invitation to step outside the endless search and discover the life already here.</p>
@@ -565,48 +565,6 @@
         </div>
     </div>
 
-    <!-- Row -1: Did the Prophets See This? (New Release) -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 d-flex">
-            <a href="/did_the_prophets_see_this" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">Did the Prophets See This?</h2>
-                    <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="book-cover mb-3">
-                    <h3>War, Famine, Earthquakes, AI and the Unfolding End Times</h3>
-                    <p class="mt-2 tj">
-                        <em>Is this what the ancient prophets saw in their visions of the end times?</em> This book places prophetic visions already associated with recorded history beside the events converging in our world today: war, energy scarcity, fertiliser shortages, failed harvests, famine, disease, unrest and technological control.
-                    </p>
-                    <p class="mt-2 tj">
-                        A sourced, evidence-led investigation, without date-setting or demanding belief. Ancient visions. Modern machines. A world entering uncertainty.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- Row 0: The Question That Cannot Be Answered (New Release) -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 d-flex">
-            <a href="/the_question_that_cannot_be_answered" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">The Question That Cannot Be Answered</h2>
-                    <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="book-cover mb-3">
-                    <h3>Why the Mind Will Never Find Your Purpose</h3>
-                    <p class="mt-2 tj">
-                        <em>What if the question "What is my purpose?" cannot be answered</em>, not because the answer is hidden, but because the question begins with a mistaken assumption? We are taught that somewhere there is a role, calling, or identity that will finally make us complete. We search, strive, and become, only to discover that the promised fulfilment never lasts.
-                    </p>
-                    <p class="mt-2 tj">
-                        This book is not another guide to finding the perfect career or life mission. It is an invitation to step outside the endless search and discover the life already here.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
-                </div>
-            </a>
-        </div>
-    </div>
-
     <!-- Row 1: Beyond Death + God's Infinite Design -->
     <div class="row text-center align-items-stretch mb-4">
         <div class="col-12 col-md-6 d-flex">
@@ -639,6 +597,42 @@
                         <em>God's Infinite Design</em> bridges the gap between the seeker and the Source, offering a final recognition that the veil of the "other" is but a mirror's lie. It is a call to look into the eyes of the stranger and see the Player behind the mask.
                     </p>
                     <div class="btn btn-primary mt-auto">Order on Amazon</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Row 1b: Did the Prophets See This? + The Question That Cannot Be Answered -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 col-md-6 d-flex">
+            <a href="/did_the_prophets_see_this" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
+                    <h2 class="mt-3">Did the Prophets See This?</h2>
+                    <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="book-cover mb-3">
+                    <h3>War, Famine, Earthquakes, AI and the Unfolding End Times</h3>
+                    <p class="mt-2 tj">
+                        <em>Is this what the ancient prophets saw in their visions of the end times?</em> This book places prophetic visions already associated with recorded history beside the events converging in our world today: war, energy scarcity, fertiliser shortages, failed harvests, famine, disease, unrest and technological control.
+                    </p>
+                    <p class="mt-2 tj">
+                        A sourced, evidence-led investigation, without date-setting or demanding belief. Ancient visions. Modern machines. A world entering uncertainty.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-6 d-flex">
+            <a href="/the_question_that_cannot_be_answered" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
+                    <h2 class="mt-3">The Question That Cannot Be Answered</h2>
+                    <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="book-cover mb-3">
+                    <h3>Why the Mind Will Never Find Your Purpose</h3>
+                    <p class="mt-2 tj">
+                        <em>What if the question "What is my purpose?" cannot be answered</em>, not because the answer is hidden, but because the question begins with a mistaken assumption? We are taught that somewhere there is a role, calling, or identity that will finally make us complete. We search, strive, and become, only to discover that the promised fulfilment never lasts.
+                    </p>
+                    <p class="mt-2 tj">
+                        This book is not another guide to finding the perfect career or life mission. It is an invitation to step outside the endless search and discover the life already here.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
                 </div>
             </a>
         </div>
