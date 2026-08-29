@@ -272,15 +272,16 @@
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – Breath, Silence and Stillness in Action (Coming Soon) -->
+   <!-- Slide 0 – Breath, Silence and Stillness in Action (New Release) -->
 <div class="carousel-item mh active" style="background: linear-gradient(135deg, #0d1b2a, #1b3a4b);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
       <h1 class="display-5 fw-bold text-white">Breath, Silence and Stillness in Action</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
       <p class="mb-4" style="color:#cccccc;">Breath prepares. Silence opens. Stillness acts. A practical, step-by-step guide to three interwoven practices, gathering the body's inner energy, settling the mind into silence, and carrying that stillness into skillful, effective action in daily life.</p>
       <a href="{{ url('/breath_silence_and_stillness_in_action') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0d1b2a; font-weight:700;">Discover More</a>
+      <a href="https://www.amazon.com.au/dp/B0HH2LZ8X8" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="img-fluid slider-book">
@@ -543,12 +544,12 @@
 
     <section class="container my-5">
 
-    <!-- Row -2: Breath, Silence and Stillness in Action (Coming Soon) -->
+    <!-- Row -2: Breath, Silence and Stillness in Action (New Release) -->
     <div class="row text-center align-items-stretch mb-4">
         <div class="col-12 d-flex">
             <a href="/breath_silence_and_stillness_in_action" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-warning text-dark mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
                     <h2 class="mt-1">Breath, Silence and Stillness in Action</h2>
                     <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="book-cover mb-3">
                     <h3>A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</h3>
