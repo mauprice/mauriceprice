@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <title>Books That Awaken the Soul | Maurice Price</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore the spiritual writings of Maurice Price: books that illuminate the path to awakening, wholeness, and true freedom.">

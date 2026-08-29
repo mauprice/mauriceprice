@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Unlock the blueprint of reality and become the architect of your future. Discover the power of conscious creation.">
     <link rel="canonical" href="https://mauriceprice.net/manifesting-your-future/" />

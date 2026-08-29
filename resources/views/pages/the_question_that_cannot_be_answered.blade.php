@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose by Maurice Price, an exploration of why the search for purpose is built on a mistaken assumption, and an invitation to discover the life already here.">
 

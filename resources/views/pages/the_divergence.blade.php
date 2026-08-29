@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Divergence by Maurice Price is a prophetic spiritual book exploring humanity's split between illusion and truth, technology and soul. Now available in Kindle, paperback, and hardcover.">
 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Before software, I designed and built recycling machinery and plants. A near-death experience in 1999 changed everything I believed about consciousness, and code became the structure that gave me the time to investigate it.">
     <link rel="canonical" href="https://mauriceprice.net/why_i_write_code/" />

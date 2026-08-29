@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="description" content="The Mind Heals The Body by Maurice Price reveals how consciousness, belief, and divine connection can awaken the body’s inherent ability to heal.">

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This Isn’t Living by Maurice Price is a wake-up call to escape the illusion of success and rediscover the eternal truth of who you are. Available now in Kindle, paperback, and hardcover.">
     <link rel="canonical" href="https://mauriceprice.net/this_isnt_living/" />

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spiritual Seeds for the Soul – Free eBook</title>
     <meta name="description" content="Get your free copy of Spiritual Seeds for the Soul: 30 daily wisdom seeds to plant in your mind. Download the eBook and join Maurice Price for occasional insights." />

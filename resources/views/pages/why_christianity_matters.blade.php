@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Why Christianity Matters by Maurice Price reveals the transformative arc from Genesis to Christ, and why this story still heals, anchors, and reorients modern life. Kindle, paperback, and hardcover.">
 

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Deep meditation isn't about reaching for something external; it's a gentle return to the profound essence that has always resided within you.">
     <link rel="canonical" href="https://mauriceprice.net/deep_meditation/" />

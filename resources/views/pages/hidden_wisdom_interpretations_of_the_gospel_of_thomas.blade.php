@@ -4,6 +4,7 @@
 <title>Hidden Wisdom – Interpretations of the Gospel of Thomas by Maurice Price</title>
 <link rel="canonical" href="https://mauriceprice.net/hidden_wisdom/" />
 <meta charset="UTF-8">
+<link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explore Hidden Wisdom by Maurice Price – a contemplative guide through the Gospel of Thomas. Discover mystical interpretations and timeless truths.">
 

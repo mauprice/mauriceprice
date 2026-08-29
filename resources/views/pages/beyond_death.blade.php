@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Beyond Death: The Architecture of Immortality by Maurice Price, a bold exploration of consciousness, biology, physics, and ancient wisdom that challenges the belief that mortality is a fixed and unavoidable law.">
 

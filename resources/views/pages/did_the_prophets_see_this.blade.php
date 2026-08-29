@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times, a new book from Maurice Price placing ancient prophetic visions beside the events converging in our world today. Available now on Amazon.">
 

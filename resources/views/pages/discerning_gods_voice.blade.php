@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Learn how to discern the voice of God from the voice of the ego and mind. Maurice Price explores the inner stillness where divine communication is truly heard.">
     <link rel="canonical" href="https://mauriceprice.net/discerning_gods_voice/" />

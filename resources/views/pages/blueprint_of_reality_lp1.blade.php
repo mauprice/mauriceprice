@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="The Blueprint of Reality by Maurice Price reveals the hidden energetic mechanics of manifestation and teaches how to consciously create your life from the inside out.">
 
