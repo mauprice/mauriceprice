@@ -33,6 +33,13 @@
 
     <!-- Book Pages -->
     <url>
+        <loc>{{ url('/breath_silence_and_stillness_in_action') }}</loc>
+        <lastmod>2026-08-29</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>{{ url('/did_the_prophets_see_this') }}</loc>
         <lastmod>2026-08-23</lastmod>
         <changefreq>weekly</changefreq>

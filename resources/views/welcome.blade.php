@@ -266,13 +266,30 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – Did the Prophets See This? (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #1a1108, #3d2b16);">
+   <!-- Slide 0 – Breath, Silence and Stillness in Action (Coming Soon) -->
+<div class="carousel-item mh active" style="background: linear-gradient(135deg, #0d1b2a, #1b3a4b);">
+  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <div class="col-md-7">
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h1 class="display-5 fw-bold text-white">Breath, Silence and Stillness in Action</h1>
+      <p class="lead mb-4" style="color:#e8e8e8;">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
+      <p class="mb-4" style="color:#cccccc;">Breath prepares. Silence opens. Stillness acts. A practical, step-by-step guide to three interwoven practices, gathering the body's inner energy, settling the mind into silence, and carrying that stillness into skillful, effective action in daily life.</p>
+      <a href="{{ url('/breath_silence_and_stillness_in_action') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0d1b2a; font-weight:700;">Discover More</a>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="img-fluid slider-book">
+    </div>
+  </div>
+</div>
+
+   <!-- Slide 1 – Did the Prophets See This? (New Release) -->
+<div class="carousel-item mh" style="background: linear-gradient(135deg, #1a1108, #3d2b16);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
       <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
@@ -525,6 +542,27 @@
     </section>
 
     <section class="container my-5">
+
+    <!-- Row -2: Breath, Silence and Stillness in Action (Coming Soon) -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 d-flex">
+            <a href="/breath_silence_and_stillness_in_action" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
+                    <span class="badge bg-warning text-dark mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <h2 class="mt-1">Breath, Silence and Stillness in Action</h2>
+                    <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="book-cover mb-3">
+                    <h3>A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</h3>
+                    <p class="mt-2 tj">
+                        <em>What if the deepest transformation begins not with more effort, but with less?</em> A practical guide to three interwoven practices: Spinal Breathing to gather the body's inner energy, Deep Meditation to settle the mind into silence, and Samyama to carry that stillness into skillful, effective action.
+                    </p>
+                    <p class="mt-2 tj">
+                        Written in plain language and structured for daily practice. Breath prepares. Silence opens. Stillness acts.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <!-- Row -1: Did the Prophets See This? (New Release) -->
     <div class="row text-center align-items-stretch mb-4">

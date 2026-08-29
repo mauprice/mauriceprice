@@ -202,6 +202,12 @@ class SiteController extends Controller
         return view('pages.did_the_prophets_see_this', compact('cc'));
     }
 
+    public function breathSilenceAndStillnessInAction(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.breath_silence_and_stillness_in_action', compact('cc'));
+    }
+
     public function bpr_landing(Request $request){
         $cc = $this->getCountryCode($request);
         return view('pages.bpr_landing', compact('cc'));
