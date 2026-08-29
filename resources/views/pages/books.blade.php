@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the published works of Maurice Price, including God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
+    <meta name="description" content="Explore the published works of Maurice Price, including Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
 
     <title>Books by Maurice Price – Spiritual Teachings, Awakening, and Mystical Wisdom</title>
     <link rel="canonical" href="https://mauriceprice.net/books" />
@@ -36,7 +36,7 @@
       "@type": "ItemList",
       "name": "Books by Maurice Price",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 10,
+      "numberOfItems": 13,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -157,6 +157,42 @@
             "url": "https://mauriceprice.net/why_christianity_matters",
             "description": "Revealing how creation, fall, and redemption form a living narrative of divine love."
           }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "Book",
+            "name": "Breath, Silence and Stillness in Action: A Practical Guide to Spinal Breathing, Deep Meditation and Samyama",
+            "author": { "@type": "Person", "name": "Maurice Price" },
+            "image": "https://mauriceprice.net/images/breath_silence_and_stillness_in_action_cover.png",
+            "url": "https://mauriceprice.net/breath_silence_and_stillness_in_action",
+            "description": "A practical guide to Spinal Breathing, Deep Meditation and Samyama, and to carrying the stillness they cultivate into effective everyday action."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "Book",
+            "name": "Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times",
+            "author": { "@type": "Person", "name": "Maurice Price" },
+            "image": "https://mauriceprice.net/images/did_the_prophets_see_this_cover.jpg",
+            "url": "https://mauriceprice.net/did_the_prophets_see_this",
+            "description": "A sourced investigation of whether today's converging crises, war, energy scarcity, famine, disease, earthquakes and autonomous machines, correspond to ancient prophetic visions."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "item": {
+            "@type": "Book",
+            "name": "Spiritual Seeds for the Soul: Planting the Seeds of Contemplation",
+            "author": { "@type": "Person", "name": "Maurice Price" },
+            "image": "https://mauriceprice.net/images/Spiritual_seeds_for_the_soul_1100.png",
+            "url": "https://mauriceprice.net/spiritual_seed_for_the_soul",
+            "description": "An invitation to cultivate a deeper inner life through contemplation and prayer, bridging ancient Scripture with contemporary understanding."
+          }
         }
       ]
     }
@@ -184,11 +220,48 @@
     <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
+                <img src="{{url('/images/breath_silence_and_stillness_in_action_3d.png')}}" alt="Breath, Silence and Stillness in Action book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
+                <h4 class="mt-2">Breath, Silence and Stillness in Action</h4>
+                <p class="small text-muted">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
+                <div class="mt-auto">
+                    <span class="badge bg-success mb-2">New Release</span><br>
+                    <a href="/breath_silence_and_stillness_in_action" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="https://www.amazon.com.au/dp/B0HH2LZ8X8" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
+                <img src="{{url('/images/did_the_prophets_see_this_3d.png')}}" alt="Did the Prophets See This? book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
+                <h4 class="mt-2">Did the Prophets See This?</h4>
+                <p class="small text-muted">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
+                <div class="mt-auto">
+                    <a href="/did_the_prophets_see_this" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="https://www.amazon.com.au/dp/B0HG7M6VSK" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
+                <img src="{{url('/images/Spiritual_seeds_for_the_soul_1100.png')}}" alt="Spiritual Seeds for the Soul book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
+                <h4 class="mt-2">Spiritual Seeds for the Soul</h4>
+                <p class="small text-muted">Planting the Seeds of Contemplation</p>
+                <div class="mt-auto">
+                    <a href="/spiritual_seed_for_the_soul" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center d-flex align-items-stretch">
+        <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/the_question_that_cannot_be_answered_cover.png')}}" alt="The Question That Cannot Be Answered book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
                 <h4 class="mt-2">The Question That Cannot Be Answered</h4>
                 <p class="small text-muted">Why the Mind Will Never Find Your Purpose</p>
                 <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/the_question_that_cannot_be_answered" class="btn btn-primary mt-2">Learn More</a>
                     <a href="https://www.amazon.com.au/dp/B0HDLNG326" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
