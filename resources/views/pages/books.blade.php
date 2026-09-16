@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the published works of Maurice Price, including Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
+    <meta name="description" content="Explore the published works of Maurice Price, including The Biblical Process of Manifestation, Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
 
     <title>Books by Maurice Price – Spiritual Teachings, Awakening, and Mystical Wisdom</title>
     <link rel="canonical" href="https://mauriceprice.net/books" />
@@ -37,7 +37,7 @@
       "@type": "ItemList",
       "name": "Books by Maurice Price",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 13,
+      "numberOfItems": 14,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -194,6 +194,18 @@
             "url": "https://mauriceprice.net/spiritual_seed_for_the_soul",
             "description": "An invitation to cultivate a deeper inner life through contemplation and prayer, bridging ancient Scripture with contemporary understanding."
           }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": "Book",
+            "name": "The Biblical Process of Manifestation: Prayer, Faith and the Movement from the Unseen into the Seen",
+            "author": { "@type": "Person", "name": "Maurice Price" },
+            "image": "https://mauriceprice.net/images/biblical_process_of_manifestation_3d.png",
+            "url": "https://mauriceprice.net/the_biblical_process_of_manifestation",
+            "description": "An exploration of nine biblical passages revealing prayer, faith and receiving as one complete spiritual process, a contemplative Christian understanding of manifestation as participation in the creative life of God."
+          }
         }
       ]
     }
@@ -221,11 +233,23 @@
     <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
+                <img src="{{url('/images/biblical_process_of_manifestation_3d.png')}}" alt="The Biblical Process of Manifestation book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
+                <h4 class="mt-2">The Biblical Process of Manifestation</h4>
+                <p class="small text-muted">Prayer, Faith and the Movement from the Unseen into the Seen</p>
+                <div class="mt-auto">
+                    <span class="badge bg-success mb-2">New Release</span><br>
+                    <a href="/the_biblical_process_of_manifestation" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="https://www.amazon.com.au/dp/B0HJYWGK9T" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/breath_silence_and_stillness_in_action_3d.png')}}" alt="Breath, Silence and Stillness in Action book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
                 <h4 class="mt-2">Breath, Silence and Stillness in Action</h4>
                 <p class="small text-muted">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
                 <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/breath_silence_and_stillness_in_action" class="btn btn-primary mt-2">Learn More</a>
                     <a href="https://www.amazon.com.au/dp/B0HH2LZ8X8" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
@@ -243,7 +267,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/Spiritual_seeds_for_the_soul_1100.png')}}" alt="Spiritual Seeds for the Soul book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -254,9 +280,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/the_question_that_cannot_be_answered_cover.png')}}" alt="The Question That Cannot Be Answered book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
