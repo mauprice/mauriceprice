@@ -42,6 +42,7 @@ Route::get('/beyond_death', [SiteController::class, 'beyondDeath'])->name('beyon
 Route::get('/the_question_that_cannot_be_answered', [SiteController::class, 'theQuestionThatCannotBeAnswered'])->name('theQuestionThatCannotBeAnswered');
 Route::get('/did_the_prophets_see_this', [SiteController::class, 'didTheProphetsSeeThis'])->name('didTheProphetsSeeThis');
 Route::get('/breath_silence_and_stillness_in_action', [SiteController::class, 'breathSilenceAndStillnessInAction'])->name('breathSilenceAndStillnessInAction');
+Route::get('/the_biblical_process_of_manifestation', [SiteController::class, 'theBiblicalProcessOfManifestation'])->name('theBiblicalProcessOfManifestation');
 Route::get('/hidden_wisdom', [SiteController::class, 'hiddenWisdom'])->name('hiddenWisdom');
 Route::get('/a_profound_teaching', [SiteController::class, 'aProfoundTeaching'])->name('aProfoundTeaching');
 Route::get('/why_christianity_matters', [SiteController::class, 'WhyChristianityMatters'])->name('WhyChristianityMatters');

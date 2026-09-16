@@ -267,16 +267,34 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – Breath, Silence and Stillness in Action (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #0d1b2a, #1b3a4b);">
+   <!-- Slide 0 – The Biblical Process of Manifestation (New Release) -->
+<div class="carousel-item mh active" style="background: linear-gradient(135deg, #1b1408, #3d2f16);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
       <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
+      <h1 class="display-5 fw-bold text-white">The Biblical Process of Manifestation</h1>
+      <p class="lead mb-4" style="color:#e8e8e8;">Prayer, Faith and the Movement from the Unseen into the Seen</p>
+      <p class="mb-4" style="color:#cccccc;">We plant the seed in prayer. Its growth belongs to God. An exploration of nine biblical passages revealing prayer, faith and receiving as one complete spiritual process, a contemplative Christian understanding of manifestation as participation in the creative life of God.</p>
+      <a href="{{ url('/the_biblical_process_of_manifestation') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#1b1408; font-weight:700;">Discover More</a>
+      <a href="https://www.amazon.com.au/dp/B0HJYWGK9T" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/images/biblical_process_of_manifestation_3d.png') }}" alt="The Biblical Process of Manifestation book cover" class="img-fluid slider-book">
+    </div>
+  </div>
+</div>
+
+   <!-- Slide 1 – Breath, Silence and Stillness in Action -->
+<div class="carousel-item mh" style="background: linear-gradient(135deg, #0d1b2a, #1b3a4b);">
+  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <div class="col-md-7">
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
       <h1 class="display-5 fw-bold text-white">Breath, Silence and Stillness in Action</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
       <p class="mb-4" style="color:#cccccc;">Breath prepares. Silence opens. Stillness acts. A practical, step-by-step guide to three interwoven practices, gathering the body's inner energy, settling the mind into silence, and carrying that stillness into skillful, effective action in daily life.</p>
@@ -289,7 +307,7 @@
   </div>
 </div>
 
-   <!-- Slide 1 – Did the Prophets See This? -->
+   <!-- Slide 2 – Did the Prophets See This? -->
 <div class="carousel-item mh" style="background: linear-gradient(135deg, #1a1108, #3d2b16);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
@@ -544,20 +562,63 @@
 
     <section class="container my-5">
 
-    <!-- Row -2: Breath, Silence and Stillness in Action (New Release) -->
+    <!-- Row -2: The Biblical Process of Manifestation (New Release) -->
     <div class="row text-center align-items-stretch mb-4">
         <div class="col-12 d-flex">
-            <a href="/breath_silence_and_stillness_in_action" class="text-decoration-none text-dark w-100">
+            <a href="/the_biblical_process_of_manifestation" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
                     <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">Breath, Silence and Stillness in Action</h2>
+                    <h2 class="mt-1">The Biblical Process of Manifestation</h2>
+                    <img src="{{ url('/images/biblical_process_of_manifestation_3d.png') }}" alt="The Biblical Process of Manifestation book cover" class="book-cover mb-3">
+                    <h3>Prayer, Faith and the Movement from the Unseen into the Seen</h3>
+                    <p class="mt-2 tj">
+                        <em>What if the Bible's teachings on prayer, faith and receiving are not separate promises, but parts of one complete spiritual process?</em> This book explores nine biblical passages revealing the movement from the unseen into the seen: entering the secret place of prayer, remaining in Christ, asking according to God's will, receiving inwardly, giving thanks, and entering peace.
+                    </p>
+                    <p class="mt-2 tj">
+                        A contemplative Christian understanding of manifestation as participation in the creative life of God. We plant the seed in prayer. Its growth belongs to God.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Row -1b: Breath, Silence and Stillness in Action + Did the Prophets See This? + The Question That Cannot Be Answered -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 col-md-4 d-flex">
+            <a href="/breath_silence_and_stillness_in_action" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
+                    <h2 class="mt-3">Breath, Silence and Stillness in Action</h2>
                     <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="book-cover mb-3">
                     <h3>A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</h3>
                     <p class="mt-2 tj">
                         <em>What if the deepest transformation begins not with more effort, but with less?</em> A practical guide to three interwoven practices: Spinal Breathing to gather the body's inner energy, Deep Meditation to settle the mind into silence, and Samyama to carry that stillness into skillful, effective action.
                     </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 d-flex">
+            <a href="/did_the_prophets_see_this" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
+                    <h2 class="mt-3">Did the Prophets See This?</h2>
+                    <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="book-cover mb-3">
+                    <h3>War, Famine, Earthquakes, AI and the Unfolding End Times</h3>
                     <p class="mt-2 tj">
-                        Written in plain language and structured for daily practice. Breath prepares. Silence opens. Stillness acts.
+                        <em>Is this what the ancient prophets saw in their visions of the end times?</em> This book places prophetic visions beside the events converging in our world today: war, energy scarcity, fertiliser shortages, famine, disease and technological control.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 d-flex">
+            <a href="/the_question_that_cannot_be_answered" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
+                    <h2 class="mt-3">The Question That Cannot Be Answered</h2>
+                    <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="book-cover mb-3">
+                    <h3>Why the Mind Will Never Find Your Purpose</h3>
+                    <p class="mt-2 tj">
+                        <em>What if the question "What is my purpose?" cannot be answered</em>, not because the answer is hidden, but because the question begins with a mistaken assumption? An invitation to step outside the endless search and discover the life already here.
                     </p>
                     <div class="btn btn-primary mt-auto">Learn More...</div>
                 </div>
@@ -597,42 +658,6 @@
                         <em>God's Infinite Design</em> bridges the gap between the seeker and the Source, offering a final recognition that the veil of the "other" is but a mirror's lie. It is a call to look into the eyes of the stranger and see the Player behind the mask.
                     </p>
                     <div class="btn btn-primary mt-auto">Order on Amazon</div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- Row 1b: Did the Prophets See This? + The Question That Cannot Be Answered -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/did_the_prophets_see_this" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">Did the Prophets See This?</h2>
-                    <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="book-cover mb-3">
-                    <h3>War, Famine, Earthquakes, AI and the Unfolding End Times</h3>
-                    <p class="mt-2 tj">
-                        <em>Is this what the ancient prophets saw in their visions of the end times?</em> This book places prophetic visions already associated with recorded history beside the events converging in our world today: war, energy scarcity, fertiliser shortages, failed harvests, famine, disease, unrest and technological control.
-                    </p>
-                    <p class="mt-2 tj">
-                        A sourced, evidence-led investigation, without date-setting or demanding belief. Ancient visions. Modern machines. A world entering uncertainty.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/the_question_that_cannot_be_answered" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
-                    <h2 class="mt-3">The Question That Cannot Be Answered</h2>
-                    <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="book-cover mb-3">
-                    <h3>Why the Mind Will Never Find Your Purpose</h3>
-                    <p class="mt-2 tj">
-                        <em>What if the question "What is my purpose?" cannot be answered</em>, not because the answer is hidden, but because the question begins with a mistaken assumption? We are taught that somewhere there is a role, calling, or identity that will finally make us complete. We search, strive, and become, only to discover that the promised fulfilment never lasts.
-                    </p>
-                    <p class="mt-2 tj">
-                        This book is not another guide to finding the perfect career or life mission. It is an invitation to step outside the endless search and discover the life already here.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
                 </div>
             </a>
         </div>

@@ -208,6 +208,12 @@ class SiteController extends Controller
         return view('pages.breath_silence_and_stillness_in_action', compact('cc'));
     }
 
+    public function theBiblicalProcessOfManifestation(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.the_biblical_process_of_manifestation', compact('cc'));
+    }
+
     public function bpr_landing(Request $request){
         $cc = $this->getCountryCode($request);
         return view('pages.bpr_landing', compact('cc'));
