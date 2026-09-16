@@ -83,7 +83,7 @@
             "name": "The Mind Heals the Body",
             "author": { "@type": "Person", "name": "Maurice Price" },
             "image": "https://mauriceprice.net/images/the_mind_heals_the_body_3d.png",
-            "url": "https://mauriceprice.net/the_mind_heals_the_body",
+            "url": "https://mauriceprice.net/the_mind_heals_the_body_lp",
             "description": "Awaken the healing power within by aligning mind, body, and spirit."
           }
         },

@@ -81,12 +81,6 @@ class SiteController extends Controller
         return view('pages.books', compact('cc'));
     }
     
-    public function talks(Request $request)
-    {
-        $cc = $this->getCountryCode($request);
-        return view('pages.talks', compact('cc'));
-    }
-
     public function hiddenWisdom(Request $request)
     {
         $cc = $this->getCountryCode($request);

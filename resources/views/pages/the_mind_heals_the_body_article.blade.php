@@ -5,7 +5,7 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Your body is not separate from your mind: every thought, belief, and emotion can either weaken or strengthen your health.">
-    <link rel="canonical" href="https://mauriceprice.net/mind_heals_body/" />
+    <link rel="canonical" href="https://mauriceprice.net/the_mind_heals_the_body_article" />
     <title>How the Mind Heals the Body</title>
     <!-- Open Graph -->
     <meta property="og:title" content="How the Mind Heals the Body" />

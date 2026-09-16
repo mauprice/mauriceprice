@@ -20,9 +20,6 @@ Route::get('/home', function () {
 // Books
 Route::get('/books', [SiteController::class, 'books'])->name('books');
 
-// Talks
-Route::get('/talks', [SiteController::class, 'talks'])->name('talks');
-
 // About
 Route::get('/about', [SiteController::class, 'about'])->name('about');
 
