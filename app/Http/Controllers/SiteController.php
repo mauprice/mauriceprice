@@ -208,6 +208,12 @@ class SiteController extends Controller
         return view('pages.the_biblical_process_of_manifestation', compact('cc'));
     }
 
+    public function deathBedVisions(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.death_bed_visions', compact('cc'));
+    }
+
     public function bpr_landing(Request $request){
         $cc = $this->getCountryCode($request);
         return view('pages.bpr_landing', compact('cc'));

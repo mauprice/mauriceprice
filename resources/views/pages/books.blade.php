@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the published works of Maurice Price, including The Biblical Process of Manifestation, Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
+    <meta name="description" content="Explore the published works of Maurice Price, including Death-Bed Visions (coming soon), The Biblical Process of Manifestation, Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
 
     <title>Books by Maurice Price – Spiritual Teachings, Awakening, and Mystical Wisdom</title>
     <link rel="canonical" href="https://mauriceprice.net/books" />
@@ -37,11 +37,23 @@
       "@type": "ItemList",
       "name": "Books by Maurice Price",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 14,
+      "numberOfItems": 15,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
+          "item": {
+            "@type": "Book",
+            "name": "Death-Bed Visions: An Annotated Edition",
+            "author": { "@type": "Person", "name": "Maurice Price" },
+            "image": "https://mauriceprice.net/images/death_bed_visions_3d.png",
+            "url": "https://mauriceprice.net/death_bed_visions",
+            "description": "An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the possibility of consciousness surviving death. Coming soon."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
           "item": {
             "@type": "Book",
             "name": "The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose",
@@ -53,7 +65,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 3,
           "item": {
             "@type": "Book",
             "name": "Beyond Death: The Architecture of Immortality",
@@ -65,7 +77,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "item": {
             "@type": "Book",
             "name": "God's Infinite Design",
@@ -77,7 +89,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@type": "Book",
             "name": "The Mind Heals the Body",
@@ -89,7 +101,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "Book",
             "name": "Hidden Wisdom",
@@ -101,7 +113,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@type": "Book",
             "name": "A Profound Teaching",
@@ -113,7 +125,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@type": "Book",
             "name": "This Isn't Living",
@@ -125,7 +137,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@type": "Book",
             "name": "The Blueprint of Reality",
@@ -137,7 +149,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "item": {
             "@type": "Book",
             "name": "The Divergence",
@@ -149,7 +161,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "item": {
             "@type": "Book",
             "name": "Why Christianity Matters",
@@ -161,7 +173,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 11,
+          "position": 12,
           "item": {
             "@type": "Book",
             "name": "Breath, Silence and Stillness in Action: A Practical Guide to Spinal Breathing, Deep Meditation and Samyama",
@@ -173,7 +185,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 12,
+          "position": 13,
           "item": {
             "@type": "Book",
             "name": "Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times",
@@ -185,7 +197,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 13,
+          "position": 14,
           "item": {
             "@type": "Book",
             "name": "Spiritual Seeds for the Soul: Planting the Seeds of Contemplation",
@@ -197,7 +209,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 14,
+          "position": 15,
           "item": {
             "@type": "Book",
             "name": "The Biblical Process of Manifestation: Prayer, Faith and the Movement from the Unseen into the Seen",
@@ -233,6 +245,18 @@
     <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
+                <img src="{{url('/images/death_bed_visions_3d.png')}}" alt="Death-Bed Visions book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
+                <h4 class="mt-2">Death-Bed Visions</h4>
+                <p class="small text-muted">An Annotated Edition of Sir William Barrett's Classic Work</p>
+                <div class="mt-auto">
+                    <span class="badge bg-secondary mb-2">Coming Soon</span><br>
+                    <a href="/death_bed_visions" class="btn btn-primary mt-2">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
                 <img src="{{url('/images/biblical_process_of_manifestation_3d.png')}}" alt="The Biblical Process of Manifestation book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
                 <h4 class="mt-2">The Biblical Process of Manifestation</h4>
                 <p class="small text-muted">Prayer, Faith and the Movement from the Unseen into the Seen</p>
@@ -255,7 +279,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/did_the_prophets_see_this_3d.png')}}" alt="Did the Prophets See This? book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -267,9 +293,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/Spiritual_seeds_for_the_soul_1100.png')}}" alt="Spiritual Seeds for the Soul book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -292,7 +316,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/beyond_death_cover.png')}}" alt="Beyond Death: The Architecture of Immortality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -315,9 +341,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/the_mind_heals_the_body_3d.png')}}" alt="The Mind Heals the Body book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -328,7 +352,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png')}}" alt="The Blueprint of Reality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -350,9 +376,7 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/a_profound_teaching_kindle.png')}}" alt="A Profound Teaching book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -363,7 +387,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/This_isnt_living_book_covers.jpg')}}" alt="This Isn't Living book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">

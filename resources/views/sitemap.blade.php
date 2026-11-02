@@ -33,6 +33,13 @@
 
     <!-- Book Pages -->
     <url>
+        <loc>{{ url('/death_bed_visions') }}</loc>
+        <lastmod>2026-11-03</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>{{ url('/the_biblical_process_of_manifestation') }}</loc>
         <lastmod>2026-09-16</lastmod>
         <changefreq>weekly</changefreq>
