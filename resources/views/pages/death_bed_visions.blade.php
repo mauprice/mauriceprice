@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Death-Bed Visions, an annotated edition of Sir William Barrett's 1926 classic on deathbed visions, near-death experiences and the survival of consciousness, with explanatory notes, illustrations and a new editorial continuation by Maurice Price. Coming soon.">
+    <meta name="description" content="Death-Bed Visions, an annotated edition of Sir William Barrett's 1926 classic on deathbed visions, near-death experiences and the survival of consciousness, with explanatory notes, illustrations and a new editorial continuation by Maurice Price. Available now on Kindle.">
 
     <title>Death-Bed Visions: An Annotated Edition – Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/death_bed_visions" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Death-Bed Visions: An Annotated Edition – Maurice Price" />
-    <meta property="og:description" content="Does consciousness end with the body? An annotated edition of Sir William Barrett's 1926 classic on deathbed visions, with notes, illustrations and a new editorial continuation by Maurice Price. Coming soon." />
+    <meta property="og:description" content="Does consciousness end with the body? An annotated edition of Sir William Barrett's 1926 classic on deathbed visions, with notes, illustrations and a new editorial continuation by Maurice Price. Available now on Kindle." />
     <meta property="og:image" content="https://mauriceprice.net/images/death_bed_visions_3d.png" />
     <meta property="og:url" content="https://mauriceprice.net/death_bed_visions" />
     <meta property="og:type" content="book" />
@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@MauricePriceNet" />
     <meta name="twitter:title" content="Death-Bed Visions: An Annotated Edition – Maurice Price" />
-    <meta name="twitter:description" content="An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the survival of consciousness. Coming soon." />
+    <meta name="twitter:description" content="An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the survival of consciousness. Available now on Kindle." />
     <meta name="twitter:image" content="https://mauriceprice.net/images/death_bed_visions_3d.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -52,10 +52,12 @@
       "image": "https://mauriceprice.net/images/death_bed_visions_3d.png",
       "publisher": {"@type": "Person", "name": "Maurice Price", "url": "https://mauriceprice.net"},
       "inLanguage": "en",
-      "bookFormat": "https://schema.org/Paperback",
+      "bookFormat": "https://schema.org/EBook",
       "offers": {
         "@type": "Offer",
-        "availability": "https://schema.org/PreOrder"
+        "priceCurrency": "AUD",
+        "url": "https://www.amazon.com.au/dp/B0HQ5VXFS3",
+        "availability": "https://schema.org/InStock"
       }
     }
     </script>
@@ -73,9 +75,19 @@
 <body>
 @include('partials.navigation')
 
+@php
+    if ($cc == 'AU') {
+        $url = 'https://www.amazon.com.au/dp/B0HQ5VXFS3';
+    } elseif ($cc == 'GB') {
+        $url = 'https://www.amazon.co.uk/dp/B0HQ5VXFS3';
+    } else {
+        $url = 'https://www.amazon.com/dp/B0HQ5VXFS3';
+    }
+@endphp
+
 <section class="books-hero">
   <div class="container">
-    <div class="eyebrow mb-2">Coming Soon from Maurice Price</div>
+    <div class="eyebrow mb-2">New Release – Available Now on Kindle</div>
     <h1 class="display-4">Death-Bed Visions</h1>
     <h2 class="text-muted">An Annotated Edition of Sir William Barrett's Classic Work</h2>
   </div>
@@ -93,7 +105,7 @@
       <p>In <em>Death-Bed Visions</em>, first published in 1926, physicist and psychical researcher Sir William Barrett brings together testimony from doctors, nurses and families to examine these experiences and their possible meaning. His accounts raise questions about perception, consciousness and the possibility of survival beyond death.</p>
       <p>This annotated edition preserves Barrett's original work and includes explanatory notes, an author biography and six pencil illustrations. A new editorial continuation and conclusion, clearly distinguished from Barrett's writing, explore the book's themes and the questions its evidence leaves open.</p>
       <p>Across these pages, the mystery of death emerges through the words of those approaching it, and those who remained beside them.</p>
-      <span class="badge bg-secondary mt-3 mb-2">Coming Soon</span>
+      <a href="{{ $url }}" target="_blank" rel="noopener" class="btn btn-primary mt-4">Available on Amazon Kindle</a>
     </div>
   </div>
 
@@ -114,7 +126,7 @@
   <div class="row mt-5">
     <div class="col-12">
       <h2>Availability</h2>
-      <p class="mt-2"><em>Death-Bed Visions: An Annotated Edition</em> is currently in production and will be available soon in Kindle and paperback. Check back here for updates, or <a href="/contact">get in touch</a> to be notified at release.</p>
+      <p class="mt-2"><em>Death-Bed Visions: An Annotated Edition</em> is available now on Kindle via Amazon. A paperback edition is in production and will follow. Availability may vary by region.</p>
     </div>
   </div>
 </section>

@@ -274,15 +274,16 @@
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – Death-Bed Visions (Coming Soon) -->
+   <!-- Slide 0 – Death-Bed Visions (New Release) -->
 <div class="carousel-item mh active" style="background: linear-gradient(135deg, #14121a, #2b2438);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now on Kindle</h6>
       <h1 class="display-5 fw-bold text-white">Death-Bed Visions</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">An Annotated Edition of Sir William Barrett's Classic Work</p>
       <p class="mb-4" style="color:#cccccc;">Does consciousness end with the body? An annotated edition of Sir William Barrett's 1926 classic, bringing together testimony from doctors, nurses and families on deathbed visions, with explanatory notes, illustrations and a new editorial continuation by Maurice Price.</p>
       <a href="{{ url('/death_bed_visions') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#14121a; font-weight:700;">Discover More</a>
+      <a href="https://www.amazon.com.au/dp/B0HQ5VXFS3" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/death_bed_visions_3d.png') }}" alt="Death-Bed Visions book cover" class="img-fluid slider-book">
@@ -579,12 +580,12 @@
 
     <section class="container my-5">
 
-    <!-- Row -3: Death-Bed Visions (Coming Soon) -->
+    <!-- Row -3: Death-Bed Visions (New Release) -->
     <div class="row text-center align-items-stretch mb-4">
         <div class="col-12 d-flex">
             <a href="/death_bed_visions" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-secondary mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
                     <h2 class="mt-1">Death-Bed Visions</h2>
                     <img src="{{ url('/images/death_bed_visions_3d.png') }}" alt="Death-Bed Visions book cover" class="book-cover mb-3">
                     <h3>An Annotated Edition of Sir William Barrett's Classic Work</h3>

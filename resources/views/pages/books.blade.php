@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the published works of Maurice Price, including Death-Bed Visions (coming soon), The Biblical Process of Manifestation, Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
+    <meta name="description" content="Explore the published works of Maurice Price, including Death-Bed Visions, The Biblical Process of Manifestation, Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
 
     <title>Books by Maurice Price – Spiritual Teachings, Awakening, and Mystical Wisdom</title>
     <link rel="canonical" href="https://mauriceprice.net/books" />
@@ -48,7 +48,7 @@
             "author": { "@type": "Person", "name": "Maurice Price" },
             "image": "https://mauriceprice.net/images/death_bed_visions_3d.png",
             "url": "https://mauriceprice.net/death_bed_visions",
-            "description": "An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the possibility of consciousness surviving death. Coming soon."
+            "description": "An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the possibility of consciousness surviving death. Available now on Kindle."
           }
         },
         {
@@ -249,8 +249,9 @@
                 <h4 class="mt-2">Death-Bed Visions</h4>
                 <p class="small text-muted">An Annotated Edition of Sir William Barrett's Classic Work</p>
                 <div class="mt-auto">
-                    <span class="badge bg-secondary mb-2">Coming Soon</span><br>
+                    <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/death_bed_visions" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="https://www.amazon.com.au/dp/B0HQ5VXFS3" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
