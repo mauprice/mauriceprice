@@ -48,7 +48,7 @@
             "author": { "@type": "Person", "name": "Maurice Price" },
             "image": "https://mauriceprice.net/images/death_bed_visions_3d.png",
             "url": "https://mauriceprice.net/death_bed_visions",
-            "description": "An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the possibility of consciousness surviving death. Available now on Kindle."
+            "description": "An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the possibility of consciousness surviving death. Available now in Kindle and paperback."
           }
         },
         {
