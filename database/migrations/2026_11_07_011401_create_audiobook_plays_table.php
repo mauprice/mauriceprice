@@ -19,8 +19,6 @@ return new class extends Migration
             $table->string('ip_address', 45)->nullable();
             $table->string('user_agent')->nullable();
             $table->timestamps();
-
-            $table->index(['book_slug', 'chapter_file']);
         });
     }
 
