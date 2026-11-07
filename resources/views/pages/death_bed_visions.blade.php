@@ -199,6 +199,7 @@
           @foreach ($audiobookChapters as $i => $chapter)
             <li class="list-group-item ab-chapter"
                 data-src="{{ url('storage/audio/death-bed-visions/' . rawurlencode($chapter['file'])) }}"
+                data-file="{{ $chapter['file'] }}"
                 data-title="{{ $chapter['title'] }}"
                 data-index="{{ $i }}"
                 role="button" tabindex="0">
@@ -227,6 +228,19 @@
   var chapterEls = Array.prototype.slice.call(document.querySelectorAll('.ab-chapter'));
   var currentIndex = -1;
   var isSeeking = false;
+  var trackedChapters = {};
+
+  function trackPlay(index) {
+    if (trackedChapters[index]) { return; }
+    trackedChapters[index] = true;
+    var el = chapterEls[index];
+    var params = new URLSearchParams({
+      book: 'death-bed-visions',
+      chapter_file: el.getAttribute('data-file'),
+      chapter_title: el.getAttribute('data-title')
+    });
+    fetch('{{ route("audiobook.trackPlay") }}?' + params.toString(), { keepalive: true }).catch(function () {});
+  }
 
   function formatTime(seconds) {
     if (!isFinite(seconds) || seconds < 0) { return '0:00'; }
@@ -286,7 +300,10 @@
     if (currentIndex < chapterEls.length - 1) { loadChapter(currentIndex + 1, true); }
   });
 
-  audio.addEventListener('play', function () { playPauseBtn.innerHTML = '&#10073;&#10073;'; });
+  audio.addEventListener('play', function () {
+    playPauseBtn.innerHTML = '&#10073;&#10073;';
+    if (currentIndex !== -1) { trackPlay(currentIndex); }
+  });
   audio.addEventListener('pause', function () { playPauseBtn.innerHTML = '&#9658;'; });
 
   audio.addEventListener('loadedmetadata', function () {
