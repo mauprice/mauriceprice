@@ -269,13 +269,30 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – Death-Bed Visions (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #14121a, #2b2438);">
+   <!-- Slide 0 – The Yoga Sūtras of Patañjali (Coming Soon) -->
+<div class="carousel-item mh active" style="background: linear-gradient(135deg, #2a1f0d, #4a3a1a);">
+  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <div class="col-md-7">
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h1 class="display-5 fw-bold text-white">The Yoga Sūtras of Patañjali</h1>
+      <p class="lead mb-4" style="color:#e8e8e8;">A New English Translation with Practice and Study Notes</p>
+      <p class="mb-4" style="color:#cccccc;">All 195 sutras in a new English translation, with romanised Sanskrit, practice notes and study notes, bringing the founding text of classical yoga within reach of every reader.</p>
+      <a href="{{ url('/the_yoga_sutras_of_patanjali') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#2a1f0d; font-weight:700;">Discover More</a>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/images/The Yoga Sūtras of Patañjali_3d.png') }}" alt="The Yoga Sūtras of Patañjali book cover" class="img-fluid slider-book">
+    </div>
+  </div>
+</div>
+
+   <!-- Slide 1 – Death-Bed Visions (New Release) -->
+<div class="carousel-item mh" style="background: linear-gradient(135deg, #14121a, #2b2438);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
       <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now on Kindle</h6>
@@ -579,6 +596,24 @@
     </section>
 
     <section class="container my-5">
+
+    <!-- Row -4: The Yoga Sūtras of Patañjali (Coming Soon) -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 d-flex">
+            <a href="/the_yoga_sutras_of_patanjali" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
+                    <span class="badge bg-secondary mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <h2 class="mt-1">The Yoga Sūtras of Patañjali</h2>
+                    <img src="{{ url('/images/The Yoga Sūtras of Patañjali_3d.png') }}" alt="The Yoga Sūtras of Patañjali book cover" class="book-cover mb-3">
+                    <h3>A New English Translation with Practice and Study Notes</h3>
+                    <p class="mt-2 tj">
+                        <em>The Yoga Sūtras of Patañjali</em> is the founding text of classical yoga. This study edition gives all 195 sutras in clear, modern English, each followed by its romanised Sanskrit and a short note that explains the verse or turns it into a practice you can try.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <!-- Row -3: Death-Bed Visions (New Release) -->
     <div class="row text-center align-items-stretch mb-4">

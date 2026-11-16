@@ -42,6 +42,7 @@ Route::get('/did_the_prophets_see_this', [SiteController::class, 'didTheProphets
 Route::get('/breath_silence_and_stillness_in_action', [SiteController::class, 'breathSilenceAndStillnessInAction'])->name('breathSilenceAndStillnessInAction');
 Route::get('/the_biblical_process_of_manifestation', [SiteController::class, 'theBiblicalProcessOfManifestation'])->name('theBiblicalProcessOfManifestation');
 Route::get('/death_bed_visions', [SiteController::class, 'deathBedVisions'])->name('deathBedVisions');
+Route::get('/the_yoga_sutras_of_patanjali', [SiteController::class, 'theYogaSutrasOfPatanjali'])->name('theYogaSutrasOfPatanjali');
 Route::get('/audiobook/track-play', [AudiobookController::class, 'trackPlay'])
     ->middleware('throttle:60,1')
     ->name('audiobook.trackPlay');
