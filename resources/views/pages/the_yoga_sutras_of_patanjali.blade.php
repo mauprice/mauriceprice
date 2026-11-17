@@ -37,6 +37,18 @@
             background-size: cover; color: white; padding: 100px 0; text-align: center;
         }
         .eyebrow { letter-spacing: .08em; text-transform: uppercase; font-weight: 700; opacity: .85; }
+
+        .audiobook-player { background: #2a1f0d; color: #f0f0f0; border-radius: .5rem; padding: 1.5rem; }
+        .audiobook-player .ab-controls { display: flex; align-items: center; gap: .75rem; margin-bottom: 1.25rem; }
+        .audiobook-player .ab-btn-play { width: 48px; height: 48px; border-radius: 50%; background: #d4af37; color: #2a1f0d; border: none; font-size: 1.1rem; flex: 0 0 auto; }
+        .audiobook-player .ab-btn-step { background: transparent; color: #f0f0f0; border: 1px solid rgba(255,255,255,.3); border-radius: 50%; width: 38px; height: 38px; flex: 0 0 auto; }
+        .audiobook-player .ab-now-playing { font-weight: 700; margin-bottom: .25rem; }
+        .audiobook-player .ab-seek { width: 100%; }
+        .audiobook-player .ab-times { display: flex; justify-content: space-between; font-size: .8rem; opacity: .75; }
+        .ab-chapter-list { max-height: 420px; overflow-y: auto; }
+        .ab-chapter { cursor: pointer; background: transparent; color: #f0f0f0; border-color: rgba(255,255,255,.15); }
+        .ab-chapter:hover { background: rgba(255,255,255,.06); }
+        .ab-chapter.active { background: rgba(212,175,55,.18); color: #d4af37; font-weight: 700; }
     </style>
 
     <script type="application/ld+json">
@@ -71,6 +83,19 @@
 
 <body>
 @include('partials.navigation')
+
+@php
+    $audiobookChapters = [
+        ['file' => '00_Copyright.mp3', 'title' => 'Copyright'],
+        ['file' => '01_About_the_Sanskrit_edition.mp3', 'title' => 'About the Sanskrit Edition'],
+        ['file' => '02_Book_I_·_Meditative_absorption_(Samādhi-pāda).mp3', 'title' => 'Book I · Meditative Absorption (Samādhi-pāda)'],
+        ['file' => '03_Book_II_·_Practice_(Sādhana-pāda).mp3', 'title' => 'Book II · Practice (Sādhana-pāda)'],
+        ['file' => '04_Book_III_·_Attainments_(Vibhūti-pāda).mp3', 'title' => 'Book III · Attainments (Vibhūti-pāda)'],
+        ['file' => '05_Book_IV_·_Liberation_(Kaivalya-pāda).mp3', 'title' => 'Book IV · Liberation (Kaivalya-pāda)'],
+        ['file' => '06_Close_reading_of_3_16–3_20.mp3', 'title' => 'Close Reading of Sutras 3.16–3.20'],
+        ['file' => '07_Editions_and_further_reading.mp3', 'title' => 'Editions and Further Reading'],
+    ];
+@endphp
 
 <section class="books-hero">
   <div class="container">
@@ -141,10 +166,175 @@
       <p class="mt-2"><em>The Yoga Sūtras of Patañjali</em> is currently in production and will be available soon in Kindle and paperback. Check back here for updates, or <a href="/contact">get in touch</a> to be notified at release.</p>
     </div>
   </div>
+
+  <div class="row mt-5">
+    <div class="col-12">
+      <h2>Listen to the Audiobook</h2>
+      <p class="mb-4">A full narrated edition of <em>The Yoga Sūtras of Patañjali</em>, in eight chapters. Press play on any chapter to begin.</p>
+
+      <div class="audiobook-player">
+        <audio id="ab-audio" preload="none"></audio>
+
+        <div class="ab-controls">
+          <button type="button" id="ab-prev" class="ab-btn-step" aria-label="Previous chapter">&#9664;&#9664;</button>
+          <button type="button" id="ab-playpause" class="ab-btn-play" aria-label="Play or pause">&#9658;</button>
+          <button type="button" id="ab-next" class="ab-btn-step" aria-label="Next chapter">&#9654;&#9654;</button>
+
+          <div class="flex-grow-1">
+            <div id="ab-now-playing" class="ab-now-playing">Select a chapter to begin</div>
+            <input type="range" id="ab-seek" class="ab-seek form-range" value="0" min="0" max="100" step="0.1" aria-label="Seek">
+            <div class="ab-times">
+              <span id="ab-current-time">0:00</span>
+              <span id="ab-duration">0:00</span>
+            </div>
+          </div>
+        </div>
+
+        <ol class="list-group list-group-numbered ab-chapter-list" id="ab-chapter-list">
+          @foreach ($audiobookChapters as $i => $chapter)
+            <li class="list-group-item ab-chapter"
+                data-src="{{ url('storage/audio/the-yoga-sūtras-of-Patañjali/' . rawurlencode($chapter['file'])) }}"
+                data-file="{{ $chapter['file'] }}"
+                data-title="{{ $chapter['title'] }}"
+                data-index="{{ $i }}"
+                role="button" tabindex="0">
+              {{ $chapter['title'] }}
+            </li>
+          @endforeach
+        </ol>
+      </div>
+    </div>
+  </div>
 </section>
 
 @include('partials.footer')
 
 <script src="{{ url('js/site-enhancements.js') }}"></script>
+<script>
+(function () {
+  var audio = document.getElementById('ab-audio');
+  var playPauseBtn = document.getElementById('ab-playpause');
+  var prevBtn = document.getElementById('ab-prev');
+  var nextBtn = document.getElementById('ab-next');
+  var seek = document.getElementById('ab-seek');
+  var currentTimeEl = document.getElementById('ab-current-time');
+  var durationEl = document.getElementById('ab-duration');
+  var nowPlayingEl = document.getElementById('ab-now-playing');
+  var chapterEls = Array.prototype.slice.call(document.querySelectorAll('.ab-chapter'));
+  var currentIndex = -1;
+  var isSeeking = false;
+  var trackedChapters = {};
+
+  function trackPlay(index) {
+    if (trackedChapters[index]) { return; }
+    trackedChapters[index] = true;
+    var el = chapterEls[index];
+    var params = new URLSearchParams({
+      book: 'the-yoga-sutras-of-patanjali',
+      chapter_file: el.getAttribute('data-file'),
+      chapter_title: el.getAttribute('data-title')
+    });
+    fetch('{{ route("audiobook.trackPlay") }}?' + params.toString(), { keepalive: true }).catch(function () {});
+  }
+
+  function formatTime(seconds) {
+    if (!isFinite(seconds) || seconds < 0) { return '0:00'; }
+    var m = Math.floor(seconds / 60);
+    var s = Math.floor(seconds % 60);
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
+  function setActiveChapter(index) {
+    chapterEls.forEach(function (el, i) {
+      el.classList.toggle('active', i === index);
+    });
+  }
+
+  function loadChapter(index, autoplay) {
+    if (index < 0 || index >= chapterEls.length) { return; }
+    currentIndex = index;
+    var el = chapterEls[index];
+    audio.src = el.getAttribute('data-src');
+    nowPlayingEl.textContent = el.getAttribute('data-title');
+    setActiveChapter(index);
+    seek.value = 0;
+    currentTimeEl.textContent = '0:00';
+    durationEl.textContent = '0:00';
+    if (autoplay) {
+      audio.play();
+    }
+  }
+
+  chapterEls.forEach(function (el, i) {
+    el.addEventListener('click', function () { loadChapter(i, true); });
+    el.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        loadChapter(i, true);
+      }
+    });
+  });
+
+  playPauseBtn.addEventListener('click', function () {
+    if (currentIndex === -1) {
+      loadChapter(0, true);
+      return;
+    }
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
+    }
+  });
+
+  prevBtn.addEventListener('click', function () {
+    if (currentIndex > 0) { loadChapter(currentIndex - 1, true); }
+  });
+
+  nextBtn.addEventListener('click', function () {
+    if (currentIndex < chapterEls.length - 1) { loadChapter(currentIndex + 1, true); }
+  });
+
+  audio.addEventListener('play', function () {
+    playPauseBtn.innerHTML = '&#10073;&#10073;';
+    if (currentIndex !== -1) { trackPlay(currentIndex); }
+  });
+  audio.addEventListener('pause', function () { playPauseBtn.innerHTML = '&#9658;'; });
+
+  audio.addEventListener('loadedmetadata', function () {
+    durationEl.textContent = formatTime(audio.duration);
+  });
+
+  audio.addEventListener('timeupdate', function () {
+    if (isSeeking) { return; }
+    if (audio.duration) {
+      seek.value = (audio.currentTime / audio.duration) * 100;
+    }
+    currentTimeEl.textContent = formatTime(audio.currentTime);
+  });
+
+  seek.addEventListener('input', function () {
+    isSeeking = true;
+    if (audio.duration) {
+      currentTimeEl.textContent = formatTime((seek.value / 100) * audio.duration);
+    }
+  });
+
+  seek.addEventListener('change', function () {
+    if (audio.duration) {
+      audio.currentTime = (seek.value / 100) * audio.duration;
+    }
+    isSeeking = false;
+  });
+
+  audio.addEventListener('ended', function () {
+    if (currentIndex < chapterEls.length - 1) {
+      loadChapter(currentIndex + 1, true);
+    } else {
+      playPauseBtn.innerHTML = '&#9658;';
+    }
+  });
+})();
+</script>
 </body>
 </html>
