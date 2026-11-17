@@ -275,15 +275,16 @@
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – The Yoga Sūtras of Patañjali (Coming Soon) -->
+   <!-- Slide 0 – The Yoga Sūtras of Patañjali (New Release) -->
 <div class="carousel-item mh active" style="background: linear-gradient(135deg, #2a1f0d, #4a3a1a);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
       <h1 class="display-5 fw-bold text-white">The Yoga Sūtras of Patañjali</h1>
       <p class="lead mb-4" style="color:#e8e8e8;">A New English Translation with Practice and Study Notes</p>
       <p class="mb-4" style="color:#cccccc;">All 195 sutras in a new English translation, with romanised Sanskrit, practice notes and study notes, bringing the founding text of classical yoga within reach of every reader.</p>
       <a href="{{ url('/the_yoga_sutras_of_patanjali') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#2a1f0d; font-weight:700;">Discover More</a>
+      <a href="https://www.amazon.com/dp/B0HRTRPC1F" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/The Yoga Sūtras of Patañjali_3d.png') }}" alt="The Yoga Sūtras of Patañjali book cover" class="img-fluid slider-book">
@@ -597,12 +598,12 @@
 
     <section class="container my-5">
 
-    <!-- Row -4: The Yoga Sūtras of Patañjali (Coming Soon) -->
+    <!-- Row -4: The Yoga Sūtras of Patañjali (New Release) -->
     <div class="row text-center align-items-stretch mb-4">
         <div class="col-12 d-flex">
             <a href="/the_yoga_sutras_of_patanjali" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-secondary mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
                     <h2 class="mt-1">The Yoga Sūtras of Patañjali</h2>
                     <img src="{{ url('/images/The Yoga Sūtras of Patañjali_3d.png') }}" alt="The Yoga Sūtras of Patañjali book cover" class="book-cover mb-3">
                     <h3>A New English Translation with Practice and Study Notes</h3>

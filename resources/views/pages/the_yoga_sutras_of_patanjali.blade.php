@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The Yoga Sūtras of Patañjali: a new English translation of all 195 sutras, with romanised Sanskrit, practice notes and study notes, by Maurice Price. Coming soon.">
+    <meta name="description" content="The Yoga Sūtras of Patañjali: a new English translation of all 195 sutras, with romanised Sanskrit, practice notes and study notes, by Maurice Price. Available now in Kindle and paperback.">
 
     <title>The Yoga Sūtras of Patañjali: A New Translation – Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/the_yoga_sutras_of_patanjali" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="The Yoga Sūtras of Patañjali: A New Translation – Maurice Price" />
-    <meta property="og:description" content="A new English translation of all 195 sutras of Patañjali's Yoga Sūtras, with romanised Sanskrit, practice notes and study notes. Coming soon." />
+    <meta property="og:description" content="A new English translation of all 195 sutras of Patañjali's Yoga Sūtras, with romanised Sanskrit, practice notes and study notes. Available now in Kindle and paperback." />
     <meta property="og:image" content="https://mauriceprice.net/images/The%20Yoga%20S%C5%ABtras%20of%20Pata%C3%B1jali_3d.png" />
     <meta property="og:url" content="https://mauriceprice.net/the_yoga_sutras_of_patanjali" />
     <meta property="og:type" content="book" />
@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@MauricePriceNet" />
     <meta name="twitter:title" content="The Yoga Sūtras of Patañjali: A New Translation – Maurice Price" />
-    <meta name="twitter:description" content="All 195 sutras in a new English translation, with romanised Sanskrit, practice notes and study notes. Coming soon." />
+    <meta name="twitter:description" content="All 195 sutras in a new English translation, with romanised Sanskrit, practice notes and study notes. Available now in Kindle and paperback." />
     <meta name="twitter:image" content="https://mauriceprice.net/images/The%20Yoga%20S%C5%ABtras%20of%20Pata%C3%B1jali_3d.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -66,7 +66,9 @@
       "inLanguage": "en",
       "offers": {
         "@type": "Offer",
-        "availability": "https://schema.org/PreOrder"
+        "priceCurrency": "USD",
+        "url": "https://www.amazon.com/dp/B0HRTRPC1F",
+        "availability": "https://schema.org/InStock"
       }
     }
     </script>
@@ -85,6 +87,14 @@
 @include('partials.navigation')
 
 @php
+    if ($cc == 'AU') {
+        $url = 'https://www.amazon.com.au/dp/B0HRTRPC1F';
+    } elseif ($cc == 'GB') {
+        $url = 'https://www.amazon.co.uk/dp/B0HRTRPC1F';
+    } else {
+        $url = 'https://www.amazon.com/dp/B0HRTRPC1F';
+    }
+
     $audiobookChapters = [
         ['file' => '00_Copyright.mp3', 'title' => 'Copyright'],
         ['file' => '01_About_the_Sanskrit_edition.mp3', 'title' => 'About the Sanskrit Edition'],
@@ -99,7 +109,7 @@
 
 <section class="books-hero">
   <div class="container">
-    <div class="eyebrow mb-2">Coming Soon from Maurice Price</div>
+    <div class="eyebrow mb-2">New Release – Available Now in Kindle &amp; Paperback</div>
     <h1 class="display-4">The Yoga Sūtras of Patañjali</h1>
     <h2 class="text-muted">A New English Translation with Romanised Sanskrit, Practice and Study Notes</h2>
   </div>
@@ -114,7 +124,7 @@
       <h2>About the Book</h2>
       <p><em>The Yoga Sūtras of Patañjali</em> is the founding text of classical yoga. In 195 short verses it maps the whole inner journey: how the mind works, why we suffer, how attention can be trained, and what freedom finally means. Its brevity is also its difficulty. Most readers meet a line like "Yoga is the stilling of the activities of the mind" and are left to work out the rest alone.</p>
       <p>This study edition is written to close that gap. Every sutra is given in clear, modern English, followed by its romanised Sanskrit and a short note that either explains the verse or turns it into a practice you can try.</p>
-      <span class="badge bg-secondary mt-3 mb-2">Coming Soon</span>
+      <a href="{{ $url }}" target="_blank" rel="noopener" class="btn btn-primary mt-4">Available on Amazon</a>
     </div>
   </div>
 
@@ -163,7 +173,7 @@
   <div class="row mt-5">
     <div class="col-12">
       <h2>Availability</h2>
-      <p class="mt-2"><em>The Yoga Sūtras of Patañjali</em> is currently in production and will be available soon in Kindle and paperback. Check back here for updates, or <a href="/contact">get in touch</a> to be notified at release.</p>
+      <p class="mt-2"><em>The Yoga Sūtras of Patañjali</em> is available now in Kindle and paperback via Amazon. Availability may vary by region.</p>
     </div>
   </div>
 

@@ -48,7 +48,7 @@
             "author": { "@type": "Person", "name": "Maurice Price" },
             "image": "https://mauriceprice.net/images/The Yoga Sūtras of Patañjali_3d.png",
             "url": "https://mauriceprice.net/the_yoga_sutras_of_patanjali",
-            "description": "A new English translation of all 195 sutras of Patañjali's Yoga Sūtras, with romanised Sanskrit, practice notes and study notes. Coming soon."
+            "description": "A new English translation of all 195 sutras of Patañjali's Yoga Sūtras, with romanised Sanskrit, practice notes and study notes. Available now in Kindle and paperback."
           }
         },
         {
@@ -261,8 +261,9 @@
                 <h4 class="mt-2">The Yoga Sūtras of Patañjali</h4>
                 <p class="small text-muted">A New English Translation with Practice and Study Notes</p>
                 <div class="mt-auto">
-                    <span class="badge bg-secondary mb-2">Coming Soon</span><br>
+                    <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/the_yoga_sutras_of_patanjali" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="https://www.amazon.com/dp/B0HRTRPC1F" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
