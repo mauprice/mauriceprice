@@ -168,6 +168,11 @@ class SiteController extends Controller
         return view('pages.why_i_write_code', compact('cc'));
     }
 
+    public function mySearchForTruth(Request $request){
+        $cc = $this->getCountryCode($request);
+        return view('pages.my_search_for_truth', compact('cc'));
+    }
+
     public function manifestation(Request $request){
         $cc = $this->getCountryCode($request);
         return view('pages.manifestation', compact('cc'));
