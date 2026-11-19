@@ -180,7 +180,8 @@
   <div class="row mt-5">
     <div class="col-12">
       <h2>Listen to the Audiobook</h2>
-      <p class="mb-4">A full narrated edition of <em>The Yoga Sūtras of Patañjali</em>, in eight chapters. Press play on any chapter to begin.</p>
+      <p class="mb-3">A full narrated edition of <em>The Yoga Sūtras of Patañjali</em>, in eight chapters. Press play on any chapter to begin, or listen on Spotify.</p>
+      <p class="mb-4"><a href="https://open.spotify.com/show/4Z5kPNTVwI0Ntm1YbGdsb4" target="_blank" rel="noopener" class="btn btn-sm" style="background:#1DB954; color:#fff; font-weight:600;">Listen on Spotify</a></p>
 
       <div class="audiobook-player">
         <audio id="ab-audio" preload="none"></audio>
