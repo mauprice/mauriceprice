@@ -75,8 +75,9 @@
                     <h3>Register Your Interest</h3>
                     <p>Are you ready to master the energetic laws behind manifestation? Be among the first to access this life-changing workshop, in-person or online.</p>
                     
-                    <form>
+                    <form id="interest-form">
                         @csrf
+                        <x-honeypot />
                         <div class="mb-3">
                             <input type="text" name="name" placeholder="Your Name" required class="form-control">
                         </div>
@@ -162,6 +163,11 @@ $(document).ready(function() {
         const interest_values = [];
         interest.each(function () { interest_values.push($(this).val()); });
 
+        const honeypotData = {};
+        $('#interest-form input[name^="my_name_"], #interest-form input[name="valid_from"]').each(function () {
+            honeypotData[$(this).attr('name')] = $(this).val();
+        });
+
         $.ajaxSetup({
             headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') }
         });
@@ -169,15 +175,15 @@ $(document).ready(function() {
         $.ajax({
             type: "POST",
             url: "/myinterest",
-            data: {
+            data: $.extend({
                 name: name,
                 email: email,
                 interest: interest_values,
                 format_preference: format.val()
-            },
+            }, honeypotData),
             success: function (response) {
                 alert("Thank you! Your interest has been recorded.");
-                $('form')[0].reset();
+                $('#interest-form')[0].reset();
             },
             error: function () {
                 alert("Server error. Please try again later.");

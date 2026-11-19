@@ -68,6 +68,7 @@
         <div class="col-md-8">
             <form action="{{ url('/contact') }}" method="POST">
                 @csrf <!-- Laravel CSRF protection -->
+                <x-honeypot />
                 <div class="mb-3">
                     <label for="name" class="form-label">Your Name</label>
                     <input type="text" id="name" name="name" class="form-control" required>

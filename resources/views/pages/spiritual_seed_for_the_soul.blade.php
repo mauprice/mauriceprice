@@ -44,8 +44,7 @@
         .trust {opacity:.9}
         .footer {border-top: 1px solid rgba(0,0,0,.06)}
         .form-check-input:checked {background-color: var(--brand); border-color: var(--brand);}        
-        .form-control:focus {box-shadow: none; border-color: var(--brand);} 
-        .honeypot {position:absolute; left:-9999px; top:-9999px;}
+        .form-control:focus {box-shadow: none; border-color: var(--brand);}
     </style>
 
     <!-- JSON‑LD: WebPage + Book -->
@@ -158,10 +157,7 @@
             <input type="hidden" name="offer" value="Spiritual Seeds for the Soul" />
 
             <!-- Honeypot -->
-            <div class="honeypot">
-              <label>Leave this field empty</label>
-              <input type="text" name="website" tabindex="-1" autocomplete="off" />
-            </div>
+            <x-honeypot />
 
             <!-- reCAPTCHA -->
             <div class="g-recaptcha mb-3" data-sitekey="6LeeZoIrAAAAAO7I-xRS-ajV4NnB5JdxMOuuHsqZ"></div>

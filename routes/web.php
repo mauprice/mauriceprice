@@ -6,6 +6,7 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\AudiobookController;
+use Spatie\Honeypot\ProtectAgainstSpam;
 
 Route::get('/', function () {
     return view('welcome');
@@ -31,10 +32,10 @@ Route::get('/bpr', [SiteController::class, 'bpr_landing'])->name('bpr_landing');
 Route::get('/bpr-workshop', [SiteController::class, 'bprWorkshop'])->name('bprWorkshop');
 
 //Route::get('/contact', [ContactController::class, 'show']);
-Route::post('/contact', [ContactController::class, 'submit']);
+Route::post('/contact', [ContactController::class, 'submit'])->middleware(ProtectAgainstSpam::class);
 //Route::post('/bpr-submit-interest', [ContactController::class, 'submit']);
 
-Route::post('/myinterest', [ContactController::class, 'myinterest'])->name('myinterest');
+Route::post('/myinterest', [ContactController::class, 'myinterest'])->middleware(ProtectAgainstSpam::class)->name('myinterest');
 
 Route::get('/beyond_death', [SiteController::class, 'beyondDeath'])->name('beyondDeath');
 Route::get('/the_question_that_cannot_be_answered', [SiteController::class, 'theQuestionThatCannotBeAnswered'])->name('theQuestionThatCannotBeAnswered');
@@ -58,7 +59,7 @@ Route::get('/blueprint_of_reality_lp1', [SiteController::class, 'theBlueprintOfR
 Route::get('/the_divergence_lp', [SiteController::class, 'theDivergenceLp1'])->name('theDivergenceLp1');
 Route::get('/the_mind_heals_the_body_lp', [SiteController::class, 'theMindHealsTheBodyLp'])->name('theMindHealsTheBodyLp');
 
-Route::post('/lead/spiritual-seeds', [LeadController::class, 'store']);
+Route::post('/lead/spiritual-seeds', [LeadController::class, 'store'])->middleware(ProtectAgainstSpam::class);
 Route::get('/spiritual-seeds', [SiteController::class, 'spiritualSeeds'])->name('spiritual_seeds');
 
 Route::get('/spiritual_seed_for_the_soul', [SiteController::class, 'spiritual_seed_for_the_soul'])->name('spiritual_seed_for_the_soul');

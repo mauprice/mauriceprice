@@ -19,15 +19,9 @@ class LeadController extends Controller
      */
     public function store(Request $request)
     {
-        // 1. 🍯 Honeypot Check (Spam Prevention)
-        // If the hidden 'website' field is filled, it's likely a bot.
-        if (!empty($request->input('website'))) {
-            Log::warning('Honeypot triggered for email: ' . $request->input('email'));
-            // Redirect gracefully as if successful to avoid signaling the honeypot works.
-            return redirect('/spiritual-seeds#download')->with('success', true);
-        }
+        // Honeypot spam check is handled by the ProtectAgainstSpam middleware on this route.
 
-        // 2. 🛡️ Validation (Includes a basic check for reCAPTCHA response)
+        // 1. 🛡️ Validation (Includes a basic check for reCAPTCHA response)
         $validationRules = [
             'name' => 'required|string|max:255',
             'email' => [
@@ -44,7 +38,7 @@ class LeadController extends Controller
 
         $request->validate($validationRules);
 
-        // 3. 🤖 Google reCAPTCHA Verification (Crucial for live forms)
+        // 2. 🤖 Google reCAPTCHA Verification (Crucial for live forms)
         // Note: Using config('services.nocaptcha.secret') based on your provided code, 
         // ensure this is the correct key in your .env file.
         $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
@@ -62,7 +56,7 @@ class LeadController extends Controller
         
         $lead = null; // Initialize lead variable
         
-        // 4. 💾 Save the Lead to the Database
+        // 3. 💾 Save the Lead to the Database
         try {
             // New entry - create the lead and capture the resulting object
             $lead = Lead::create([
@@ -89,7 +83,7 @@ class LeadController extends Controller
         }
 
 
-        // 5. 📧 Fulfillment (Send Email and Redirect)
+        // 4. 📧 Fulfillment (Send Email and Redirect)
         if ($lead) { 
             // Send the email using the captured or retrieved Lead object
             Mail::to($lead->email)->send(new SpiritualSeedsDownload($lead)); 

@@ -816,6 +816,7 @@
 
                     <form id="workshop-form">
                         @csrf
+                        <x-honeypot />
                         <div class="row g-3 mb-3">
                             <div class="col-md-6">
                                 <input type="text" name="name" id="ws_name" placeholder="Your Full Name" required class="form-control">
@@ -935,18 +936,23 @@ $(document).ready(function () {
         var date_values = [];
         dates.each(function () { date_values.push($(this).val()); });
 
+        var honeypotData = {};
+        $('#workshop-form input[name^="my_name_"], #workshop-form input[name="valid_from"]').each(function () {
+            honeypotData[$(this).attr('name')] = $(this).val();
+        });
+
         $.ajaxSetup({ headers: { 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content') } });
 
         $.ajax({
             type: 'POST',
             url: '/myinterest',
-            data: {
+            data: $.extend({
                 name: name,
                 email: email,
                 interest: interest_values,
                 preferred_dates: date_values,
                 format_preference: format.length ? format.val() : 'not specified'
-            },
+            }, honeypotData),
             success: function () {
                 $('#workshop-form input, #workshop-form button').prop('disabled', true);
                 $('#ws_success').fadeIn();
