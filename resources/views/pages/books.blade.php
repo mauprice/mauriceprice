@@ -1,3 +1,23 @@
+@php
+    $__cc = $cc ?? null;
+    if ($__cc == 'AU') {
+        $amazonDomain = 'amazon.com.au';
+    } elseif ($__cc == 'GB') {
+        $amazonDomain = 'amazon.co.uk';
+    } else {
+        $amazonDomain = 'amazon.com';
+    }
+
+    $amzWomb = "https://www.$amazonDomain/dp/B0HSR6LN4Z";
+    $amzYoga = "https://www.$amazonDomain/dp/B0HRTRPC1F";
+    $amzDeathBed = "https://www.$amazonDomain/dp/B0HQ5VXFS3";
+    $amzBiblicalProcess = "https://www.$amazonDomain/dp/B0HJYWGK9T";
+    $amzBreathSilence = "https://www.$amazonDomain/dp/B0HH2LZ8X8";
+    $amzDidTheProphets = "https://www.$amazonDomain/dp/B0HG7M6VSK";
+    $amzQuestionCannotBeAnswered = "https://www.$amazonDomain/dp/B0HDLNG326";
+    $amzBeyondDeathShort = "https://www.$amazonDomain/dp/B0GZGHPNFS";
+    $amzGodsInfiniteDesign = "https://www.$amazonDomain/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/";
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,7 +127,7 @@
             "name": "God's Infinite Design",
             "author": { "@type": "Person", "name": "Maurice Price" },
             "image": "https://mauriceprice.net/images/gods_infinite_design.jpg",
-            "url": "https://www.amazon.com.au/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/",
+            "url": "{{ $amzGodsInfiniteDesign }}",
             "description": "An exploration of the soul's journey, the simulation of reality, and the refinement process of returning to the Source."
           }
         },
@@ -275,7 +295,7 @@
                 <div class="mt-auto">
                     <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/the_womb_of_creation" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com/dp/B0HSR6LN4Z" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzWomb }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -287,7 +307,7 @@
                 <div class="mt-auto">
                     <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/the_yoga_sutras_of_patanjali" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com/dp/B0HRTRPC1F" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzYoga }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -299,7 +319,7 @@
                 <div class="mt-auto">
                     <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/death_bed_visions" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com.au/dp/B0HQ5VXFS3" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzDeathBed }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -314,7 +334,7 @@
                 <div class="mt-auto">
                     <span class="badge bg-success mb-2">New Release</span><br>
                     <a href="/the_biblical_process_of_manifestation" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com.au/dp/B0HJYWGK9T" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzBiblicalProcess }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -325,7 +345,7 @@
                 <p class="small text-muted">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
                 <div class="mt-auto">
                     <a href="/breath_silence_and_stillness_in_action" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com.au/dp/B0HH2LZ8X8" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzBreathSilence }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -336,7 +356,7 @@
                 <p class="small text-muted">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
                 <div class="mt-auto">
                     <a href="/did_the_prophets_see_this" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com.au/dp/B0HG7M6VSK" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzDidTheProphets }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -360,7 +380,7 @@
                 <p class="small text-muted">Why the Mind Will Never Find Your Purpose</p>
                 <div class="mt-auto">
                     <a href="/the_question_that_cannot_be_answered" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com.au/dp/B0HDLNG326" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzQuestionCannotBeAnswered }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -371,7 +391,7 @@
                 <p class="small text-muted">The Architecture of Immortality</p>
                 <div class="mt-auto">
                     <a href="/beyond_death" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="https://www.amazon.com.au/dp/B0GZGHPNFS" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                    <a href="{{ $amzBeyondDeathShort }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>
@@ -384,7 +404,7 @@
                 <h4 class="mt-2">God's Infinite Design</h4>
                 <p class="small text-muted">The Soul's Journey Through the Simulation of Reality</p>
                 <div class="mt-auto">
-                    <a href="https://www.amazon.com.au/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/" class="btn btn-outline-primary mt-2" target="_blank">Order on Amazon</a>
+                    <a href="{{ $amzGodsInfiniteDesign }}" class="btn btn-outline-primary mt-2" target="_blank">Order on Amazon</a>
                 </div>
             </div>
         </div>

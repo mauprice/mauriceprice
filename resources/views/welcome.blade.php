@@ -1,3 +1,24 @@
+@php
+    $__cc = $cc ?? null;
+    if ($__cc == 'AU') {
+        $amazonDomain = 'amazon.com.au';
+    } elseif ($__cc == 'GB') {
+        $amazonDomain = 'amazon.co.uk';
+    } else {
+        $amazonDomain = 'amazon.com';
+    }
+
+    $amzWomb = "https://www.$amazonDomain/dp/B0HSR6LN4Z";
+    $amzYoga = "https://www.$amazonDomain/dp/B0HRTRPC1F";
+    $amzDeathBed = "https://www.$amazonDomain/dp/B0HQ5VXFS3";
+    $amzBiblicalProcess = "https://www.$amazonDomain/dp/B0HJYWGK9T";
+    $amzBreathSilence = "https://www.$amazonDomain/dp/B0HH2LZ8X8";
+    $amzDidTheProphets = "https://www.$amazonDomain/dp/B0HG7M6VSK";
+    $amzQuestionCannotBeAnswered = "https://www.$amazonDomain/dp/B0HDLNG326";
+    $amzBeyondDeathShort = "https://www.$amazonDomain/dp/B0GZGHPNFS";
+    $amzBeyondDeathLong = "https://www.$amazonDomain/BEYOND-DEATH-ARCHITECTURE-Maurice-Price/dp/B0GZHPWG68";
+    $amzGodsInfiniteDesign = "https://www.$amazonDomain/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/";
+@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -285,7 +306,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">Restoring the Feminine Source of All That Is</p>
       <p class="mb-4" style="color:#cccccc;">Before Marduk, there was Tiamat. Before Zeus, there was Gaia. A history of how the creative mother at the beginning of the world was turned into a monster to be conquered, and a path back to the source.</p>
       <a href="{{ url('/the_womb_of_creation') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#10102a; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com/dp/B0HSR6LN4Z" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzWomb }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/the_womb_of_creation_3d.png') }}" alt="The Womb of Creation book cover" class="img-fluid slider-book">
@@ -302,7 +323,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">A New English Translation with Practice and Study Notes</p>
       <p class="mb-4" style="color:#cccccc;">All 195 sutras in a new English translation, with romanised Sanskrit, practice notes and study notes, bringing the founding text of classical yoga within reach of every reader.</p>
       <a href="{{ url('/the_yoga_sutras_of_patanjali') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#2a1f0d; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com/dp/B0HRTRPC1F" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzYoga }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/The Yoga Sūtras of Patañjali_3d.png') }}" alt="The Yoga Sūtras of Patañjali book cover" class="img-fluid slider-book">
@@ -319,7 +340,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">An Annotated Edition of Sir William Barrett's Classic Work</p>
       <p class="mb-4" style="color:#cccccc;">Does consciousness end with the body? An annotated edition of Sir William Barrett's 1926 classic, bringing together testimony from doctors, nurses and families on deathbed visions, with explanatory notes, illustrations and a new editorial continuation by Maurice Price.</p>
       <a href="{{ url('/death_bed_visions') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#14121a; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com.au/dp/B0HQ5VXFS3" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzDeathBed }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/death_bed_visions_3d.png') }}" alt="Death-Bed Visions book cover" class="img-fluid slider-book">
@@ -336,7 +357,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">Prayer, Faith and the Movement from the Unseen into the Seen</p>
       <p class="mb-4" style="color:#cccccc;">We plant the seed in prayer. Its growth belongs to God. An exploration of nine biblical passages revealing prayer, faith and receiving as one complete spiritual process, a contemplative Christian understanding of manifestation as participation in the creative life of God.</p>
       <a href="{{ url('/the_biblical_process_of_manifestation') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#1b1408; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com.au/dp/B0HJYWGK9T" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzBiblicalProcess }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/biblical_process_of_manifestation_3d.png') }}" alt="The Biblical Process of Manifestation book cover" class="img-fluid slider-book">
@@ -353,7 +374,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
       <p class="mb-4" style="color:#cccccc;">Breath prepares. Silence opens. Stillness acts. A practical, step-by-step guide to three interwoven practices, gathering the body's inner energy, settling the mind into silence, and carrying that stillness into skillful, effective action in daily life.</p>
       <a href="{{ url('/breath_silence_and_stillness_in_action') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0d1b2a; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com.au/dp/B0HH2LZ8X8" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzBreathSilence }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="img-fluid slider-book">
@@ -370,7 +391,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
       <p class="mb-4" style="color:#cccccc;">Ancient visions. Modern machines. A world entering uncertainty. This book places what the prophets saw beside the events converging in our world today, and asks: are they merely coincidences, or are we beginning to see what the ancient prophets saw?</p>
       <a href="{{ url('/did_the_prophets_see_this') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#1a1108; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com.au/dp/B0HG7M6VSK" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzDidTheProphets }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="img-fluid slider-book">
@@ -387,7 +408,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">Why the Mind Will Never Find Your Purpose</p>
       <p class="mb-4" style="color:#cccccc;">What if the search for purpose is built on a mistaken assumption? An invitation to step outside the endless search and discover the life already here.</p>
       <a href="{{ url('/the_question_that_cannot_be_answered') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#12141c; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com.au/dp/B0HDLNG326" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzQuestionCannotBeAnswered }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="img-fluid slider-book">
@@ -404,7 +425,7 @@
       <p class="lead mb-4" style="color:#e8e8e8;">The Architecture of Immortality</p>
       <p class="mb-4" style="color:#cccccc;">What if death is not the end… but a misunderstanding? A bold exploration of consciousness, biology, physics, and ancient wisdom.</p>
       <a href="{{ url('/beyond_death') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0a1a14; font-weight:700;">Discover More</a>
-      <a href="https://www.amazon.com.au/dp/B0GZGHPNFS" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+      <a href="{{ $amzBeyondDeathShort }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/beyond_death_cover.png') }}" alt="Beyond Death: The Architecture of Immortality book cover" class="img-fluid slider-book">
@@ -418,7 +439,7 @@
     <div class="col-md-7">
       <h1 class="display-5 fw-bold text-dark">God's Infinite Design</h1>
       <p class="lead text-dark mb-4">The Soul's Journey Through the Simulation of Reality.</p>
-      <a href="https://www.amazon.com.au/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/" target="_blank" class="btn btn-primary btn-lg">ORDER ON AMAZON</a>
+      <a href="{{ $amzGodsInfiniteDesign }}" target="_blank" class="btn btn-primary btn-lg">ORDER ON AMAZON</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/gods_infinate_design.png') }}" alt="God's Infinite Design Cover" class="img-fluid slider-book">
@@ -737,7 +758,7 @@
     <!-- Row 1: Beyond Death + God's Infinite Design -->
     <div class="row text-center align-items-stretch mb-4">
         <div class="col-12 col-md-6 d-flex">
-            <a href="https://www.amazon.com.au/BEYOND-DEATH-ARCHITECTURE-Maurice-Price/dp/B0GZHPWG68" class="text-decoration-none text-dark w-100">
+            <a href="{{ $amzBeyondDeathLong }}" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
                     <h2 class="mt-3">Beyond Death</h2>
                     <img src="{{ url('/images/beyond_death_cover.png') }}" alt="The Mind Heals the Body book cover" class="book-cover mb-3">
@@ -754,7 +775,7 @@
             </a>
         </div>
         <div class="col-12 col-md-6 d-flex">
-            <a href="https://www.amazon.com.au/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/" target="_blank" class="text-decoration-none text-dark w-100">
+            <a href="{{ $amzGodsInfiniteDesign }}" target="_blank" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
                     <h2 class="mt-3">God's Infinite Design</h2>
                     <img src="{{ url('/images/gods_infinate_design.png') }}" alt="God's Infinite Design book cover" class="book-cover mb-3">
