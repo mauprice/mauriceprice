@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the published works of Maurice Price, including The Yoga Sūtras of Patañjali, Death-Bed Visions, The Biblical Process of Manifestation, Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
+    <meta name="description" content="Explore the published works of Maurice Price, including The Womb of Creation, The Yoga Sūtras of Patañjali, Death-Bed Visions, The Biblical Process of Manifestation, Breath, Silence and Stillness in Action, Did the Prophets See This?, God's Infinite Design, The Mind Heals the Body, Hidden Wisdom, and more, books on spiritual awakening and consciousness.">
 
     <title>Books by Maurice Price – Spiritual Teachings, Awakening, and Mystical Wisdom</title>
     <link rel="canonical" href="https://mauriceprice.net/books" />
@@ -37,11 +37,23 @@
       "@type": "ItemList",
       "name": "Books by Maurice Price",
       "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 16,
+      "numberOfItems": 17,
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
+          "item": {
+            "@type": "Book",
+            "name": "The Womb of Creation",
+            "author": { "@type": "Person", "name": "Maurice Price" },
+            "image": "https://mauriceprice.net/images/the_womb_of_creation_3d.png",
+            "url": "https://mauriceprice.net/the_womb_of_creation",
+            "description": "A history of how the creative mother at the beginning of the world was reversed into a conquered monster, culture by culture, and a path back to the formless source through contemplative practice. Available now in Kindle and paperback."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
           "item": {
             "@type": "Book",
             "name": "The Yoga Sūtras of Patañjali",
@@ -53,7 +65,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 3,
           "item": {
             "@type": "Book",
             "name": "Death-Bed Visions: An Annotated Edition",
@@ -65,7 +77,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 4,
           "item": {
             "@type": "Book",
             "name": "The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose",
@@ -77,7 +89,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 5,
           "item": {
             "@type": "Book",
             "name": "Beyond Death: The Architecture of Immortality",
@@ -89,7 +101,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 6,
           "item": {
             "@type": "Book",
             "name": "God's Infinite Design",
@@ -101,7 +113,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 7,
           "item": {
             "@type": "Book",
             "name": "The Mind Heals the Body",
@@ -113,7 +125,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 8,
           "item": {
             "@type": "Book",
             "name": "Hidden Wisdom",
@@ -125,7 +137,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 9,
           "item": {
             "@type": "Book",
             "name": "A Profound Teaching",
@@ -137,7 +149,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 10,
           "item": {
             "@type": "Book",
             "name": "This Isn't Living",
@@ -149,7 +161,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 11,
           "item": {
             "@type": "Book",
             "name": "The Blueprint of Reality",
@@ -161,7 +173,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 11,
+          "position": 12,
           "item": {
             "@type": "Book",
             "name": "The Divergence",
@@ -173,7 +185,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 12,
+          "position": 13,
           "item": {
             "@type": "Book",
             "name": "Why Christianity Matters",
@@ -185,7 +197,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 13,
+          "position": 14,
           "item": {
             "@type": "Book",
             "name": "Breath, Silence and Stillness in Action: A Practical Guide to Spinal Breathing, Deep Meditation and Samyama",
@@ -197,7 +209,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 14,
+          "position": 15,
           "item": {
             "@type": "Book",
             "name": "Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times",
@@ -209,7 +221,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 15,
+          "position": 16,
           "item": {
             "@type": "Book",
             "name": "Spiritual Seeds for the Soul: Planting the Seeds of Contemplation",
@@ -221,7 +233,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 16,
+          "position": 17,
           "item": {
             "@type": "Book",
             "name": "The Biblical Process of Manifestation: Prayer, Faith and the Movement from the Unseen into the Seen",
@@ -257,6 +269,18 @@
     <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
+                <img src="{{url('/images/the_womb_of_creation_3d.png')}}" alt="The Womb of Creation book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
+                <h4 class="mt-2">The Womb of Creation</h4>
+                <p class="small text-muted">Restoring the Feminine Source of All That Is</p>
+                <div class="mt-auto">
+                    <span class="badge bg-success mb-2">New Release</span><br>
+                    <a href="/the_womb_of_creation" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="https://www.amazon.com/dp/B0HSR6LN4Z" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
                 <img src="{{url('/images/The Yoga Sūtras of Patañjali_3d.png')}}" alt="The Yoga Sūtras of Patañjali book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
                 <h4 class="mt-2">The Yoga Sūtras of Patañjali</h4>
                 <p class="small text-muted">A New English Translation with Practice and Study Notes</p>
@@ -267,7 +291,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
                 <img src="{{url('/images/death_bed_visions_3d.png')}}" alt="Death-Bed Visions book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -280,7 +303,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
                 <img src="{{url('/images/biblical_process_of_manifestation_3d.png')}}" alt="The Biblical Process of Manifestation book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -293,9 +318,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/breath_silence_and_stillness_in_action_3d.png')}}" alt="Breath, Silence and Stillness in Action book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -307,7 +329,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/did_the_prophets_see_this_3d.png')}}" alt="Did the Prophets See This? book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -319,7 +340,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/Spiritual_seeds_for_the_soul_1100.png')}}" alt="Spiritual Seeds for the Soul book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -330,9 +353,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/the_question_that_cannot_be_answered_cover.png')}}" alt="The Question That Cannot Be Answered book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -344,7 +364,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/beyond_death_cover.png')}}" alt="Beyond Death: The Architecture of Immortality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -356,7 +375,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/gods_infinate_design.png')}}" alt="God's Infinite Design book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -367,9 +388,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/the_mind_heals_the_body_3d.png')}}" alt="The Mind Heals the Body book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -380,7 +398,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png')}}" alt="The Blueprint of Reality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -391,7 +408,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/The_divergence_web.png')}}" alt="The Divergence book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -402,9 +421,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/a_profound_teaching_kindle.png')}}" alt="A Profound Teaching book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -415,7 +431,6 @@
                 </div>
             </div>
         </div>
-
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/This_isnt_living_book_covers.jpg')}}" alt="This Isn't Living book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -426,7 +441,9 @@
                 </div>
             </div>
         </div>
+    </div>
 
+    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
                 <img src="{{url('/images/Hidden_wisdom_interpretations_Gospel_of_thomas.jpg')}}" alt="Hidden Wisdom book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -437,9 +454,6 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
         <div class="col-md-4">
             <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
                 <img src="{{url('/images/Why_christianity_matters_600.png')}}" alt="Why Christianity Matters book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
@@ -451,6 +465,7 @@
             </div>
         </div>
     </div>
+
 </section>
 
 @include('partials.footer')

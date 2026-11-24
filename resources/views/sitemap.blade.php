@@ -33,6 +33,13 @@
 
     <!-- Book Pages -->
     <url>
+        <loc>{{ url('/the_womb_of_creation') }}</loc>
+        <lastmod>2026-11-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
         <loc>{{ url('/the_yoga_sutras_of_patanjali') }}</loc>
         <lastmod>2026-11-16</lastmod>
         <changefreq>weekly</changefreq>

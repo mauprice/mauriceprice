@@ -253,7 +253,7 @@
 <!-- Hero Slider Section with Book Covers -->
 <section id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
   <!-- Indicators -->
-  <div class="carousel-indicators">
+    <div class="carousel-indicators">
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -270,13 +270,31 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – The Yoga Sūtras of Patañjali (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #2a1f0d, #4a3a1a);">
+   <!-- Slide 0 – The Womb of Creation (New Release) -->
+<div class="carousel-item mh active" style="background: linear-gradient(135deg, #10102a, #2c2458);">
+  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <div class="col-md-7">
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
+      <h1 class="display-5 fw-bold text-white">The Womb of Creation</h1>
+      <p class="lead mb-4" style="color:#e8e8e8;">Restoring the Feminine Source of All That Is</p>
+      <p class="mb-4" style="color:#cccccc;">Before Marduk, there was Tiamat. Before Zeus, there was Gaia. A history of how the creative mother at the beginning of the world was turned into a monster to be conquered, and a path back to the source.</p>
+      <a href="{{ url('/the_womb_of_creation') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#10102a; font-weight:700;">Discover More</a>
+      <a href="https://www.amazon.com/dp/B0HSR6LN4Z" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/images/the_womb_of_creation_3d.png') }}" alt="The Womb of Creation book cover" class="img-fluid slider-book">
+    </div>
+  </div>
+</div>
+
+   <!-- Slide 1 – The Yoga Sūtras of Patañjali (New Release) -->
+<div class="carousel-item mh" style="background: linear-gradient(135deg, #2a1f0d, #4a3a1a);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
       <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
@@ -597,6 +615,24 @@
     </section>
 
     <section class="container my-5">
+
+    <!-- Row -5: The Womb of Creation (New Release) -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 d-flex">
+            <a href="/the_womb_of_creation" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
+                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
+                    <h2 class="mt-1">The Womb of Creation</h2>
+                    <img src="{{ url('/images/the_womb_of_creation_3d.png') }}" alt="The Womb of Creation book cover" class="book-cover mb-3">
+                    <h3>Restoring the Feminine Source of All That Is</h3>
+                    <p class="mt-2 tj">
+                        Before Marduk, there was Tiamat. Before Zeus, there was Gaia. <em>The Womb of Creation</em> traces how the creative mother at the beginning of the world was absorbed, split in two and slain across six ancient civilisations, and offers a practical path back to the source through contemplative practice.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <!-- Row -4: The Yoga Sūtras of Patañjali (New Release) -->
     <div class="row text-center align-items-stretch mb-4">
