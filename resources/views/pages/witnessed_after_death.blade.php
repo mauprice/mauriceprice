@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Witnessed After Death: an annotated edition of F. W. H. Myers's classic paper on apparitions of the dead and Rose Morton's Record of a Haunted House, with a new introduction and chapter commentary by Maurice Price. Coming soon.">
+    <meta name="description" content="Witnessed After Death: an annotated edition of F. W. H. Myers's classic paper on apparitions of the dead and Rose Morton's Record of a Haunted House, with a new introduction and chapter commentary by Maurice Price. Available now on Amazon.">
 
     <title>Witnessed After Death: Apparitions of the Dead, Attested by Those Who Saw Them – Maurice Price</title>
     <link rel="canonical" href="https://mauriceprice.net/witnessed_after_death/" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Witnessed After Death – Maurice Price" />
-    <meta property="og:description" content="An annotated edition of F. W. H. Myers's classic paper on apparitions of the dead and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost. Coming soon." />
+    <meta property="og:description" content="An annotated edition of F. W. H. Myers's classic paper on apparitions of the dead and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost. Available now on Amazon." />
     <meta property="og:image" content="https://mauriceprice.net/images/witnessed_after_death_cover.png" />
     <meta property="og:url" content="https://mauriceprice.net/witnessed_after_death" />
     <meta property="og:type" content="book" />
@@ -19,7 +19,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@MauricePriceNet" />
     <meta name="twitter:title" content="Witnessed After Death – Maurice Price" />
-    <meta name="twitter:description" content="An annotated edition of F. W. H. Myers's classic paper on apparitions of the dead and the famous Cheltenham ghost case. Coming soon." />
+    <meta name="twitter:description" content="An annotated edition of F. W. H. Myers's classic paper on apparitions of the dead and the famous Cheltenham ghost case. Available now on Amazon." />
     <meta name="twitter:image" content="https://mauriceprice.net/images/witnessed_after_death_cover.png" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -52,11 +52,11 @@
       "image": "https://mauriceprice.net/images/witnessed_after_death_cover.png",
       "publisher": {"@type": "Person", "name": "Maurice Price", "url": "https://mauriceprice.net"},
       "inLanguage": "en",
-      "bookFormat": "https://schema.org/Paperback",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "AUD",
-        "availability": "https://schema.org/PreOrder"
+        "url": "https://www.amazon.com.au/dp/B0HSXMQ72L",
+        "availability": "https://schema.org/InStock"
       }
     }
     </script>
@@ -74,9 +74,19 @@
 <body>
 @include('partials.navigation')
 
+@php
+    if ($cc == 'AU') {
+        $amzUrl = 'https://www.amazon.com.au/dp/B0HSXMQ72L';
+    } elseif ($cc == 'GB') {
+        $amzUrl = 'https://www.amazon.co.uk/dp/B0HSXMQ72L';
+    } else {
+        $amzUrl = 'https://www.amazon.com/dp/B0HSXMQ72L';
+    }
+@endphp
+
 <section class="books-hero">
   <div class="container">
-    <div class="eyebrow mb-2">Coming Soon from Maurice Price</div>
+    <div class="eyebrow mb-2">New Release – Available Now</div>
     <h1 class="display-4">Witnessed After Death</h1>
     <h2 class="text-muted">Apparitions of the Dead, Attested by Those Who Saw Them</h2>
   </div>
@@ -92,8 +102,7 @@
       <p><em>What do the dead know?</em></p>
       <p>In 1892 the Cambridge scholar F. W. H. Myers, the man who coined the word "telepathy," set out to answer that question with evidence: sworn statements, death certificates, newspaper reports and letters from the people who were there. <em>Witnessed After Death</em> brings his classic paper <em>On Indications of Continued Terrene Knowledge on the Part of Phantasms of the Dead</em> back into print, together with Rose Morton's <em>Record of a Haunted House</em>, the famous "Cheltenham ghost," in which some twenty witnesses over seven years saw a tall widow in black pass through threads stretched across a staircase without breaking them.</p>
       <p>This annotated edition presents the 1892 text unchanged and adds a new introduction and a commentary on every chapter by Maurice Price, placing Myers's cases beside later investigations, modern near-death research, and parallels from scripture and the lives of mystics and yogis.</p>
-      <p class="mt-4"><strong>Available soon on Amazon.</strong></p>
-      <span class="btn btn-secondary disabled mt-2" aria-disabled="true">Coming Soon</span>
+      <a href="{{ $amzUrl }}" target="_blank" rel="noopener" class="btn btn-primary mt-4">Available on Amazon</a>
     </div>
   </div>
 
@@ -121,7 +130,7 @@
   <div class="row mt-5">
     <div class="col-12">
       <h2>Availability</h2>
-      <p class="mt-2"><em>Witnessed After Death</em> is currently in development and will be available soon in Kindle and paperback via Amazon. Check back here or watch the announcement on the <a href="/">home page</a> for the release date.</p>
+      <p class="mt-2"><em>Witnessed After Death</em> is available now via Amazon. Availability may vary by region.</p>
     </div>
   </div>
 </section>
