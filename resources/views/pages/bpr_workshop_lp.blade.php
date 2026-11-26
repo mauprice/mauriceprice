@@ -905,7 +905,7 @@
 ═══════════════════════════════════════ -->
 <footer class="site-footer">
     <div class="container">
-        <p class="mb-1">&copy; 2025 Maurice Price &bull; <a href="https://lightofvictoryeverlasting.com/" target="_blank">Light of Victory Everlasting</a></p>
+        <p class="mb-1">&copy; {{ date('Y') }} Maurice Price &bull; <a href="https://lightofvictoryeverlasting.com/" target="_blank">Light of Victory Everlasting</a></p>
         <p class="mb-0">All rights reserved.</p>
     </div>
 </footer>

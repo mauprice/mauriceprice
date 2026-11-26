@@ -110,6 +110,13 @@
     </url>
 
     <url>
+        <loc>{{ url('/gods_infinite_design') }}</loc>
+        <lastmod>2026-11-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
         <loc>{{ url('/why_christianity_matters') }}</loc>
         <lastmod>2026-02-14</lastmod>
         <changefreq>monthly</changefreq>

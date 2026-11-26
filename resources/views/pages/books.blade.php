@@ -142,8 +142,8 @@
             "@type": "Book",
             "name": "God's Infinite Design",
             "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/gods_infinite_design.jpg",
-            "url": "{{ $amzGodsInfiniteDesign }}",
+            "image": "https://mauriceprice.net/images/gods_infinate_design.png",
+            "url": "https://mauriceprice.net/gods_infinite_design",
             "description": "An exploration of the soul's journey, the simulation of reality, and the refinement process of returning to the Source."
           }
         },
@@ -435,7 +435,8 @@
                 <h4 class="mt-2">God's Infinite Design</h4>
                 <p class="small text-muted">The Soul's Journey Through the Simulation of Reality</p>
                 <div class="mt-auto">
-                    <a href="{{ $amzGodsInfiniteDesign }}" class="btn btn-outline-primary mt-2" target="_blank">Order on Amazon</a>
+                    <a href="/gods_infinite_design" class="btn btn-primary mt-2">Learn More</a>
+                    <a href="{{ $amzGodsInfiniteDesign }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
                 </div>
             </div>
         </div>

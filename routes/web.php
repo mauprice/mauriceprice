@@ -8,9 +8,7 @@ use App\Http\Controllers\LeadController;
 use App\Http\Controllers\AudiobookController;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [SiteController::class, 'home'])->name('home.root');
 
 Route::get('/sitemap.xml', [SiteController::class, 'sitemap'])->name('sitemap');
 
@@ -51,6 +49,7 @@ Route::get('/audiobook/track-play', [AudiobookController::class, 'trackPlay'])
     ->name('audiobook.trackPlay');
 Route::get('/hidden_wisdom', [SiteController::class, 'hiddenWisdom'])->name('hiddenWisdom');
 Route::get('/a_profound_teaching', [SiteController::class, 'aProfoundTeaching'])->name('aProfoundTeaching');
+Route::get('/gods_infinite_design', [SiteController::class, 'godsInfiniteDesign'])->name('godsInfiniteDesign');
 Route::get('/why_christianity_matters', [SiteController::class, 'WhyChristianityMatters'])->name('WhyChristianityMatters');
 Route::get('/this_isnt_living', [SiteController::class, 'thisIsntLiving'])->name('thisIsntLiving');
 Route::get('/the_blueprint_of_reality', [SiteController::class, 'theBlueprintOfReality'])->name('theBlueprintOfReality');

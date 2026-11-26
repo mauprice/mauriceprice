@@ -213,7 +213,7 @@
 
 <footer class="footer mt-auto py-3">
     <div class="container text-center">
-        <span class="text-muted">&copy; 2025 Maurice Price. <a href="https://lightofvictoryeverlasting.com/" target="_blank">Light of Victory Everlasting.</a> All rights reserved.</span>
+        <span class="text-muted">&copy; {{ date('Y') }} Maurice Price. <a href="https://lightofvictoryeverlasting.com/" target="_blank">Light of Victory Everlasting.</a> All rights reserved.</span>
     </div>
 </footer>
 

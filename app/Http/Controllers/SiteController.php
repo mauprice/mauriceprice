@@ -60,7 +60,8 @@ class SiteController extends Controller
     public function home(Request $request)
     {
         $cc = $this->getCountryCode($request);
-        return view('welcome', compact('cc'));
+        $testimonials = \App\Models\Testimonial::sourced()->latest()->get();
+        return view('welcome', compact('cc', 'testimonials'));
     }
 
     public function about(Request $request)
@@ -91,6 +92,12 @@ class SiteController extends Controller
     {
         $cc = $this->getCountryCode($request);
         return view('pages.a_profound_teaching', compact('cc'));
+    }
+
+    public function godsInfiniteDesign(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.gods_infinite_design', compact('cc'));
     }
 
     public function WhyChristianityMatters(Request $request)

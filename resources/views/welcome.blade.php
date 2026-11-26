@@ -458,7 +458,8 @@
     <div class="col-md-7">
       <h1 class="display-5 fw-bold text-dark">God's Infinite Design</h1>
       <p class="lead text-dark mb-4">The Soul's Journey Through the Simulation of Reality.</p>
-      <a href="{{ $amzGodsInfiniteDesign }}" target="_blank" class="btn btn-primary btn-lg">ORDER ON AMAZON</a>
+      <a href="{{ url('/gods_infinite_design') }}" class="btn btn-primary btn-lg me-2">Learn More</a>
+      <a href="{{ $amzGodsInfiniteDesign }}" target="_blank" class="btn btn-outline-dark btn-lg">Order on Amazon</a>
     </div>
     <div class="col-md-5 text-center mt-4 mt-md-0">
       <img src="{{ url('/images/gods_infinate_design.png') }}" alt="God's Infinite Design Cover" class="img-fluid slider-book">
@@ -668,7 +669,7 @@
                     <p class="mt-2 tj">
                         <em>What do the dead know?</em> An annotated edition of F. W. H. Myers's classic 1892 paper on apparitions of the dead, and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost, with a new introduction and chapter commentary by Maurice Price.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -686,7 +687,7 @@
                     <p class="mt-2 tj">
                         Before Marduk, there was Tiamat. Before Zeus, there was Gaia. <em>The Womb of Creation</em> traces how the creative mother at the beginning of the world was absorbed, split in two and slain across six ancient civilisations, and offers a practical path back to the source through contemplative practice.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -700,7 +701,7 @@
                     <p class="mt-2 tj">
                         <em>The Yoga Sūtras of Patañjali</em> is the founding text of classical yoga. This study edition gives all 195 sutras in clear, modern English, each followed by its romanised Sanskrit and a short note that explains the verse or turns it into a practice you can try.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -718,7 +719,7 @@
                     <p class="mt-2 tj">
                         <em>Does consciousness end with the body?</em> At the bedside of the dying, witnesses have reported encounters with deceased loved ones, distant relatives and music with no apparent source. This annotated edition of Sir William Barrett's 1926 classic brings together testimony from doctors, nurses and families, with explanatory notes, illustrations and a new editorial continuation by Maurice Price.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -735,7 +736,7 @@
                     <p class="mt-2 tj">
                         A contemplative Christian understanding of manifestation as participation in the creative life of God. We plant the seed in prayer. Its growth belongs to God.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -752,7 +753,7 @@
                     <p class="mt-2 tj">
                         <em>What if the deepest transformation begins not with more effort, but with less?</em> A practical guide to three interwoven practices: Spinal Breathing to gather the body's inner energy, Deep Meditation to settle the mind into silence, and Samyama to carry that stillness into skillful, effective action.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -765,7 +766,7 @@
                     <p class="mt-2 tj">
                         <em>Is this what the ancient prophets saw in their visions of the end times?</em> This book places prophetic visions beside the events converging in our world today: war, energy scarcity, fertiliser shortages, famine, disease and technological control.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -778,7 +779,7 @@
                     <p class="mt-2 tj">
                         <em>What if the question "What is my purpose?" cannot be answered</em>, not because the answer is hidden, but because the question begins with a mistaken assumption? An invitation to step outside the endless search and discover the life already here.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -793,18 +794,18 @@
                     <img src="{{ url('/images/beyond_death_cover.png') }}" alt="The Mind Heals the Body book cover" class="book-cover mb-3">
                     <h3>The Architecture of Immortality</h3>
                     <p class="mt-2 tj">
-                        <em>What if death is not the end…</em> but a misunderstanding? Maurice Price takes you on a bold and thought-provoking journey into the nature of human existence, blending insights from consciousness, biology, physics, and ancient spiritual traditions.is a clear and compassionate guide to the mind–body connection and the hidden mechanics of healing. It reveals how belief, attention, and intention shape biology, moving you from chasing symptoms to true restoration.
+                        <em>What if death is not the end…</em> but a misunderstanding? Maurice Price takes you on a bold and thought-provoking journey into the nature of human existence, blending insights from consciousness, biology, physics, and ancient spiritual traditions.
                     </p>
                     <p class="mt-2 tj">
                          This work challenges the deeply rooted belief that mortality is a fixed and unavoidable law and explores the radical possibility that what we call death may be the result of a deeper disconnect, an interruption in the natural continuity of awareness.
                     </p>
                     
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
         <div class="col-12 col-md-6 d-flex">
-            <a href="{{ $amzGodsInfiniteDesign }}" target="_blank" class="text-decoration-none text-dark w-100">
+            <a href="/gods_infinite_design" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
                     <h2 class="mt-3">God's Infinite Design</h2>
                     <img src="{{ url('/images/gods_infinate_design.png') }}" alt="God's Infinite Design book cover" class="book-cover mb-3">
@@ -815,7 +816,7 @@
                     <p class="tj">
                         <em>God's Infinite Design</em> bridges the gap between the seeker and the Source, offering a final recognition that the veil of the "other" is but a mirror's lie. It is a call to look into the eyes of the stranger and see the Player behind the mask.
                     </p>
-                    <div class="btn btn-primary mt-auto">Order on Amazon</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -838,7 +839,7 @@
                     <p class="mt-2 tj">
                         Whether facing illness, supporting others, or seeking deeper understanding, this book offers practical tools and timeless truths to help you step into wholeness and live as evidence that <strong>consciousness heals, and God's power flows through you.</strong>
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -852,12 +853,12 @@
                         A sacred manual for manifesting your desired future through the hidden science of reality. This book invites you beyond surface-level teachings to discover how reality truly functions beneath the veil, where energy, intention, and consciousness converge.
                     </p>
                     <p class="tj">
-                        Drawing from both quantum principles and spiritual insight, *The Blueprint of Reality* reveals how your thoughts are not passive: they are creative forces. Learn to align your internal state with your desired outcome, activate the frequency of your future, and live as the embodied expression of your vision.
+                        Drawing from both quantum principles and spiritual insight, <em>The Blueprint of Reality</em> reveals how your thoughts are not passive: they are creative forces. Learn to align your internal state with your desired outcome, activate the frequency of your future, and live as the embodied expression of your vision.
                     </p>
                     <p class="tj">
                         Whether you're just awakening to your creative potential or deepening your existing practice, this book offers a powerful framework for conscious creation. It's not about wishful thinking: it's about becoming the architect of your own life through alignment, coherence, and the sacred science of manifestation.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -876,7 +877,7 @@
                     </p>
                     <p class="mt-2 tj">As (AI) artificial intelligence accelerates and begins to mirror human thought, it tempts us toward a synthetic existence, one that leaves us empty, hollowed out, with only the shell remaining. This book is a call to remember what cannot be replicated: the soul, the sacred, and the real.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -886,7 +887,7 @@
                     <h2 class="mt-3">A Profound Teaching</h2>
                     <img src="{{url('/images/a_profound_teaching_kindle.png')}}" alt="A Profound Teaching Book Cover" class="book-cover mb-3">
                     <p class="mt-2 tj">
-                        Blending ancient wisdom, quantum theory, and lived spiritual experience, *A Profound Teaching* is a powerful invitation to transcend the illusions of identity, death, and separation, and step into the timeless truth of who you really are.
+                        Blending ancient wisdom, quantum theory, and lived spiritual experience, <em>A Profound Teaching</em> is a powerful invitation to transcend the illusions of identity, death, and separation, and step into the timeless truth of who you really are.
                     </p>
                     <p class="tj">
                         Through clear insight and gentle guidance, Maurice Price opens the reader to a direct encounter with the eternal self: the aspect of you untouched by birth or decay. This book is not just read, it is experienced. It serves as a bridge between form and formlessness, intellect and intuition, science and soul.
@@ -894,7 +895,7 @@
                     <p class="tj">
                         For the seeker, the mystic, and the awakening soul, this is a call to return to what has never left. More than a philosophy, it is a living transmission of peace, stillness, and sacred remembrance.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -917,7 +918,7 @@
                     <p class="mt-2 tj">
                         Maurice Price exposes the quiet suffering beneath our routines, and shows how to rediscover peace, purpose, and the courage to live as your true self.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -931,12 +932,12 @@
                         A mystical exploration of one of the most enigmatic early Christian texts, this book unpacks the Gospel of Thomas with fresh insight. Maurice Price offers a contemplative journey beyond doctrine, revealing the hidden teachings of Jesus that point directly to awakening and divine union.
                     </p>
                     <p class="tj">
-                        In *Hidden Wisdom*, ancient sayings once shrouded in mystery are brought to life through a lens of spiritual clarity and experiential insight. Rather than analyzing from the outside, the book invites the reader inward, to contemplate each verse as a doorway to presence, inner stillness, and the sacred remembrance of who and what we truly are.
+                        In <em>Hidden Wisdom</em>, ancient sayings once shrouded in mystery are brought to life through a lens of spiritual clarity and experiential insight. Rather than analyzing from the outside, the book invites the reader inward, to contemplate each verse as a doorway to presence, inner stillness, and the sacred remembrance of who and what we truly are.
                     </p>
                     <p class="tj">
                         This is not a scholarly critique, but a spiritual transmission. Ideal for mystics, seekers, and contemplatives, it offers a mapless invitation to go beyond the surface and enter the silence behind the words: a silence where truth is known, not taught.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -957,9 +958,9 @@
                         In this powerful exploration, Maurice Price bridges ancient Scripture with contemporary understanding. Each page uncovers how humanity's journey mirrors the journey of the soul: from separation to reunion, from darkness to light, from death to resurrection.
                     </p>
                     <p class="tj">
-                        A book for seekers, believers, and the questioning alike, *Why Christianity Matters* restores faith as a living experience of truth, not tradition. It's an invitation to rediscover the beauty, coherence, and transformative love that flow through the entire biblical story.
+                        A book for seekers, believers, and the questioning alike, <em>Why Christianity Matters</em> restores faith as a living experience of truth, not tradition. It's an invitation to rediscover the beauty, coherence, and transformative love that flow through the entire biblical story.
                     </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -972,13 +973,8 @@
                     <p class="mt-2 tj">
                         <em>Spiritual Seeds for the Soul</em> invites readers to cultivate a deeper inner life through contemplation and prayer. It offers practical guidance for nurturing the soul's growth in a fast-paced world.
                     </p>
-                    <p class="tj">
-                        In this powerful exploration, Maurice Price bridges ancient Scripture with contemporary understanding. Each page uncovers how humanity's journey mirrors the journey of the soul: from separation to reunion, from darkness to light, from death to resurrection.
-                    </p>
-                    <p class="tj">
-                        A book for seekers, believers, and the questioning alike, *Why Christianity Matters* restores faith as a living experience of truth, not tradition. It's an invitation to rediscover the beauty, coherence, and transformative love that flow through the entire biblical story.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                    {{-- TODO(Maurice): supply full description. The previous two paragraphs here were copy-pasted from "Why Christianity Matters" and have been removed. --}}
+                    <div class="btn btn-primary mt-auto">Learn More</div>
                 </div>
             </a>
         </div>
@@ -986,58 +982,38 @@
 
     </section>
 
+    @if ($testimonials->isNotEmpty())
     <section class="bg-light py-5">
         <div class="container">
             <h2 class="text-center mb-4">What Readers Are Saying</h2>
             <div class="row text-center">
+                @foreach ($testimonials as $testimonial)
                 <div class="col-md-4 mb-4">
                     <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
                         <blockquote class="blockquote mb-0">
-                            <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"A Profound Teaching stirred something ancient in me, a remembering."</p>
-                            <footer class="blockquote-footer mt-3" style="color: #1a252f; font-weight: 600; font-size: 1rem;">Emily R.</footer>
+                            <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"{{ $testimonial->quote }}"</p>
+                            <footer class="blockquote-footer mt-3" style="color: #1a252f; font-weight: 600; font-size: 1rem;">
+                                <a href="{{ $testimonial->source_url }}" target="_blank" rel="noopener">{{ $testimonial->name }}</a>
+                            </footer>
                         </blockquote>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
-                        <blockquote class="blockquote mb-0">
-                            <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"This Isn't Living put into words what I've silently felt for years. Life-changing."</p>
-                            <footer class="blockquote-footer mt-3" style="color: #1a252f; font-weight: 600; font-size: 1rem;">Jason T.</footer>
-                        </blockquote>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
-                        <blockquote class="blockquote mb-0">
-                            <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"Hidden Wisdom reads like a quiet conversation with the eternal. Stunning."</p>
-                            <footer class="blockquote-footer mt-3" style="color: #1a252f; font-weight: 600; font-size: 1rem;">Ava M.</footer>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="https://www.goodreads.com/book/show/235696591-the-blueprint-of-reality?ac=1&from_search=true&qid=zvtQd5d4vA&rank=3" target="_blank" class="btn btn-primary">Read More Reviews on Goodreads</a>
+                @endforeach
             </div>
         </div>
     </section>
+    @endif
 
     
 
     <section class="bg-light py-5">
         <div class="container text-center">
-            <h2>Ready to Get Started?</h2>
-            <p class="lead">Contact us today to learn more about how we can help you.</p>
-            <a href="/contact" class="btn btn-primary btn-lg">Contact Us</a>
+            <h2>Stay in Touch</h2>
+            <p class="lead">Questions, invitations to speak, or just want to say hello?</p>
+            <a href="/contact" class="btn btn-primary btn-lg">Get in Touch</a>
         </div>
     </section>
 
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-            <span class="text-muted">&copy; 2025 Maurice Price. <a href="https://lightofvictoryeverlasting.com/" target="_blank">Light of Victory Everlasting.</a> All rights reserved.</span>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    @include('partials.footer')
 </body>
 </html>
