@@ -292,13 +292,30 @@
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
     <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="17" aria-label="Slide 18"></button>
   </div>
 
   <!-- Slides -->
   <div class="carousel-inner">
 
-   <!-- Slide 0 – The Womb of Creation (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #10102a, #2c2458);">
+   <!-- Slide 0 – Witnessed After Death (Coming Soon) -->
+<div class="carousel-item mh active" style="background: linear-gradient(135deg, #0d1b14, #1a3024);">
+  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
+    <div class="col-md-7">
+      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Coming Soon</h6>
+      <h1 class="display-5 fw-bold text-white">Witnessed After Death</h1>
+      <p class="lead mb-4" style="color:#e8e8e8;">Apparitions of the Dead, Attested by Those Who Saw Them</p>
+      <p class="mb-4" style="color:#cccccc;">What do the dead know? An annotated edition of F. W. H. Myers's classic 1892 paper on apparitions of the dead, and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost, with a new introduction and chapter commentary by Maurice Price.</p>
+      <a href="{{ url('/witnessed_after_death') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0d1b14; font-weight:700;">Discover More</a>
+    </div>
+    <div class="col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/images/witnessed_after_death_3d.png') }}" alt="Witnessed After Death book cover" class="img-fluid slider-book">
+    </div>
+  </div>
+</div>
+
+   <!-- Slide 1 – The Womb of Creation (New Release) -->
+<div class="carousel-item mh" style="background: linear-gradient(135deg, #10102a, #2c2458);">
   <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
     <div class="col-md-7">
       <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
@@ -636,6 +653,24 @@
     </section>
 
     <section class="container my-5">
+
+    <!-- Row -6: Witnessed After Death (Coming Soon) -->
+    <div class="row text-center align-items-stretch mb-4">
+        <div class="col-12 d-flex">
+            <a href="/witnessed_after_death" class="text-decoration-none text-dark w-100">
+                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
+                    <span class="badge bg-warning text-dark mb-2 mx-auto" style="width:fit-content;">Coming Soon</span>
+                    <h2 class="mt-1">Witnessed After Death</h2>
+                    <img src="{{ url('/images/witnessed_after_death_3d.png') }}" alt="Witnessed After Death book cover" class="book-cover mb-3">
+                    <h3>Apparitions of the Dead, Attested by Those Who Saw Them</h3>
+                    <p class="mt-2 tj">
+                        <em>What do the dead know?</em> An annotated edition of F. W. H. Myers's classic 1892 paper on apparitions of the dead, and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost, with a new introduction and chapter commentary by Maurice Price.
+                    </p>
+                    <div class="btn btn-primary mt-auto">Learn More...</div>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <!-- Row -5: The Womb of Creation (New Release) -->
     <div class="row text-center align-items-stretch mb-4">

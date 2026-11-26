@@ -231,6 +231,12 @@ class SiteController extends Controller
         return view('pages.the_womb_of_creation', compact('cc'));
     }
 
+    public function witnessedAfterDeath(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.witnessed_after_death', compact('cc'));
+    }
+
     public function bpr_landing(Request $request){
         $cc = $this->getCountryCode($request);
         return view('pages.bpr_landing', compact('cc'));
