@@ -672,9 +672,9 @@
         </div>
     </div>
 
-    <!-- Row -5: The Womb of Creation (New Release) -->
+    <!-- Row -5: The Womb of Creation + The Yoga Sūtras of Patañjali (New Releases) -->
     <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 d-flex">
+        <div class="col-12 col-md-6 d-flex">
             <a href="/the_womb_of_creation" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
                     <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
@@ -688,11 +688,7 @@
                 </div>
             </a>
         </div>
-    </div>
-
-    <!-- Row -4: The Yoga Sūtras of Patañjali (New Release) -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 d-flex">
+        <div class="col-12 col-md-6 d-flex">
             <a href="/the_yoga_sutras_of_patanjali" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
                     <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
@@ -708,9 +704,9 @@
         </div>
     </div>
 
-    <!-- Row -3: Death-Bed Visions (New Release) -->
+    <!-- Row -3: Death-Bed Visions + The Biblical Process of Manifestation (New Releases) -->
     <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 d-flex">
+        <div class="col-12 col-md-6 d-flex">
             <a href="/death_bed_visions" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
                     <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
@@ -724,11 +720,7 @@
                 </div>
             </a>
         </div>
-    </div>
-
-    <!-- Row -2: The Biblical Process of Manifestation (New Release) -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 d-flex">
+        <div class="col-12 col-md-6 d-flex">
             <a href="/the_biblical_process_of_manifestation" class="text-decoration-none text-dark w-100">
                 <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
                     <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
