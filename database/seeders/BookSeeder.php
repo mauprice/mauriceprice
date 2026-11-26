@@ -1,0 +1,247 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Book;
+use Illuminate\Database\Seeder;
+
+class BookSeeder extends Seeder
+{
+    /**
+     * Backfills the `books` table from what was previously hand-duplicated
+     * HTML on the homepage and the /books page. published_at dates come
+     * from each book page's git creation date, except gods_infinite_design
+     * (predates the rest of the catalogue but never had its own git
+     * history until this redesign) and spiritual_seed_for_the_soul (a free
+     * lead-magnet, not an Amazon title, so amazon_path stays null).
+     *
+     * theme assignments are seeded from the redesign brief and flagged in
+     * config/themes.php for Maurice to confirm.
+     */
+    public function run(): void
+    {
+        $books = [
+            [
+                'slug' => 'witnessed_after_death',
+                'title' => 'Witnessed After Death',
+                'subtitle' => 'Apparitions of the Dead, Attested by Those Who Saw Them',
+                'tagline' => 'What do the dead know? The classic 1892 investigation into apparitions of the dead, annotated.',
+                'cover_image' => 'images/witnessed_after_death_3d.png',
+                'url' => '/witnessed_after_death',
+                'amazon_path' => '/dp/B0HSXMQ72L',
+                'theme' => 'consciousness-death-afterlife',
+                'type' => 'annotated_edition',
+                'featured_at' => '2026-11-26 16:04:37',
+                'published_at' => '2026-11-26 16:04:37',
+            ],
+            [
+                'slug' => 'the_womb_of_creation',
+                'title' => 'The Womb of Creation',
+                'subtitle' => 'Restoring the Feminine Source of All That Is',
+                'tagline' => 'Before Marduk, there was Tiamat. Before Zeus, there was Gaia.',
+                'cover_image' => 'images/the_womb_of_creation_3d.png',
+                'url' => '/the_womb_of_creation',
+                'amazon_path' => '/dp/B0HSR6LN4Z',
+                'theme' => 'modern-world-awakening',
+                'type' => 'original',
+                'published_at' => '2026-11-24 18:34:01',
+            ],
+            [
+                'slug' => 'the_yoga_sutras_of_patanjali',
+                'title' => 'The Yoga Sūtras of Patañjali',
+                'subtitle' => 'A New English Translation with Practice and Study Notes',
+                'tagline' => 'All 195 sutras in a new English translation, with practice and study notes.',
+                'cover_image' => 'images/The Yoga Sūtras of Patañjali_3d.png',
+                'url' => '/the_yoga_sutras_of_patanjali',
+                'amazon_path' => '/dp/B0HRTRPC1F',
+                'theme' => 'meditation-practice',
+                'type' => 'translation',
+                'published_at' => '2026-11-16 18:28:09',
+            ],
+            [
+                'slug' => 'death_bed_visions',
+                'title' => 'Death-Bed Visions',
+                'subtitle' => "An Annotated Edition of Sir William Barrett's Classic Work",
+                'tagline' => 'Does consciousness end with the body? Testimony from doctors, nurses and families.',
+                'cover_image' => 'images/death_bed_visions_3d.png',
+                'url' => '/death_bed_visions',
+                'amazon_path' => '/dp/B0HQ5VXFS3',
+                'theme' => 'consciousness-death-afterlife',
+                'type' => 'annotated_edition',
+                'published_at' => '2026-11-03 09:51:33',
+            ],
+            [
+                'slug' => 'the_biblical_process_of_manifestation',
+                'title' => 'The Biblical Process of Manifestation',
+                'subtitle' => 'Prayer, Faith and the Movement from the Unseen into the Seen',
+                'tagline' => 'We plant the seed in prayer. Its growth belongs to God.',
+                'cover_image' => 'images/biblical_process_of_manifestation_3d.png',
+                'url' => '/the_biblical_process_of_manifestation',
+                'amazon_path' => '/dp/B0HJYWGK9T',
+                'theme' => 'christian-mysticism',
+                'type' => 'original',
+                'published_at' => '2026-09-16 17:28:45',
+            ],
+            [
+                'slug' => 'breath_silence_and_stillness_in_action',
+                'title' => 'Breath, Silence and Stillness in Action',
+                'subtitle' => 'A Practical Guide to Spinal Breathing, Deep Meditation and Samyama',
+                'tagline' => 'Breath prepares. Silence opens. Stillness acts.',
+                'cover_image' => 'images/breath_silence_and_stillness_in_action_3d.png',
+                'url' => '/breath_silence_and_stillness_in_action',
+                'amazon_path' => '/dp/B0HH2LZ8X8',
+                'theme' => 'meditation-practice',
+                'type' => 'original',
+                'published_at' => '2026-08-29 12:44:10',
+            ],
+            [
+                'slug' => 'did_the_prophets_see_this',
+                'title' => 'Did the Prophets See This?',
+                'subtitle' => 'War, Famine, Earthquakes, AI and the Unfolding End Times',
+                'tagline' => 'Ancient visions. Modern machines. A world entering uncertainty.',
+                'cover_image' => 'images/did_the_prophets_see_this_3d.png',
+                'url' => '/did_the_prophets_see_this',
+                'amazon_path' => '/dp/B0HG7M6VSK',
+                'theme' => 'christian-mysticism',
+                'type' => 'original',
+                'published_at' => '2026-08-23 14:07:51',
+            ],
+            [
+                'slug' => 'the_question_that_cannot_be_answered',
+                'title' => 'The Question That Cannot Be Answered',
+                'subtitle' => 'Why the Mind Will Never Find Your Purpose',
+                'tagline' => 'What if the search for purpose is built on a mistaken assumption?',
+                'cover_image' => 'images/the_question_that_cannot_be_answered_cover.png',
+                'url' => '/the_question_that_cannot_be_answered',
+                'amazon_path' => '/dp/B0HDLNG326',
+                'theme' => 'meditation-practice',
+                'type' => 'original',
+                'published_at' => '2026-08-12 09:09:50',
+            ],
+            [
+                'slug' => 'a_profound_teaching',
+                'title' => 'A Profound Teaching',
+                'subtitle' => 'The Journey to Realizing the Eternal Self',
+                'tagline' => 'Transcend the illusions of identity, death, and separation.',
+                'cover_image' => 'images/a_profound_teaching_front_cover.png',
+                'url' => '/a_profound_teaching',
+                'amazon_path' => '/dp/B0F6C4NT15',
+                'theme' => 'consciousness-death-afterlife',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'beyond_death',
+                'title' => 'Beyond Death',
+                'subtitle' => 'The Architecture of Immortality',
+                'tagline' => "What if death is not the end, but a misunderstanding?",
+                'cover_image' => 'images/beyond_death_cover.png',
+                'url' => '/beyond_death',
+                'amazon_path' => '/dp/B0GZGHPNFS',
+                'theme' => 'consciousness-death-afterlife',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'hidden_wisdom',
+                'title' => 'Hidden Wisdom',
+                'subtitle' => 'Interpretations of the Gospel of Thomas',
+                'tagline' => 'A contemplative journey into one of Christianity\'s most mysterious texts.',
+                'cover_image' => 'images/Hidden_wisdom_interpretations_Gospel_of_thomas.jpg',
+                'url' => '/hidden_wisdom',
+                'amazon_path' => '/dp/B0F42NCQF8',
+                'theme' => 'christian-mysticism',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'spiritual_seed_for_the_soul',
+                'title' => 'Spiritual Seeds for the Soul',
+                'subtitle' => 'Planting the Seeds of Contemplation',
+                'tagline' => 'A free guide to nurturing the soul\'s growth in a fast-paced world.',
+                'cover_image' => 'images/Spiritual_seeds_for_the_soul_1100.png',
+                'url' => '/spiritual_seed_for_the_soul',
+                'amazon_path' => null,
+                'theme' => 'christian-mysticism',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'the_blueprint_of_reality',
+                'title' => 'The Blueprint of Reality',
+                'subtitle' => 'The Hidden Mechanics of Manifestation',
+                'tagline' => 'Your thoughts are not passive: they are creative forces.',
+                'cover_image' => 'images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png',
+                'url' => '/the_blueprint_of_reality',
+                'amazon_path' => '/dp/B0FBRNJW9B',
+                'theme' => 'manifestation-healing',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'the_divergence',
+                'title' => 'The Divergence',
+                'subtitle' => 'Awakening in the Age of Illusion',
+                'tagline' => 'A prophetic exploration of humanity\'s split between illusion and truth.',
+                'cover_image' => 'images/The_divergence_web.png',
+                'url' => '/the_divergence',
+                'amazon_path' => '/dp/B0FHC3H7GN',
+                'theme' => 'modern-world-awakening',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'the_mind_heals_the_body',
+                'title' => 'The Mind Heals the Body',
+                'subtitle' => 'Awaken the Healing Power Within',
+                'tagline' => 'How belief, attention, and intention shape biology.',
+                'cover_image' => 'images/the_mind_heals_the_body_3d.png',
+                'url' => '/the_mind_heals_the_body_lp',
+                'amazon_path' => '/dp/B0FMFDXZ6K',
+                'theme' => 'manifestation-healing',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'this_isnt_living',
+                'title' => "This Isn't Living",
+                'subtitle' => "Wake Up Before It's Too Late",
+                'tagline' => 'A heartfelt call to break free from the illusions of modern life.',
+                'cover_image' => 'images/This_isnt_living_book_covers.jpg',
+                'url' => '/this_isnt_living',
+                'amazon_path' => '/dp/B0F9L37D7X',
+                'theme' => 'modern-world-awakening',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'why_christianity_matters',
+                'title' => 'Why Christianity Matters',
+                'subtitle' => 'The Transformative Story from Genesis to Christ',
+                'tagline' => "The timeless arc of God's plan, from creation to redemption.",
+                'cover_image' => 'images/Why_christianity_matters_600.png',
+                'url' => '/why_christianity_matters',
+                'amazon_path' => '/dp/B0FXBK33HS',
+                'theme' => 'christian-mysticism',
+                'type' => 'original',
+                'published_at' => '2026-08-12 08:12:29',
+            ],
+            [
+                'slug' => 'gods_infinite_design',
+                'title' => "God's Infinite Design",
+                'subtitle' => "The Soul's Journey Through the Simulation of Reality",
+                'tagline' => 'The Game was God, and we were Him.',
+                'cover_image' => 'images/gods_infinate_design.png',
+                'url' => '/gods_infinite_design',
+                'amazon_path' => '/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/',
+                'theme' => 'manifestation-healing',
+                'type' => 'original',
+                'published_at' => '2026-07-01 00:00:00',
+            ],
+        ];
+
+        foreach ($books as $book) {
+            Book::query()->updateOrCreate(['slug' => $book['slug']], $book);
+        }
+    }
+}

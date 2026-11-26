@@ -1,25 +1,3 @@
-@php
-    $__cc = $cc ?? null;
-    if ($__cc == 'AU') {
-        $amazonDomain = 'amazon.com.au';
-    } elseif ($__cc == 'GB') {
-        $amazonDomain = 'amazon.co.uk';
-    } else {
-        $amazonDomain = 'amazon.com';
-    }
-
-    $amzWitnessedAfterDeath = "https://www.$amazonDomain/dp/B0HSXMQ72L";
-    $amzWomb = "https://www.$amazonDomain/dp/B0HSR6LN4Z";
-    $amzYoga = "https://www.$amazonDomain/dp/B0HRTRPC1F";
-    $amzDeathBed = "https://www.$amazonDomain/dp/B0HQ5VXFS3";
-    $amzBiblicalProcess = "https://www.$amazonDomain/dp/B0HJYWGK9T";
-    $amzBreathSilence = "https://www.$amazonDomain/dp/B0HH2LZ8X8";
-    $amzDidTheProphets = "https://www.$amazonDomain/dp/B0HG7M6VSK";
-    $amzQuestionCannotBeAnswered = "https://www.$amazonDomain/dp/B0HDLNG326";
-    $amzBeyondDeathShort = "https://www.$amazonDomain/dp/B0GZGHPNFS";
-    $amzBeyondDeathLong = "https://www.$amazonDomain/BEYOND-DEATH-ARCHITECTURE-Maurice-Price/dp/B0GZHPWG68";
-    $amzGodsInfiniteDesign = "https://www.$amazonDomain/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/";
-@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +9,7 @@
     <meta property="og:title" content="Maurice Price – Spiritual Author" />
     <meta property="og:site_name" content="Maurice Price" />
     <meta property="og:description" content="Discover books and teachings to help you awaken, heal, and remember your eternal self." />
-    <meta property="og:image" content="https://mauriceprice.net/images/hero.jpg" />
+    <meta property="og:image" content="{{ url('/' . $featuredBook->cover_image) }}" />
     <meta property="og:url" content="https://mauriceprice.net/" />
     <meta property="og:type" content="website" />
 
@@ -40,7 +18,7 @@
     <meta name="twitter:site" content="@MauricePriceNet" />
     <meta name="twitter:title" content="Maurice Price – Spiritual Author" />
     <meta name="twitter:description" content="Books and teachings to guide you back to the truth within." />
-    <meta name="twitter:image" content="https://mauriceprice.net/images/hero.jpg" />
+    <meta name="twitter:image" content="{{ url('/' . $featuredBook->cover_image) }}" />
 
     <script type="application/ld+json">
     {
@@ -63,17 +41,16 @@
     {
       "@context": "https://schema.org",
       "@type": "Book",
-      "name": "The Mind Heals the Body",
+      "name": {!! json_encode($featuredBook->title) !!},
       "author": {
         "@type": "Person",
         "name": "Maurice Price",
         "url": "https://mauriceprice.net"
       },
-      "url": "https://mauriceprice.net/the_mind_heals_the_body",
-      "image": "{{ url('/images/The_Mind_Heals_The_Body_cover.jpg') }}",
+      "url": "https://mauriceprice.net{{ $featuredBook->url }}",
+      "image": "{{ url('/' . $featuredBook->cover_image) }}",
       "inLanguage": "en",
-      "genre": "Spirituality, Healing, Mind-Body",
-      "publisher": "Light of Victory Everlasting"
+      "publisher": "Maurice Price"
     }
     </script>
 
@@ -81,939 +58,243 @@
     <link rel="icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
     <link rel="canonical" href="https://mauriceprice.net/" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="{{ url('css/app.css') }}">
+    <link rel="stylesheet" href="{{ url('css/app.css') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
 
     <style>
-    .hero-section {
-        background: url({{url('images/mp_hero.jpg')}}) no-repeat center center;
-        background-size: cover;
-        color: white;
-        padding: 88px 0;
-        text-align: center;
-    }
-
-    /* Added custom styling for the carousel content */
-    .carousel-caption {
-        text-align: center; /* Center content within the caption */
-        bottom: 0; /* Align caption to the bottom of the section */
-        top: 0; /* Align caption to the top of the section */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 0;
-    }
-    
-    .carousel-caption h1, .carousel-caption h5, .carousel-caption p {
-        background-color: rgba(0, 0, 0, 0.4); /* Add a subtle background for readability over the hero image */
-        padding: 5px 15px;
-        border-radius: 5px;
-        margin-bottom: 10px;
-    }
-
-
-    .hero-section h1 {
-        font-size: 3rem; /* default for desktop */
-        line-height: 1.2;
-        margin: 0;
-    }
-
-    @media (max-width: 992px) { /* tablets */
-        .hero-section h1 {
-            font-size: 2.25rem;
+        .mp-hero {
+            background: linear-gradient(135deg, var(--mp-dark-brown), #3d2b16);
+            color: #fff;
+            padding: 80px 0;
         }
-    }
-
-    @media (max-width: 768px) { /* large phones */
-        .hero-section h1 {
-            font-size: 1.75rem;
-            padding: 0 10px; /* prevent text from touching edges */
+        .mp-hero h1 {
+            color: #fff;
         }
-    }
-
-    @media (max-width: 480px) { /* small phones */
-        .hero-section {
-             padding: 37px 0;
+        .mp-hero .eyebrow {
+            color: var(--mp-gold);
+            text-transform: uppercase;
+            letter-spacing: .1em;
+            font-weight: 700;
+            font-size: .9rem;
         }
-    }
-
-    .gold-featured {
-        border: 2px solid #d4af37;
-        border-radius: 0.375rem;
-        box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
-    }
-
-    .feature-icon {
-        font-size: 3rem;
-        color: #007bff;
-    }
-
-    .footer {
-        background-color: #f8f9fa;
-        padding: 40px 0;
-        text-align: center;
-    }
-
-    .apt-bc {
-        height: 42%;
-        width: fit-content;
-        margin: 0 auto;
-        margin-bottom: 0px;
-        display: block;
-    }
-
-    .tj {
-        text-align: justify;
-    }
-
-    .spacer20 {
-        height: 20px;
-        width: 100%;
-        display: block;
-    }
-
-    .gap25 {
-        margin-top: 25px;
-    }
-
-    .book-cover {
-        height: 280px;
-        width: 100%;
-        object-fit: contain;
-    }
-
-    @media (max-width: 767px) {
-        .book-cover {
-            height: 200px;
+        .mp-hero img {
+            max-height: 420px;
         }
-        #heroCarousel .container {
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+        .mp-theme-tile {
+            display: block;
+            background: #fff;
+            border: 1px solid var(--mp-border);
+            border-radius: var(--mp-radius);
+            padding: 1.5rem 1rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--mp-heading);
+            height: 100%;
+            transition: box-shadow .2s ease, transform .2s ease;
         }
-    }
-
-/* Hero Carousel Layout */
-#heroCarousel {
-  overflow: hidden;
-}
-
-/* Reserve clearance so slide content (text/buttons) never sits under the indicator dots */
-#heroCarousel .container {
-  padding-bottom: 48px;
-}
-
-#heroCarousel .carousel-indicators {
-  margin-bottom: 0.5rem;
-}
-
-.slider-book {
-  max-height: 380px;
-  transition: transform 0.4s ease;
-}
-
-.slider-book:hover {
-  transform: scale(1.03);
-}
-
-#heroCarousel h1 {
-  font-family: 'Cinzel', serif;
-}
-
-#heroCarousel p {
-  font-family: 'Merriweather', serif;
-}
-
-#heroCarousel .btn {
-  border-radius: 50px;
-  padding: 10px 30px;
-}
-.mh{
-  max-height:500px;
-}
-.w180{
-  width: 180px;
-  margin-left: 20px;
-  margin-top: 20px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 992px) {
-  .slider-book {
-    max-height: 280px;
-    margin-top: 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  #heroCarousel h1 {
-    font-size: 1.8rem;
-  }
-  #heroCarousel p {
-    font-size: 1rem;
-  }
-  .slider-book {
-    max-height: 220px;
-  }
-  .mh{
-    max-height:inherit;
-  }
-}
-
-
-</style>
-
+        .mp-theme-tile:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,.08);
+            transform: translateY(-3px);
+            color: var(--mp-heading);
+        }
+        .mp-signup-section {
+            background: var(--mp-dark-brown);
+            color: #fff;
+        }
+        .mp-signup-section .form-control {
+            border-radius: 6px;
+        }
+        .mp-article-card {
+            border: 1px solid var(--mp-border);
+            border-radius: var(--mp-radius);
+            background: #fff;
+            height: 100%;
+        }
+        @media (max-width: 767px) {
+            .mp-hero {
+                padding: 48px 0;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HK3ED8XZVW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-HK3ED8XZVW');
+</script>
 
 <body>
 
-    @include('partials.navigation')
+@include('partials.navigation')
 
-    <!-- Hero Slider Section -->
-<!-- Hero Slider Section with Book Covers -->
-<section id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
-  <!-- Indicators -->
-    <div class="carousel-indicators">
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
-    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="17" aria-label="Slide 18"></button>
-  </div>
-
-  <!-- Slides -->
-  <div class="carousel-inner">
-
-   <!-- Slide 0 – Witnessed After Death (New Release) -->
-<div class="carousel-item mh active" style="background: linear-gradient(135deg, #0d1b14, #1a3024);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
-      <h1 class="display-5 fw-bold text-white">Witnessed After Death</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">Apparitions of the Dead, Attested by Those Who Saw Them</p>
-      <p class="mb-4" style="color:#cccccc;">What do the dead know? An annotated edition of F. W. H. Myers's classic 1892 paper on apparitions of the dead, and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost, with a new introduction and chapter commentary by Maurice Price.</p>
-      <a href="{{ url('/witnessed_after_death') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0d1b14; font-weight:700;">Discover More</a>
-      <a href="{{ $amzWitnessedAfterDeath }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
+{{-- 2.1 Hero: single banner driven by the featured book --}}
+<section class="mp-hero">
+  <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
+    <div class="col-12 col-md-7 text-center text-md-start">
+      <div class="eyebrow mb-2">Latest Book</div>
+      <h1 class="display-5 fw-bold">{{ $featuredBook->title }}</h1>
+      @if ($featuredBook->subtitle)
+        <p class="lead" style="color:#e8e8e8;">{{ $featuredBook->subtitle }}</p>
+      @endif
+      @if ($featuredBook->tagline)
+        <p class="mb-4" style="color:#cccccc;">{{ $featuredBook->tagline }}</p>
+      @endif
+      <a href="{{ $featuredBook->url }}" class="btn btn-primary me-2">Learn More</a>
+      @if ($featuredBook->amazonUrl($cc))
+        <a href="{{ $featuredBook->amazonUrl($cc) }}" target="_blank" rel="noopener" class="btn btn-outline-light">Order on Amazon</a>
+      @endif
     </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/witnessed_after_death_3d.png') }}" alt="Witnessed After Death book cover" class="img-fluid slider-book">
+    <div class="col-12 col-md-5 text-center mt-4 mt-md-0">
+      <img src="{{ url('/' . $featuredBook->cover_image) }}" alt="{{ $featuredBook->title }} by Maurice Price — book cover" class="img-fluid">
     </div>
   </div>
-</div>
-
-   <!-- Slide 1 – The Womb of Creation (New Release) -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #10102a, #2c2458);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
-      <h1 class="display-5 fw-bold text-white">The Womb of Creation</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">Restoring the Feminine Source of All That Is</p>
-      <p class="mb-4" style="color:#cccccc;">Before Marduk, there was Tiamat. Before Zeus, there was Gaia. A history of how the creative mother at the beginning of the world was turned into a monster to be conquered, and a path back to the source.</p>
-      <a href="{{ url('/the_womb_of_creation') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#10102a; font-weight:700;">Discover More</a>
-      <a href="{{ $amzWomb }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/the_womb_of_creation_3d.png') }}" alt="The Womb of Creation book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-   <!-- Slide 1 – The Yoga Sūtras of Patañjali (New Release) -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #2a1f0d, #4a3a1a);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
-      <h1 class="display-5 fw-bold text-white">The Yoga Sūtras of Patañjali</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">A New English Translation with Practice and Study Notes</p>
-      <p class="mb-4" style="color:#cccccc;">All 195 sutras in a new English translation, with romanised Sanskrit, practice notes and study notes, bringing the founding text of classical yoga within reach of every reader.</p>
-      <a href="{{ url('/the_yoga_sutras_of_patanjali') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#2a1f0d; font-weight:700;">Discover More</a>
-      <a href="{{ $amzYoga }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/The Yoga Sūtras of Patañjali_3d.png') }}" alt="The Yoga Sūtras of Patañjali book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-   <!-- Slide 1 – Death-Bed Visions (New Release) -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #14121a, #2b2438);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now on Kindle</h6>
-      <h1 class="display-5 fw-bold text-white">Death-Bed Visions</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">An Annotated Edition of Sir William Barrett's Classic Work</p>
-      <p class="mb-4" style="color:#cccccc;">Does consciousness end with the body? An annotated edition of Sir William Barrett's 1926 classic, bringing together testimony from doctors, nurses and families on deathbed visions, with explanatory notes, illustrations and a new editorial continuation by Maurice Price.</p>
-      <a href="{{ url('/death_bed_visions') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#14121a; font-weight:700;">Discover More</a>
-      <a href="{{ $amzDeathBed }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/death_bed_visions_3d.png') }}" alt="Death-Bed Visions book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-   <!-- Slide 1 – The Biblical Process of Manifestation (New Release) -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #1b1408, #3d2f16);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">New Release – Available Now</h6>
-      <h1 class="display-5 fw-bold text-white">The Biblical Process of Manifestation</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">Prayer, Faith and the Movement from the Unseen into the Seen</p>
-      <p class="mb-4" style="color:#cccccc;">We plant the seed in prayer. Its growth belongs to God. An exploration of nine biblical passages revealing prayer, faith and receiving as one complete spiritual process, a contemplative Christian understanding of manifestation as participation in the creative life of God.</p>
-      <a href="{{ url('/the_biblical_process_of_manifestation') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#1b1408; font-weight:700;">Discover More</a>
-      <a href="{{ $amzBiblicalProcess }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/biblical_process_of_manifestation_3d.png') }}" alt="The Biblical Process of Manifestation book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-   <!-- Slide 1 – Breath, Silence and Stillness in Action -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #0d1b2a, #1b3a4b);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
-      <h1 class="display-5 fw-bold text-white">Breath, Silence and Stillness in Action</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
-      <p class="mb-4" style="color:#cccccc;">Breath prepares. Silence opens. Stillness acts. A practical, step-by-step guide to three interwoven practices, gathering the body's inner energy, settling the mind into silence, and carrying that stillness into skillful, effective action in daily life.</p>
-      <a href="{{ url('/breath_silence_and_stillness_in_action') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0d1b2a; font-weight:700;">Discover More</a>
-      <a href="{{ $amzBreathSilence }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-   <!-- Slide 2 – Did the Prophets See This? -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #1a1108, #3d2b16);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
-      <h1 class="display-5 fw-bold text-white">Did the Prophets See This?</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
-      <p class="mb-4" style="color:#cccccc;">Ancient visions. Modern machines. A world entering uncertainty. This book places what the prophets saw beside the events converging in our world today, and asks: are they merely coincidences, or are we beginning to see what the ancient prophets saw?</p>
-      <a href="{{ url('/did_the_prophets_see_this') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#1a1108; font-weight:700;">Discover More</a>
-      <a href="{{ $amzDidTheProphets }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-   <!-- Slide 1 – The Question That Cannot Be Answered -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #12141c, #262b3d);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
-      <h1 class="display-5 fw-bold text-white">The Question That Cannot Be Answered</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">Why the Mind Will Never Find Your Purpose</p>
-      <p class="mb-4" style="color:#cccccc;">What if the search for purpose is built on a mistaken assumption? An invitation to step outside the endless search and discover the life already here.</p>
-      <a href="{{ url('/the_question_that_cannot_be_answered') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#12141c; font-weight:700;">Discover More</a>
-      <a href="{{ $amzQuestionCannotBeAnswered }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-   <!-- Slide 1 – Beyond Death -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #0a1a14, #1a2e20);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h6 class="text-uppercase mb-2" style="color:#d4af37; letter-spacing:.1em;">Also Available</h6>
-      <h1 class="display-5 fw-bold text-white">Beyond Death</h1>
-      <p class="lead mb-4" style="color:#e8e8e8;">The Architecture of Immortality</p>
-      <p class="mb-4" style="color:#cccccc;">What if death is not the end… but a misunderstanding? A bold exploration of consciousness, biology, physics, and ancient wisdom.</p>
-      <a href="{{ url('/beyond_death') }}" class="btn btn-lg me-2" style="background:#d4af37; color:#0a1a14; font-weight:700;">Discover More</a>
-      <a href="{{ $amzBeyondDeathShort }}" target="_blank" class="btn btn-outline-light btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/beyond_death_cover.png') }}" alt="Beyond Death: The Architecture of Immortality book cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<!-- Slide 2 – God's Infinite Design -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #f9f1d0, #e6d5a7);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">God's Infinite Design</h1>
-      <p class="lead text-dark mb-4">The Soul's Journey Through the Simulation of Reality.</p>
-      <a href="{{ url('/gods_infinite_design') }}" class="btn btn-primary btn-lg me-2">Learn More</a>
-      <a href="{{ $amzGodsInfiniteDesign }}" target="_blank" class="btn btn-outline-dark btn-lg">Order on Amazon</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/gods_infinate_design.png') }}" alt="God's Infinite Design Cover" class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #fff6e9, #fdebd0);">
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">Maurice Price – Spiritual Author</h1>
-      
-      <p class="lead text-dark mb-2"><b>FREE GUIDE: Stop the Spiritual Struggle</b></p>
-      
-      <p class="h4 text-dark mb-4">
-        Get Your **30-Day Clarity Challenge** and Anchor Your Peace With Simple Daily Practices.
-      </p>
-      
-      <a href="{{ url('/spiritual_seed_for_the_soul') }}" class="btn btn-primary btn-lg">
-        GET MY INSTANT DOWNLOAD NOW
-      </a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/Spiritual_seeds_for_the_soul.png') }}" 
-           alt="Spiritual Seeds For the Soul Cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #fff6e9, #fdebd0);"> <!-- soft peach-gold -->
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">Why Christianity Matters</h1>
-      <p class="lead text-secondary mb-4">Exploring the historical and modern impact of faith.</p>
-      <a href="{{ url('/why_christianity_matters') }}" class="btn btn-primary btn-lg">Discover More</a>
-      <div class="row">
-        <div class="w180">
-           <!-- NOTE: Update the number in the Goodreads URL (e.g., '1234567') to the correct Book ID once available. -->
-          <!-- <a href="https://www.goodreads.com/book/show/1234567-why-christianity-matters" target="_blank">
-              <img style="vertical-align: middle; margin-bottom: 0.5em" src="https://s.gr-assets.com/assets/badge/goodreads-badge-read-reviews-a8508f765fac427f58da8ebf9e89721a.png" alt="Goodreads badge read reviews for Why Christianity Matters">
-           </a>-->
-        </div>
-      </div>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/Why_christianity_matters_600.png') }}" 
-           alt="Why Christianity Matters book cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<!-- Slide 2 -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #e8f8f5, #d1f2eb);"> <!-- soft aqua-green -->
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">The Mind Heals the Body</h1>
-      <p class="lead text-secondary mb-4">Awaken the healing power within you.</p>
-      <a href="/the_mind_heals_the_body_lp" class="btn btn-outline-dark btn-lg">Learn More</a>
-      <div class="row">
-        <div class="w180">
-           <a href="https://www.goodreads.com/book/show/240125387-the-mind-heals-the-body" target="_blank">
-              <img style="vertical-align: middle; margin-bottom: 0.5em" src="https://s.gr-assets.com/assets/badge/goodreads-badge-read-reviews-a8508f765fac427f58da8ebf9e89721a.png" alt="Goodreads badge read reviews">
-           </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/the_mind_heals_the_body_3d.png') }}" 
-           alt="The Mind Heals the Body 3D cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<!-- Slide 3 -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #eaf2ff, #d4e4ff);"> <!-- light sky blue -->
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-       <h1 class="display-5 fw-bold text-dark">The Blueprint of Reality</h1>
-       <p class="lead text-secondary mb-4">Discover how consciousness shapes reality<br>and how you can shape your own.</p>
-       <a href="/the_blueprint_of_reality" class="btn btn-dark btn-lg">Learn More</a>
-      <div class="row">
-        <div class="w180">
-           <a href="https://www.goodreads.com/book/show/240125387-the-mind-heals-the-body" target="_blank">
-              <img style="vertical-align: middle; margin-bottom: 0.5em" src="https://s.gr-assets.com/assets/badge/goodreads-badge-read-reviews-a8508f765fac427f58da8ebf9e89721a.png" alt="Goodreads badge read reviews">
-           </a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png') }}" 
-           alt="The Blueprint of Reality book cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<!-- Slide 4 -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #f5f0ff, #e6e0fa);"> <!-- lavender glow -->
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">The Divergence</h1>
-      <p class="lead text-secondary mb-4">
-        Awakening in the Age of Illusion: a profound exploration of the split between truth and technology, soul and simulation.
-      </p>
-      <a href="/the_divergence" class="btn btn-primary btn-lg">Learn More</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/The_divergence_web.png') }}" 
-           alt="The Divergence book cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<!-- Slide 5 -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #fff0f5, #fde2e4);"> <!-- rose quartz blush -->
-  <div class="container h-100 d-flex flex-column flex-md-row-reverse justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">A Profound Teaching</h1>
-      <p class="lead text-secondary mb-4">
-        Transcend the illusions of identity, death, and separation, and awaken to the timeless truth of who you truly are.
-      </p>
-      <a href="/a_profound_teaching" class="btn btn-dark btn-lg">Learn More</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/a_profound_teaching_front_cover.png') }}" 
-           alt="A Profound Teaching book cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<!-- Slide 6 -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #fff9e6, #fff2cc);"> <!-- pale sunrise gold -->
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">This Isn't Living</h1>
-      <p class="lead text-secondary mb-4">
-        Wake up before it's too late: a heartfelt call to break free from illusion, rediscover your soul, and live from truth and purpose.
-      </p>
-      <a href="/this_isnt_living" class="btn btn-primary btn-lg">Learn More</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/This_isnt_living_book_covers.png') }}" 
-           alt="This Isn't Living book cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-<!-- Slide 7 -->
-<div class="carousel-item mh" style="background: linear-gradient(135deg, #eaf8ff, #d4f0ff);"> <!-- airy blue-white -->
-  <div class="container h-100 d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
-    <div class="col-md-7">
-      <h1 class="display-5 fw-bold text-dark">Hidden Wisdom</h1>
-      <p class="lead text-secondary mb-4">Interpretations of the Gospel of Thomas</p>
-      <p class="lead text-secondary mb-4">A contemplative journey into one of Christianity's most mysterious texts: uncovering the timeless, inner teachings of Jesus that point directly to awakening and divine union.</p>
-      <a href="/the_mind_heals_the_body_lp" class="btn btn-outline-dark btn-lg">Learn More</a>
-    </div>
-    <div class="col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/images/Hidden_wisdom_interpretations_Gospel_of_thomas.png') }}" 
-           alt="Hidden Wisdom – Interpretations of the Gospel of Thomas book cover" 
-           class="img-fluid slider-book">
-    </div>
-  </div>
-</div>
-
-
-
-  </div>
-
-  <!-- Controls -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </section>
 
-
-
-    <section class="container my-5 text-center">
-        <h2 class="mb-3">Welcome to MauricePrice.Net</h2>
-        <p class="lead">
-            I'm Maurice Price, author, mystic, and explorer of consciousness. Through words, teachings, and silence, I help others awaken to their eternal nature. Whether you're searching for peace, clarity, or deeper purpose, you're in the right place.
-        </p>
-        
-    </section>
-
-    <section class="container my-5">
-
-    <!-- Row -6: Witnessed After Death (New Release) -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 d-flex">
-            <a href="/witnessed_after_death" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">Witnessed After Death</h2>
-                    <img src="{{ url('/images/witnessed_after_death_3d.png') }}" alt="Witnessed After Death book cover" class="book-cover mb-3">
-                    <h3>Apparitions of the Dead, Attested by Those Who Saw Them</h3>
-                    <p class="mt-2 tj">
-                        <em>What do the dead know?</em> An annotated edition of F. W. H. Myers's classic 1892 paper on apparitions of the dead, and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost, with a new introduction and chapter commentary by Maurice Price.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
+{{-- 2.2 About Maurice --}}
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+      <img src="{{ url('/images/MauricePrice.jpg') }}" alt="Maurice Price – spiritual author, mystic, and teacher" class="img-fluid author-image" loading="lazy" width="300" height="320">
     </div>
-
-    <!-- Row -5: The Womb of Creation + The Yoga Sūtras of Patañjali (New Releases) -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/the_womb_of_creation" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">The Womb of Creation</h2>
-                    <img src="{{ url('/images/the_womb_of_creation_3d.png') }}" alt="The Womb of Creation book cover" class="book-cover mb-3">
-                    <h3>Restoring the Feminine Source of All That Is</h3>
-                    <p class="mt-2 tj">
-                        Before Marduk, there was Tiamat. Before Zeus, there was Gaia. <em>The Womb of Creation</em> traces how the creative mother at the beginning of the world was absorbed, split in two and slain across six ancient civilisations, and offers a practical path back to the source through contemplative practice.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/the_yoga_sutras_of_patanjali" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">The Yoga Sūtras of Patañjali</h2>
-                    <img src="{{ url('/images/The Yoga Sūtras of Patañjali_3d.png') }}" alt="The Yoga Sūtras of Patañjali book cover" class="book-cover mb-3">
-                    <h3>A New English Translation with Practice and Study Notes</h3>
-                    <p class="mt-2 tj">
-                        <em>The Yoga Sūtras of Patañjali</em> is the founding text of classical yoga. This study edition gives all 195 sutras in clear, modern English, each followed by its romanised Sanskrit and a short note that explains the verse or turns it into a practice you can try.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
+    <div class="col-12 col-md-8">
+      <h2>Welcome to MauricePrice.Net</h2>
+      <p class="lead tj">
+          I'm Maurice Price — author, mystic and explorer of consciousness. Through writing, teaching and silence, I help others awaken to their eternal nature. Whether you're searching for peace, clarity or deeper purpose, you're in the right place.
+      </p>
+      <a href="/about">More about Maurice &rarr;</a>
     </div>
+  </div>
+</section>
 
-    <!-- Row -3: Death-Bed Visions + The Biblical Process of Manifestation (New Releases) -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/death_bed_visions" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">Death-Bed Visions</h2>
-                    <img src="{{ url('/images/death_bed_visions_3d.png') }}" alt="Death-Bed Visions book cover" class="book-cover mb-3">
-                    <h3>An Annotated Edition of Sir William Barrett's Classic Work</h3>
-                    <p class="mt-2 tj">
-                        <em>Does consciousness end with the body?</em> At the bedside of the dying, witnesses have reported encounters with deceased loved ones, distant relatives and music with no apparent source. This annotated edition of Sir William Barrett's 1926 classic brings together testimony from doctors, nurses and families, with explanatory notes, illustrations and a new editorial continuation by Maurice Price.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/the_biblical_process_of_manifestation" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column" style="border: 2px solid #d4af37 !important;">
-                    <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">New Release</span>
-                    <h2 class="mt-1">The Biblical Process of Manifestation</h2>
-                    <img src="{{ url('/images/biblical_process_of_manifestation_3d.png') }}" alt="The Biblical Process of Manifestation book cover" class="book-cover mb-3">
-                    <h3>Prayer, Faith and the Movement from the Unseen into the Seen</h3>
-                    <p class="mt-2 tj">
-                        <em>What if the Bible's teachings on prayer, faith and receiving are not separate promises, but parts of one complete spiritual process?</em> This book explores nine biblical passages revealing the movement from the unseen into the seen: entering the secret place of prayer, remaining in Christ, asking according to God's will, receiving inwardly, giving thanks, and entering peace.
-                    </p>
-                    <p class="mt-2 tj">
-                        A contemplative Christian understanding of manifestation as participation in the creative life of God. We plant the seed in prayer. Its growth belongs to God.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-    </div>
+{{-- 2.3 New Releases: compact grid, four most recent books --}}
+<section class="container my-5">
+  <div class="d-flex justify-content-between align-items-end mb-4">
+    <h2 class="mb-0">New Releases</h2>
+  </div>
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+    @foreach ($newReleases as $book)
+      <div class="col d-flex">
+        @include('partials.book-card', ['book' => $book])
+      </div>
+    @endforeach
+  </div>
+  <div class="text-center mt-4">
+    <a href="/books">View all books &rarr;</a>
+  </div>
+</section>
 
-    <!-- Row -1b: Breath, Silence and Stillness in Action + Did the Prophets See This? + The Question That Cannot Be Answered -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-4 d-flex">
-            <a href="/breath_silence_and_stillness_in_action" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">Breath, Silence and Stillness in Action</h2>
-                    <img src="{{ url('/images/breath_silence_and_stillness_in_action_3d.png') }}" alt="Breath, Silence and Stillness in Action book cover" class="book-cover mb-3">
-                    <h3>A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</h3>
-                    <p class="mt-2 tj">
-                        <em>What if the deepest transformation begins not with more effort, but with less?</em> A practical guide to three interwoven practices: Spinal Breathing to gather the body's inner energy, Deep Meditation to settle the mind into silence, and Samyama to carry that stillness into skillful, effective action.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-4 d-flex">
-            <a href="/did_the_prophets_see_this" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
-                    <h2 class="mt-3">Did the Prophets See This?</h2>
-                    <img src="{{ url('/images/did_the_prophets_see_this_3d.png') }}" alt="Did the Prophets See This? book cover" class="book-cover mb-3">
-                    <h3>War, Famine, Earthquakes, AI and the Unfolding End Times</h3>
-                    <p class="mt-2 tj">
-                        <em>Is this what the ancient prophets saw in their visions of the end times?</em> This book places prophetic visions beside the events converging in our world today: war, energy scarcity, fertiliser shortages, famine, disease and technological control.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-4 d-flex">
-            <a href="/the_question_that_cannot_be_answered" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">The Question That Cannot Be Answered</h2>
-                    <img src="{{ url('/images/the_question_that_cannot_be_answered_cover.png') }}" alt="The Question That Cannot Be Answered book cover" class="book-cover mb-3">
-                    <h3>Why the Mind Will Never Find Your Purpose</h3>
-                    <p class="mt-2 tj">
-                        <em>What if the question "What is my purpose?" cannot be answered</em>, not because the answer is hidden, but because the question begins with a mistaken assumption? An invitation to step outside the endless search and discover the life already here.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-    </div>
+{{-- 2.4 Explore by Theme --}}
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Explore by Theme</h2>
+  <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
+    @foreach ($themes as $slug => $label)
+      <div class="col">
+        <a href="/books?theme={{ $slug }}" class="mp-theme-tile">
+          <span>{{ $label }}</span>
+        </a>
+      </div>
+    @endforeach
+  </div>
+</section>
 
-    <!-- Row 1: Beyond Death + God's Infinite Design -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="{{ $amzBeyondDeathLong }}" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">Beyond Death</h2>
-                    <img src="{{ url('/images/beyond_death_cover.png') }}" alt="The Mind Heals the Body book cover" class="book-cover mb-3">
-                    <h3>The Architecture of Immortality</h3>
-                    <p class="mt-2 tj">
-                        <em>What if death is not the end…</em> but a misunderstanding? Maurice Price takes you on a bold and thought-provoking journey into the nature of human existence, blending insights from consciousness, biology, physics, and ancient spiritual traditions.
-                    </p>
-                    <p class="mt-2 tj">
-                         This work challenges the deeply rooted belief that mortality is a fixed and unavoidable law and explores the radical possibility that what we call death may be the result of a deeper disconnect, an interruption in the natural continuity of awareness.
-                    </p>
-                    
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/gods_infinite_design" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
-                    <h2 class="mt-3">God's Infinite Design</h2>
-                    <img src="{{ url('/images/gods_infinate_design.png') }}" alt="God's Infinite Design book cover" class="book-cover mb-3">
-                    <h3>The Soul's Journey Through the Simulation of Reality</h3>
-                    <p class="mt-2 tj">
-                        The Game was God... and we were Him. In this transformative work, Maurice Price reveals the profound design behind our existence. Discover how the "simulation" of matter and time serves as a divine refinement process, guiding the soul back to its source.
-                    </p>
-                    <p class="tj">
-                        <em>God's Infinite Design</em> bridges the gap between the seeker and the Source, offering a final recognition that the veil of the "other" is but a mirror's lie. It is a call to look into the eyes of the stranger and see the Player behind the mask.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-    </div>
+{{-- 2.5 Email signup --}}
+<section class="mp-signup-section py-5">
+  <div class="container text-center" style="max-width: 560px;">
+    <h2 class="text-white">Stay Connected</h2>
+    <p class="mb-4" style="color:#cccccc;">New books, articles and reflections, sent occasionally. No noise, unsubscribe any time.</p>
 
-    <!-- Row 2: The Mind Heals the Body + The Blueprint of Reality -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/the_mind_heals_the_body_lp" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">The Mind Heals the Body</h2>
-                    <img src="{{ url('/images/the_mind_heals_the_body_3d.png') }}" alt="The Mind Heals the Body book cover" class="book-cover mb-3">
-                    <h3>Awaken The Healing Power Within</h3>
-                    <p class="mt-2 tj">
-                        <em>The Mind Heals the Body</em> is a clear and compassionate guide to the mind–body connection and the hidden mechanics of healing. It reveals how belief, attention, and intention shape biology, moving you from chasing symptoms to true restoration.
-                    </p>
-                    <p class="mt-2 tj">
-                        Maurice Price draws from spiritual wisdom, scripture, and modern insights into consciousness to show that healing is not found outside yourself but awakened within. Through stillness, visualization, forgiveness, and alignment, you'll learn how to release fear, restore balance, and hold the frequency of health.
-                    </p>
-                    <p class="mt-2 tj">
-                        Whether facing illness, supporting others, or seeking deeper understanding, this book offers practical tools and timeless truths to help you step into wholeness and live as evidence that <strong>consciousness heals, and God's power flows through you.</strong>
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/the_blueprint_of_reality" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
-                    <h2 class="mt-3">The Blueprint of Reality</h2>
-                    <img src="{{url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png')}}" alt="The Blueprint of Reality Book Cover" class="book-cover mb-3">
-                    <h3>The Hidden Mechanics of Manifestation</h3>
-                    <p class="mt-2 tj">
-                        A sacred manual for manifesting your desired future through the hidden science of reality. This book invites you beyond surface-level teachings to discover how reality truly functions beneath the veil, where energy, intention, and consciousness converge.
-                    </p>
-                    <p class="tj">
-                        Drawing from both quantum principles and spiritual insight, <em>The Blueprint of Reality</em> reveals how your thoughts are not passive: they are creative forces. Learn to align your internal state with your desired outcome, activate the frequency of your future, and live as the embodied expression of your vision.
-                    </p>
-                    <p class="tj">
-                        Whether you're just awakening to your creative potential or deepening your existing practice, this book offers a powerful framework for conscious creation. It's not about wishful thinking: it's about becoming the architect of your own life through alignment, coherence, and the sacred science of manifestation.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-    </div>
+    <form action="/subscribe" method="POST" class="row g-2 justify-content-center">
+      @csrf
+      <x-honeypot />
+      <div class="col-12 col-sm-5">
+        <input type="text" name="name" class="form-control" placeholder="First name (optional)" autocomplete="given-name">
+      </div>
+      <div class="col-12 col-sm-5">
+        <input type="email" name="email" class="form-control" placeholder="Your email" required autocomplete="email">
+      </div>
+      <div class="col-12 col-sm-2">
+        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+      </div>
+    </form>
+    <p class="small mt-3 mb-0" style="color:#aaaaaa;">
+      By subscribing you agree to our <a href="/privacy" style="color:#d4af37;">privacy policy</a>.
+    </p>
+  </div>
+</section>
 
-    <!-- Row 3: The Divergence + A Profound Teaching -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/the_divergence" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
-                    <h2 class="mt-3">The Divergence</h2>
-                    <img src="{{url('/images/The_divergence_web.png')}}" alt="Divergence Book Cover" class="book-cover mb-3">
-                    <h3>Awakening in the Age of Illusion</h3>
-                    <p class="mt-2 tj">
-                        The Divergence is a prophetic exploration of humanity's split between illusion and truth, technology and soul, and the final choice each of us must make.
-                    </p>
-                    <p class="mt-2 tj">As (AI) artificial intelligence accelerates and begins to mirror human thought, it tempts us toward a synthetic existence, one that leaves us empty, hollowed out, with only the shell remaining. This book is a call to remember what cannot be replicated: the soul, the sacred, and the real.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
+{{-- 2.6 Latest Articles --}}
+@if ($articles->isNotEmpty())
+<section class="container my-5">
+  <h2 class="mb-4 text-center">Latest Articles</h2>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach ($articles as $article)
+      <div class="col">
+        <div class="mp-article-card p-4 d-flex flex-column">
+          <h3 class="h5">{{ $article->title }}</h3>
+          <p class="small text-muted mb-2">{{ $article->published_at->format('F j, Y') }}</p>
+          <p class="tj flex-grow-1">{{ $article->excerpt }}</p>
+          <a href="{{ $article->url }}" class="mt-2">Read &rarr;</a>
         </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/a_profound_teaching" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">A Profound Teaching</h2>
-                    <img src="{{url('/images/a_profound_teaching_kindle.png')}}" alt="A Profound Teaching Book Cover" class="book-cover mb-3">
-                    <p class="mt-2 tj">
-                        Blending ancient wisdom, quantum theory, and lived spiritual experience, <em>A Profound Teaching</em> is a powerful invitation to transcend the illusions of identity, death, and separation, and step into the timeless truth of who you really are.
-                    </p>
-                    <p class="tj">
-                        Through clear insight and gentle guidance, Maurice Price opens the reader to a direct encounter with the eternal self: the aspect of you untouched by birth or decay. This book is not just read, it is experienced. It serves as a bridge between form and formlessness, intellect and intuition, science and soul.
-                    </p>
-                    <p class="tj">
-                        For the seeker, the mystic, and the awakening soul, this is a call to return to what has never left. More than a philosophy, it is a living transmission of peace, stillness, and sacred remembrance.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-    </div>
+      </div>
+    @endforeach
+  </div>
+</section>
+@endif
 
-    <!-- Row 4: This Isn't Living + Hidden Wisdom -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/this_isnt_living" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">This Isn't Living</h2>
-                    <img src="{{url('/images/This_isnt_living_book_covers.jpg')}}" alt="This Isn't Living Book Cover" class="book-cover mb-3">
-                    <h3>Wake up before it's too late.</h3>
-                    <p class="mt-2 tj">
-                        A heartfelt call to break free from the illusions of modern life, This Isn't Living weaves memoir, philosophy, and spiritual insight into a powerful guide for awakening. With raw honesty and hard-won wisdom, Maurice Price exposes the quiet despair that hides behind productivity and the polished masks we wear.
-                    </p>
-                    <p class="mt-2 tj">
-                        This book is for those who are fed up with the lies, the shallowness, and the fakeness of modern life, who feel the hollowness beneath the surface and know in their soul that this can't be all there is. It's for those ready to unplug from the system, to reclaim the soul's voice, and to rediscover the sacred simplicity of a life lived from truth.
-                    </p>
-                    <p class="mt-2 tj">
-                        Maurice Price exposes the quiet suffering beneath our routines, and shows how to rediscover peace, purpose, and the courage to live as your true self.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
+{{-- 2.7 Testimonials: data-driven, hidden entirely until a quote has a source_url --}}
+@if ($testimonials->isNotEmpty())
+<section class="bg-light py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">What Readers Are Saying</h2>
+        <div class="row text-center">
+            @foreach ($testimonials as $testimonial)
+            <div class="col-md-4 mb-4">
+                <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
+                    <blockquote class="blockquote mb-0">
+                        <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"{{ $testimonial->quote }}"</p>
+                        <footer class="blockquote-footer mt-3" style="color: #1a252f; font-weight: 600; font-size: 1rem;">
+                            <a href="{{ $testimonial->source_url }}" target="_blank" rel="noopener">{{ $testimonial->name }}</a>
+                        </footer>
+                    </blockquote>
                 </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/hidden_wisdom" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-white h-100 d-flex flex-column">
-                    <h2 class="mt-3">Hidden Wisdom</h2>
-                    <img src="{{url('/images/Hidden_wisdom_interpretations_Gospel_of_thomas.jpg')}}" alt="Hidden Wisdom Book Cover" class="book-cover mb-3">
-                    <h3>Interpretations of the Gospel of Thomas</h3>
-                    <p class="mt-2 tj">
-                        A mystical exploration of one of the most enigmatic early Christian texts, this book unpacks the Gospel of Thomas with fresh insight. Maurice Price offers a contemplative journey beyond doctrine, revealing the hidden teachings of Jesus that point directly to awakening and divine union.
-                    </p>
-                    <p class="tj">
-                        In <em>Hidden Wisdom</em>, ancient sayings once shrouded in mystery are brought to life through a lens of spiritual clarity and experiential insight. Rather than analyzing from the outside, the book invites the reader inward, to contemplate each verse as a doorway to presence, inner stillness, and the sacred remembrance of who and what we truly are.
-                    </p>
-                    <p class="tj">
-                        This is not a scholarly critique, but a spiritual transmission. Ideal for mystics, seekers, and contemplatives, it offers a mapless invitation to go beyond the surface and enter the silence behind the words: a silence where truth is known, not taught.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- Row 5: Why Christianity Matters + Spiritual Seeds for the Soul -->
-    <div class="row text-center align-items-stretch mb-4">
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/why_christianity_matters" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
-                    <h2 class="mt-3">Why Christianity Matters</h2>
-                    <img src="{{url('/images/Why_christianity_matters_600.png')}}" alt="Why Christianity Matters Book Cover" class="book-cover mb-3">
-                    <h3>The Transformative Story from Genesis to Christ</h3>
-                    <p class="mt-2 tj">
-                        <em>Why Christianity Matters</em> unveils the timeless arc of God's plan: from creation and the fall to redemption in Christ. It reveals why this story remains the cornerstone of hope, renewal, and divine purpose in the modern world.
-                    </p>
-                    <p class="tj">
-                        In this powerful exploration, Maurice Price bridges ancient Scripture with contemporary understanding. Each page uncovers how humanity's journey mirrors the journey of the soul: from separation to reunion, from darkness to light, from death to resurrection.
-                    </p>
-                    <p class="tj">
-                        A book for seekers, believers, and the questioning alike, <em>Why Christianity Matters</em> restores faith as a living experience of truth, not tradition. It's an invitation to rediscover the beauty, coherence, and transformative love that flow through the entire biblical story.
-                    </p>
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-        <div class="col-12 col-md-6 d-flex">
-            <a href="/spiritual_seed_for_the_soul" class="text-decoration-none text-dark w-100">
-                <div class="p-4 border rounded shadow-sm mb-4 bg-light h-100 d-flex flex-column">
-                    <h2 class="mt-3">Spiritual Seeds for the Soul</h2>
-                    <img src="{{url('/images/Spiritual_seeds_for_the_soul_1100.png')}}" alt="Spiritual Seeds for the Soul Book Cover" class="book-cover mb-3">
-                    <h3>Planting the Seeds of Contemplation</h3>
-                    <p class="mt-2 tj">
-                        <em>Spiritual Seeds for the Soul</em> invites readers to cultivate a deeper inner life through contemplation and prayer. It offers practical guidance for nurturing the soul's growth in a fast-paced world.
-                    </p>
-                    {{-- TODO(Maurice): supply full description. The previous two paragraphs here were copy-pasted from "Why Christianity Matters" and have been removed. --}}
-                    <div class="btn btn-primary mt-auto">Learn More</div>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    </section>
-
-    @if ($testimonials->isNotEmpty())
-    <section class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">What Readers Are Saying</h2>
-            <div class="row text-center">
-                @foreach ($testimonials as $testimonial)
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-card p-4 bg-white rounded shadow-sm h-100">
-                        <blockquote class="blockquote mb-0">
-                            <p class="mb-3" style="font-style: italic; color: #2c3e50; font-size: 1.1rem;">"{{ $testimonial->quote }}"</p>
-                            <footer class="blockquote-footer mt-3" style="color: #1a252f; font-weight: 600; font-size: 1rem;">
-                                <a href="{{ $testimonial->source_url }}" target="_blank" rel="noopener">{{ $testimonial->name }}</a>
-                            </footer>
-                        </blockquote>
-                    </div>
-                </div>
-                @endforeach
             </div>
+            @endforeach
         </div>
-    </section>
-    @endif
+    </div>
+</section>
+@endif
 
-    
+{{-- 2.8 Footer: nav links + a repeat of the signup, then the shared copyright footer --}}
+<section class="py-5" style="background:#f8f9fa;">
+  <div class="container text-center">
+    <div class="mb-4">
+      <a href="/" class="mx-2">Home</a>
+      <a href="/books" class="mx-2">Books</a>
+      <a href="/about" class="mx-2">About</a>
+      <a href="/contact" class="mx-2">Contact</a>
+      <a href="/privacy" class="mx-2">Privacy</a>
+    </div>
+    <form action="/subscribe" method="POST" class="row g-2 justify-content-center" style="max-width: 480px; margin: 0 auto;">
+      @csrf
+      <x-honeypot />
+      <div class="col-8">
+        <input type="email" name="email" class="form-control" placeholder="Join the mailing list" required autocomplete="email">
+      </div>
+      <div class="col-4">
+        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
 
-    <section class="bg-light py-5">
-        <div class="container text-center">
-            <h2>Stay in Touch</h2>
-            <p class="lead">Questions, invitations to speak, or just want to say hello?</p>
-            <a href="/contact" class="btn btn-primary btn-lg">Get in Touch</a>
-        </div>
-    </section>
-
-    @include('partials.footer')
+@include('partials.footer')
+<script src="{{ url('js/site-enhancements.js') }}"></script>
 </body>
 </html>
