@@ -50,12 +50,12 @@ src="https://www.facebook.com/tr?id=2207982119340635&ev=PageView&noscript=1"
     }
 
     .navbar-toggler {
-        border: 2px solid #667eea;
+        border: 2px solid var(--mp-dark-brown);
         padding: 8px 12px;
     }
 
     .navbar-toggler:focus {
-        box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+        box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.35);
     }
 
     .dropdown-menu {
@@ -70,8 +70,8 @@ src="https://www.facebook.com/tr?id=2207982119340635&ev=PageView&noscript=1"
     }
 
     .dropdown-item:hover {
-        background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-        color: #667eea;
+        background: rgba(212, 175, 55, 0.12);
+        color: var(--mp-dark-brown);
         transform: translateX(5px);
     }
 </style>
