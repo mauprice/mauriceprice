@@ -6,11 +6,10 @@ use App\Http\Controllers\SiteController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\LeadController;
 use App\Http\Controllers\AudiobookController;
+use App\Http\Controllers\NewsletterController;
 use Spatie\Honeypot\ProtectAgainstSpam;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [SiteController::class, 'home'])->name('home.root');
 
 Route::get('/sitemap.xml', [SiteController::class, 'sitemap'])->name('sitemap');
 
@@ -51,6 +50,7 @@ Route::get('/audiobook/track-play', [AudiobookController::class, 'trackPlay'])
     ->name('audiobook.trackPlay');
 Route::get('/hidden_wisdom', [SiteController::class, 'hiddenWisdom'])->name('hiddenWisdom');
 Route::get('/a_profound_teaching', [SiteController::class, 'aProfoundTeaching'])->name('aProfoundTeaching');
+Route::get('/gods_infinite_design', [SiteController::class, 'godsInfiniteDesign'])->name('godsInfiniteDesign');
 Route::get('/why_christianity_matters', [SiteController::class, 'WhyChristianityMatters'])->name('WhyChristianityMatters');
 Route::get('/this_isnt_living', [SiteController::class, 'thisIsntLiving'])->name('thisIsntLiving');
 Route::get('/the_blueprint_of_reality', [SiteController::class, 'theBlueprintOfReality'])->name('theBlueprintOfReality');
@@ -62,6 +62,10 @@ Route::get('/the_divergence_lp', [SiteController::class, 'theDivergenceLp1'])->n
 Route::get('/the_mind_heals_the_body_lp', [SiteController::class, 'theMindHealsTheBodyLp'])->name('theMindHealsTheBodyLp');
 
 Route::post('/lead/spiritual-seeds', [LeadController::class, 'store'])->middleware(ProtectAgainstSpam::class);
+Route::post('/subscribe', [NewsletterController::class, 'store'])
+    ->middleware([ProtectAgainstSpam::class, 'throttle:5,1'])
+    ->name('newsletter.subscribe');
+Route::get('/privacy', [SiteController::class, 'privacy'])->name('privacy');
 Route::get('/spiritual-seeds', [SiteController::class, 'spiritualSeeds'])->name('spiritual_seeds');
 
 Route::get('/spiritual_seed_for_the_soul', [SiteController::class, 'spiritual_seed_for_the_soul'])->name('spiritual_seed_for_the_soul');

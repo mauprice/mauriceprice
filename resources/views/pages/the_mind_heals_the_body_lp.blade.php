@@ -232,7 +232,7 @@
 
 <footer class="py-4">
   <div class="container text-center">
-    <span class="text-muted d-block">&copy; 2025 Maurice Price</span>
+    <span class="text-muted d-block">&copy; {{ date('Y') }} Maurice Price</span>
     <a class="text-muted" href="https://lightofvictoryeverlasting.com/" target="_blank" rel="noopener">Light of Victory Everlasting</a>
     <span class="text-muted d-block mt-1">All rights reserved.</span>
   </div>

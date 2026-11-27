@@ -1,24 +1,3 @@
-@php
-    $__cc = $cc ?? null;
-    if ($__cc == 'AU') {
-        $amazonDomain = 'amazon.com.au';
-    } elseif ($__cc == 'GB') {
-        $amazonDomain = 'amazon.co.uk';
-    } else {
-        $amazonDomain = 'amazon.com';
-    }
-
-    $amzWitnessedAfterDeath = "https://www.$amazonDomain/dp/B0HSXMQ72L";
-    $amzWomb = "https://www.$amazonDomain/dp/B0HSR6LN4Z";
-    $amzYoga = "https://www.$amazonDomain/dp/B0HRTRPC1F";
-    $amzDeathBed = "https://www.$amazonDomain/dp/B0HQ5VXFS3";
-    $amzBiblicalProcess = "https://www.$amazonDomain/dp/B0HJYWGK9T";
-    $amzBreathSilence = "https://www.$amazonDomain/dp/B0HH2LZ8X8";
-    $amzDidTheProphets = "https://www.$amazonDomain/dp/B0HG7M6VSK";
-    $amzQuestionCannotBeAnswered = "https://www.$amazonDomain/dp/B0HDLNG326";
-    $amzBeyondDeathShort = "https://www.$amazonDomain/dp/B0GZGHPNFS";
-    $amzGodsInfiniteDesign = "https://www.$amazonDomain/Gods-Infinite-Design-Souls-Journey/dp/B0GF2C221W/";
-@endphp
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,228 +36,22 @@
       "@context": "https://schema.org",
       "@type": "ItemList",
       "name": "Books by Maurice Price",
-      "itemListOrder": "https://schema.org/ItemListOrderAscending",
-      "numberOfItems": 18,
+      "itemListOrder": "https://schema.org/ItemListOrderDescending",
+      "numberOfItems": {{ $books->count() }},
       "itemListElement": [
+        @foreach ($books as $book)
         {
           "@type": "ListItem",
-          "position": 1,
+          "position": {{ $loop->iteration }},
           "item": {
             "@type": "Book",
-            "name": "Witnessed After Death: Apparitions of the Dead, Attested by Those Who Saw Them",
-            "author": [
-              { "@type": "Person", "name": "F. W. H. Myers" },
-              { "@type": "Person", "name": "R. C. Morton" }
-            ],
-            "image": "https://mauriceprice.net/images/witnessed_after_death_3d.png",
-            "url": "https://mauriceprice.net/witnessed_after_death",
-            "description": "An annotated edition of F. W. H. Myers's classic 1892 paper on apparitions of the dead and Rose Morton's Record of a Haunted House, the famous Cheltenham ghost, with a new introduction and chapter commentary by Maurice Price. Available now."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "item": {
-            "@type": "Book",
-            "name": "The Womb of Creation",
+            "name": {!! json_encode($book->title) !!},
             "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/the_womb_of_creation_3d.png",
-            "url": "https://mauriceprice.net/the_womb_of_creation",
-            "description": "A history of how the creative mother at the beginning of the world was reversed into a conquered monster, culture by culture, and a path back to the formless source through contemplative practice. Available now in Kindle and paperback."
+            "image": {!! json_encode($book->coverImageUrl()) !!},
+            "url": {!! json_encode(url($book->url)) !!}
           }
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": {
-            "@type": "Book",
-            "name": "The Yoga Sūtras of Patañjali",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/The Yoga Sūtras of Patañjali_3d.png",
-            "url": "https://mauriceprice.net/the_yoga_sutras_of_patanjali",
-            "description": "A new English translation of all 195 sutras of Patañjali's Yoga Sūtras, with romanised Sanskrit, practice notes and study notes. Available now in Kindle and paperback."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "item": {
-            "@type": "Book",
-            "name": "Death-Bed Visions: An Annotated Edition",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/death_bed_visions_3d.png",
-            "url": "https://mauriceprice.net/death_bed_visions",
-            "description": "An annotated edition of Sir William Barrett's 1926 classic on deathbed visions and the possibility of consciousness surviving death. Available now in Kindle and paperback."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 5,
-          "item": {
-            "@type": "Book",
-            "name": "The Question That Cannot Be Answered: Why the Mind Will Never Find Your Purpose",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/the_question_that_cannot_be_answered_cover.jpg",
-            "url": "https://mauriceprice.net/the_question_that_cannot_be_answered",
-            "description": "Why the search for purpose is built on a mistaken assumption, and an invitation to step outside the endless search and discover the life already here."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 6,
-          "item": {
-            "@type": "Book",
-            "name": "Beyond Death: The Architecture of Immortality",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/beyond_death_cover.jpg",
-            "url": "https://mauriceprice.net/beyond_death",
-            "description": "A bold exploration of consciousness, biology, physics, and ancient wisdom that challenges the belief that mortality is a fixed and unavoidable law."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 7,
-          "item": {
-            "@type": "Book",
-            "name": "God's Infinite Design",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/gods_infinite_design.jpg",
-            "url": "{{ $amzGodsInfiniteDesign }}",
-            "description": "An exploration of the soul's journey, the simulation of reality, and the refinement process of returning to the Source."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 8,
-          "item": {
-            "@type": "Book",
-            "name": "The Mind Heals the Body",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/the_mind_heals_the_body_3d.png",
-            "url": "https://mauriceprice.net/the_mind_heals_the_body_lp",
-            "description": "Awaken the healing power within by aligning mind, body, and spirit."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 9,
-          "item": {
-            "@type": "Book",
-            "name": "Hidden Wisdom",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/Hidden_wisdom_interpretations_Gospel_of_thomas.jpg",
-            "url": "https://mauriceprice.net/hidden_wisdom",
-            "description": "A mystical interpretation of the Gospel of Thomas."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 10,
-          "item": {
-            "@type": "Book",
-            "name": "A Profound Teaching",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/a_profound_teaching.jpg",
-            "url": "https://mauriceprice.net/a_profound_teaching",
-            "description": "A transformative spiritual work exploring consciousness and quantum insight."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 11,
-          "item": {
-            "@type": "Book",
-            "name": "This Isn't Living",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/This_isnt_living_book_covers.jpg",
-            "url": "https://mauriceprice.net/this_isnt_living",
-            "description": "A spiritual companion guiding readers toward presence and inner truth."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 12,
-          "item": {
-            "@type": "Book",
-            "name": "The Blueprint of Reality",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/the_blueprint_of_reality_cover.jpg",
-            "url": "https://mauriceprice.net/the_blueprint_of_reality",
-            "description": "A powerful work on the hidden mechanics of manifestation and consciousness."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 13,
-          "item": {
-            "@type": "Book",
-            "name": "The Divergence",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/The_divergence_web.png",
-            "url": "https://mauriceprice.net/the_divergence",
-            "description": "Exploration of spiritual awakening in a world shaped by illusion and technology."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 14,
-          "item": {
-            "@type": "Book",
-            "name": "Why Christianity Matters",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/Why_christianity_matters_600.png",
-            "url": "https://mauriceprice.net/why_christianity_matters",
-            "description": "Revealing how creation, fall, and redemption form a living narrative of divine love."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 15,
-          "item": {
-            "@type": "Book",
-            "name": "Breath, Silence and Stillness in Action: A Practical Guide to Spinal Breathing, Deep Meditation and Samyama",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/breath_silence_and_stillness_in_action_cover.png",
-            "url": "https://mauriceprice.net/breath_silence_and_stillness_in_action",
-            "description": "A practical guide to Spinal Breathing, Deep Meditation and Samyama, and to carrying the stillness they cultivate into effective everyday action."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 16,
-          "item": {
-            "@type": "Book",
-            "name": "Did the Prophets See This? War, Famine, Earthquakes, AI and the Unfolding End Times",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/did_the_prophets_see_this_cover.jpg",
-            "url": "https://mauriceprice.net/did_the_prophets_see_this",
-            "description": "A sourced investigation of whether today's converging crises, war, energy scarcity, famine, disease, earthquakes and autonomous machines, correspond to ancient prophetic visions."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 17,
-          "item": {
-            "@type": "Book",
-            "name": "Spiritual Seeds for the Soul: Planting the Seeds of Contemplation",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/Spiritual_seeds_for_the_soul_1100.png",
-            "url": "https://mauriceprice.net/spiritual_seed_for_the_soul",
-            "description": "An invitation to cultivate a deeper inner life through contemplation and prayer, bridging ancient Scripture with contemporary understanding."
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 18,
-          "item": {
-            "@type": "Book",
-            "name": "The Biblical Process of Manifestation: Prayer, Faith and the Movement from the Unseen into the Seen",
-            "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": "https://mauriceprice.net/images/biblical_process_of_manifestation_3d.png",
-            "url": "https://mauriceprice.net/the_biblical_process_of_manifestation",
-            "description": "An exploration of nine biblical passages revealing prayer, faith and receiving as one complete spiritual process, a contemplative Christian understanding of manifestation as participation in the creative life of God."
-          }
-        }
+        }{{ $loop->last ? '' : ',' }}
+        @endforeach
       ]
     }
     </script>
@@ -287,6 +60,20 @@
         .books-hero {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url({{url('images/hero.jpg')}}) no-repeat center center;
         }
+        .theme-chip {
+            display: inline-block;
+            padding: 6px 16px;
+            margin: 4px;
+            border-radius: var(--mp-radius-pill);
+            border: 1px solid var(--mp-dark-brown);
+            color: var(--mp-dark-brown);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .theme-chip.active {
+            background: var(--mp-dark-brown);
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -294,6 +81,7 @@
 
 @include('partials.navigation')
 
+<main>
 <section class="books-hero">
     <div class="container">
         <h1 class="display-4">Books by Maurice Price</h1>
@@ -302,225 +90,30 @@
 </section>
 
 <section class="container my-5">
-    <div class="row text-center d-flex align-items-stretch justify-content-center">
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
-                <img src="{{url('/images/witnessed_after_death_3d.png')}}" alt="Witnessed After Death book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Witnessed After Death</h4>
-                <p class="small text-muted">Apparitions of the Dead, Attested by Those Who Saw Them</p>
-                <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
-                    <a href="/witnessed_after_death" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzWitnessedAfterDeath }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
+
+    <div class="text-center mb-5">
+        <a href="/books" class="theme-chip {{ $activeTheme ? '' : 'active' }}">All</a>
+        @foreach ($themes as $slug => $label)
+            <a href="/books?theme={{ $slug }}" class="theme-chip {{ $activeTheme === $slug ? 'active' : '' }}">{{ $label }}</a>
+        @endforeach
     </div>
 
-    <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
-                <img src="{{url('/images/the_womb_of_creation_3d.png')}}" alt="The Womb of Creation book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">The Womb of Creation</h4>
-                <p class="small text-muted">Restoring the Feminine Source of All That Is</p>
-                <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
-                    <a href="/the_womb_of_creation" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzWomb }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach ($books as $book)
+            <div class="col d-flex">
+                @include('partials.book-card', ['book' => $book])
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
-                <img src="{{url('/images/The Yoga Sūtras of Patañjali_3d.png')}}" alt="The Yoga Sūtras of Patañjali book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">The Yoga Sūtras of Patañjali</h4>
-                <p class="small text-muted">A New English Translation with Practice and Study Notes</p>
-                <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
-                    <a href="/the_yoga_sutras_of_patanjali" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzYoga }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
-                <img src="{{url('/images/death_bed_visions_3d.png')}}" alt="Death-Bed Visions book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Death-Bed Visions</h4>
-                <p class="small text-muted">An Annotated Edition of Sir William Barrett's Classic Work</p>
-                <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
-                    <a href="/death_bed_visions" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzDeathBed }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 
-    <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100" style="border: 2px solid #d4af37 !important;">
-                <img src="{{url('/images/biblical_process_of_manifestation_3d.png')}}" alt="The Biblical Process of Manifestation book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">The Biblical Process of Manifestation</h4>
-                <p class="small text-muted">Prayer, Faith and the Movement from the Unseen into the Seen</p>
-                <div class="mt-auto">
-                    <span class="badge bg-success mb-2">New Release</span><br>
-                    <a href="/the_biblical_process_of_manifestation" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzBiblicalProcess }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/breath_silence_and_stillness_in_action_3d.png')}}" alt="Breath, Silence and Stillness in Action book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Breath, Silence and Stillness in Action</h4>
-                <p class="small text-muted">A Practical Guide to Spinal Breathing, Deep Meditation and Samyama</p>
-                <div class="mt-auto">
-                    <a href="/breath_silence_and_stillness_in_action" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzBreathSilence }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/did_the_prophets_see_this_3d.png')}}" alt="Did the Prophets See This? book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Did the Prophets See This?</h4>
-                <p class="small text-muted">War, Famine, Earthquakes, AI and the Unfolding End Times</p>
-                <div class="mt-auto">
-                    <a href="/did_the_prophets_see_this" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzDidTheProphets }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/Spiritual_seeds_for_the_soul_1100.png')}}" alt="Spiritual Seeds for the Soul book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Spiritual Seeds for the Soul</h4>
-                <p class="small text-muted">Planting the Seeds of Contemplation</p>
-                <div class="mt-auto">
-                    <a href="/spiritual_seed_for_the_soul" class="btn btn-primary mt-2">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/the_question_that_cannot_be_answered_cover.png')}}" alt="The Question That Cannot Be Answered book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">The Question That Cannot Be Answered</h4>
-                <p class="small text-muted">Why the Mind Will Never Find Your Purpose</p>
-                <div class="mt-auto">
-                    <a href="/the_question_that_cannot_be_answered" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzQuestionCannotBeAnswered }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/beyond_death_cover.png')}}" alt="Beyond Death: The Architecture of Immortality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Beyond Death</h4>
-                <p class="small text-muted">The Architecture of Immortality</p>
-                <div class="mt-auto">
-                    <a href="/beyond_death" class="btn btn-primary mt-2">Learn More</a>
-                    <a href="{{ $amzBeyondDeathShort }}" class="btn btn-outline-secondary mt-2 ms-1" target="_blank">Amazon</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/gods_infinate_design.png')}}" alt="God's Infinite Design book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">God's Infinite Design</h4>
-                <p class="small text-muted">The Soul's Journey Through the Simulation of Reality</p>
-                <div class="mt-auto">
-                    <a href="{{ $amzGodsInfiniteDesign }}" class="btn btn-outline-primary mt-2" target="_blank">Order on Amazon</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/the_mind_heals_the_body_3d.png')}}" alt="The Mind Heals the Body book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">The Mind Heals the Body</h4>
-                <p class="small text-muted">Awaken the Healing Power Within</p>
-                <div class="mt-auto">
-                    <a href="/the_mind_heals_the_body_lp" class="btn btn-outline-primary mt-2" target="_blank">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
-                <img src="{{url('/images/The Blueprint of Reality_ The Hidden Mechanics of Manifestation.png')}}" alt="The Blueprint of Reality book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">The Blueprint of Reality</h4>
-                <p class="small text-muted">The Hidden Mechanics of Manifestation</p>
-                <div class="mt-auto">
-                    <a href="/the_blueprint_of_reality" class="btn btn-outline-primary mt-2" target="_blank">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
-                <img src="{{url('/images/The_divergence_web.png')}}" alt="The Divergence book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">The Divergence</h4>
-                <p class="small text-muted">Awakening in the Age of Illusion</p>
-                <div class="mt-auto">
-                    <a href="/the_divergence" class="btn btn-outline-primary mt-2" target="_blank">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
-                <img src="{{url('/images/a_profound_teaching_kindle.png')}}" alt="A Profound Teaching book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">A Profound Teaching</h4>
-                <p class="small text-muted">The Journey to Realizing the Eternal Self</p>
-                <div class="mt-auto">
-                    <a href="/a_profound_teaching" class="btn btn-outline-primary mt-2">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
-                <img src="{{url('/images/This_isnt_living_book_covers.jpg')}}" alt="This Isn't Living book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">This Isn't Living</h4>
-                <p class="small text-muted">Wake up before it's too late.</p>
-                <div class="mt-auto">
-                    <a href="/this_isnt_living" class="btn btn-outline-primary mt-2">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row text-center d-flex align-items-stretch">
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-white d-flex flex-column h-100">
-                <img src="{{url('/images/Hidden_wisdom_interpretations_Gospel_of_thomas.jpg')}}" alt="Hidden Wisdom book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Hidden Wisdom</h4>
-                <p class="small text-muted">Interpretations of the Gospel of Thomas</p>
-                <div class="mt-auto">
-                    <a href="/hidden_wisdom" class="btn btn-outline-primary mt-2">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="p-4 border rounded shadow-sm mb-4 bg-light d-flex flex-column h-100">
-                <img src="{{url('/images/Why_christianity_matters_600.png')}}" alt="Why Christianity Matters book cover – Maurice Price" class="img-fluid mb-3" loading="lazy">
-                <h4 class="mt-2">Why Christianity Matters</h4>
-                <p class="small text-muted">The Transformative Story from Genesis to Christ</p>
-                <div class="mt-auto">
-                    <a href="/why_christianity_matters" class="btn btn-outline-primary mt-2" target="_blank">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    @if ($books->isEmpty())
+        <p class="text-center text-muted">No books found in this theme yet.</p>
+    @endif
 
 </section>
+</main>
 
 @include('partials.footer')
-
 <script src="{{ url('js/site-enhancements.js') }}"></script>
 </body>
 </html>

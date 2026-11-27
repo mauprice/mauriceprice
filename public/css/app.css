@@ -1,4 +1,18 @@
 /* ====================================
+   Design Tokens
+==================================== */
+:root {
+  --mp-gold: #d4af37;
+  --mp-dark-brown: #1a1108;
+  --mp-off-white: #f8f9fa;
+  --mp-text: #2c3e50;
+  --mp-heading: #1a252f;
+  --mp-border: #e8e8e8;
+  --mp-radius: 10px;
+  --mp-radius-pill: 20px;
+}
+
+/* ====================================
    Base Styles & Typography
 ==================================== */
 html {
@@ -41,13 +55,13 @@ h3 {
    Links & Buttons
 ==================================== */
 a {
-  color: #3498db;
+  color: #2a6496;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #2980b9;
+  color: var(--mp-dark-brown);
   text-decoration: none;
 }
 
@@ -59,32 +73,38 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 0.9rem;
+  display: inline-block;
+  width: auto;
 }
 
-.btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border: none;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+.btn-primary,
+.btn-outline-primary:hover {
+  background: var(--mp-gold);
+  border: 1px solid var(--mp-gold);
+  color: var(--mp-dark-brown);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.35);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.5);
+  background: #c6a233;
+  border-color: #c6a233;
+  color: var(--mp-dark-brown);
 }
 
-.btn-outline-primary {
-  border: 2px solid #667eea;
-  color: #667eea;
+.btn-outline-primary,
+.btn-outline-secondary {
+  border: 1px solid var(--mp-dark-brown);
+  color: var(--mp-dark-brown);
   background: transparent;
 }
 
-.btn-outline-primary:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-color: #667eea;
-  color: white;
+.btn-outline-secondary:hover {
+  background: var(--mp-dark-brown);
+  border-color: var(--mp-dark-brown);
+  color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
 /* ====================================
@@ -106,7 +126,7 @@ a:hover {
 }
 
 .navbar-brand:hover {
-  color: #667eea !important;
+  color: var(--mp-gold) !important;
   transform: scale(1.05);
 }
 
@@ -125,7 +145,7 @@ a:hover {
   left: 50%;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--mp-gold);
   transition: all 0.3s ease;
   transform: translateX(-50%);
 }
@@ -136,7 +156,7 @@ a:hover {
 }
 
 .nav-link:hover {
-  color: #667eea !important;
+  color: var(--mp-dark-brown) !important;
 }
 
 /* ====================================
@@ -164,7 +184,7 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(102, 126, 234, 0.7) 0%, rgba(118, 75, 162, 0.7) 100%);
+  background: linear-gradient(135deg, rgba(26, 17, 8, 0.75) 0%, rgba(61, 43, 22, 0.65) 100%);
   z-index: 1;
 }
 
@@ -198,15 +218,44 @@ a:hover {
 ==================================== */
 .card,
 .border {
-  border-radius: 12px;
+  border-radius: var(--mp-radius);
   transition: all 0.3s ease;
-  border: 1px solid #e8e8e8;
+  border: 1px solid var(--mp-border);
 }
 
 .card:hover,
 .border:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* One consistent book card style: white, light border, soft shadow. */
+.book-card {
+  background: #fff;
+  border: 1px solid var(--mp-border);
+  border-radius: var(--mp-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-cover {
+  height: 280px;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 767px) {
+  .book-cover {
+    height: 200px;
+  }
+}
+
+.book-card .book-card-subtitle {
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #5a6472;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 .shadow-sm {
@@ -234,7 +283,7 @@ a:hover {
    Footer Styling
 ==================================== */
 footer, .footer {
-  background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+  background: linear-gradient(135deg, var(--mp-dark-brown) 0%, #3d2b16 100%);
   color: white;
   padding: 3rem 0;
   margin-top: 4rem;
@@ -270,7 +319,7 @@ footer a:hover, .footer a:hover {
 }
 
 .tj {
-  text-align: justify;
+  text-align: left;
 }
 
 .text-white {
@@ -375,24 +424,18 @@ img[loading="lazy"].loaded {
    Badge Enhancements
 ==================================== */
 .badge {
-  padding: 8px 16px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  border-radius: 20px;
+  padding: 6px 14px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  border-radius: var(--mp-radius-pill);
 }
 
-.badge.bg-success {
-  background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%) !important;
-  box-shadow: 0 4px 12px rgba(56, 239, 125, 0.3);
+.badge.bg-success,
+.badge.bg-warning {
+  background: var(--mp-dark-brown) !important;
+  color: #fff !important;
 }
 
-/* ====================================
-   Gold Border Highlight
-==================================== */
-[style*="border: 2px solid #d4af37"] {
-  border: 2px solid #d4af37 !important;
-  box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3) !important;
-  position: relative;
-  overflow: hidden;
-}
 /*# sourceMappingURL=app.css.map */

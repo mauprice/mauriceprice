@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
+use App\Models\Book;
+use App\Models\Testimonial;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
@@ -60,13 +63,33 @@ class SiteController extends Controller
     public function home(Request $request)
     {
         $cc = $this->getCountryCode($request);
-        return view('welcome', compact('cc'));
+
+        $featuredBook = Book::featured()->first() ?? Book::published()->first();
+        $newReleases = Book::published()->limit(4)->get();
+        $themes = config('themes');
+        $articles = Article::latest3()->get();
+        $testimonials = Testimonial::sourced()->latest()->get();
+
+        return view('welcome', compact(
+            'cc',
+            'featuredBook',
+            'newReleases',
+            'themes',
+            'articles',
+            'testimonials'
+        ));
     }
 
     public function about(Request $request)
     {
         $cc = $this->getCountryCode($request);
         return view('pages.about', compact('cc'));
+    }
+
+    public function privacy(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.privacy', compact('cc'));
     }
 
     public function contact(Request $request)
@@ -78,7 +101,17 @@ class SiteController extends Controller
     public function books(Request $request)
     {
         $cc = $this->getCountryCode($request);
-        return view('pages.books', compact('cc'));
+        $themes = config('themes');
+        $activeTheme = $request->query('theme');
+
+        $books = Book::query()
+            ->when($activeTheme && array_key_exists($activeTheme, $themes), function ($query) use ($activeTheme) {
+                $query->inTheme($activeTheme);
+            })
+            ->orderByDesc('published_at')
+            ->get();
+
+        return view('pages.books', compact('cc', 'books', 'themes', 'activeTheme'));
     }
     
     public function hiddenWisdom(Request $request)
@@ -91,6 +124,12 @@ class SiteController extends Controller
     {
         $cc = $this->getCountryCode($request);
         return view('pages.a_profound_teaching', compact('cc'));
+    }
+
+    public function godsInfiniteDesign(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.gods_infinite_design', compact('cc'));
     }
 
     public function WhyChristianityMatters(Request $request)
