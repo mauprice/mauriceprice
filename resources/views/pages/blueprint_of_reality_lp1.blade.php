@@ -21,7 +21,7 @@
     <meta name="twitter:image" content="https://mauriceprice.net/images/the_blueprint_of_reality_cover.jpg" />
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url('css/app.css') }}">
+    <link rel="stylesheet" href="{{ url('css/app.css') }}?v={{ filemtime(public_path('css/app.css')) }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,wght@0,300;1,300&display=swap" rel="stylesheet">

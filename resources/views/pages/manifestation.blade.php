@@ -15,7 +15,7 @@
     <meta name="twitter:title" content="Manifesting Your Future: Unlocking the Blueprint of Reality" />
     <meta name="twitter:description" content="Unlock the blueprint of reality and become the architect of your future. Discover the power of conscious creation." />
     <meta name="twitter:image" content="{{ url('/images/manifestation_blueprint.jpg') }}" /> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url('css/app.css') }}">
+    <link rel="stylesheet" href="{{ url('css/app.css') }}?v={{ filemtime(public_path('css/app.css')) }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">

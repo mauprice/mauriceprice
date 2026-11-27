@@ -13,7 +13,7 @@
         <link href="{{ asset('/css/bootstrap.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="{{ asset('/js/jquery-ui/jquery-ui.min.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="{{ asset('/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" rel="preload" crossorigin="anonymous">
-        <link href="{{ asset('/css/app.css') }}" type="text/css" rel="stylesheet" media="screen,projection"/>
+        <link href="{{ asset('/css/app.css') }}?v={{ filemtime(public_path('css/app.css')) }}" type="text/css" rel="stylesheet" media="screen,projection"/>
         <!-- Scripts -->
         <script src="{{ asset('/js/jquery-3.6.0.min.js') }}"></script>
         <script src="{{ asset('/js/jquery-ui/jquery-ui.min.js') }}"></script>
