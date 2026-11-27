@@ -86,6 +86,12 @@ class SiteController extends Controller
         return view('pages.about', compact('cc'));
     }
 
+    public function privacy(Request $request)
+    {
+        $cc = $this->getCountryCode($request);
+        return view('pages.privacy', compact('cc'));
+    }
+
     public function contact(Request $request)
     {
         $cc = $this->getCountryCode($request);

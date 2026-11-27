@@ -210,19 +210,25 @@
     <h2 class="text-white">Stay Connected</h2>
     <p class="mb-4" style="color:#cccccc;">New books, articles and reflections, sent occasionally. No noise, unsubscribe any time.</p>
 
-    <form action="/subscribe" method="POST" class="row g-2 justify-content-center">
-      @csrf
-      <x-honeypot />
-      <div class="col-12 col-sm-5">
-        <input type="text" name="name" class="form-control" placeholder="First name (optional)" autocomplete="given-name">
-      </div>
-      <div class="col-12 col-sm-5">
-        <input type="email" name="email" class="form-control" placeholder="Your email" required autocomplete="email">
-      </div>
-      <div class="col-12 col-sm-2">
-        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
-      </div>
-    </form>
+    @if (session('subscribed'))
+      <p class="alert alert-success">Thanks — you're on the list.</p>
+    @else
+      <form action="/subscribe" method="POST" class="row g-2 justify-content-center mp-newsletter-form">
+        @csrf
+        <x-honeypot />
+        <input type="hidden" name="source" value="homepage-main">
+        <div class="col-12 col-sm-5">
+          <input type="text" name="name" class="form-control" placeholder="First name (optional)" autocomplete="given-name">
+        </div>
+        <div class="col-12 col-sm-5">
+          <input type="email" name="email" class="form-control" placeholder="Your email" required autocomplete="email">
+        </div>
+        <div class="col-12 col-sm-2">
+          <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+        </div>
+      </form>
+    @endif
+    <p class="small mt-3 mb-0 mp-newsletter-message" style="color:#aaaaaa;" role="status"></p>
     <p class="small mt-3 mb-0" style="color:#aaaaaa;">
       By subscribing you agree to our <a href="/privacy" style="color:#d4af37;">privacy policy</a>.
     </p>
@@ -281,20 +287,67 @@
       <a href="/contact" class="mx-2">Contact</a>
       <a href="/privacy" class="mx-2">Privacy</a>
     </div>
-    <form action="/subscribe" method="POST" class="row g-2 justify-content-center" style="max-width: 480px; margin: 0 auto;">
-      @csrf
-      <x-honeypot />
-      <div class="col-8">
-        <input type="email" name="email" class="form-control" placeholder="Join the mailing list" required autocomplete="email">
-      </div>
-      <div class="col-4">
-        <button type="submit" class="btn btn-primary w-100">Subscribe</button>
-      </div>
-    </form>
+    @if (session('subscribed'))
+      <p class="alert alert-success d-inline-block">Thanks — you're on the list.</p>
+    @else
+      <form action="/subscribe" method="POST" class="row g-2 justify-content-center mp-newsletter-form" style="max-width: 480px; margin: 0 auto;">
+        @csrf
+        <x-honeypot />
+        <input type="hidden" name="source" value="homepage-footer">
+        <div class="col-8">
+          <input type="email" name="email" class="form-control" placeholder="Join the mailing list" required autocomplete="email">
+        </div>
+        <div class="col-4">
+          <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+        </div>
+      </form>
+    @endif
+    <p class="small mt-2 mb-0 mp-newsletter-message" role="status"></p>
   </div>
 </section>
 
 @include('partials.footer')
 <script src="{{ url('js/site-enhancements.js') }}"></script>
+<script>
+(function () {
+  document.querySelectorAll('.mp-newsletter-form').forEach(function (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var messageEl = form.parentElement.querySelector('.mp-newsletter-message');
+      var submitBtn = form.querySelector('button[type="submit"]');
+      submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      })
+        .then(function (response) {
+          return response.json().then(function (data) {
+            return { ok: response.ok, data: data };
+          });
+        })
+        .then(function (result) {
+          if (result.ok) {
+            form.reset();
+            form.style.display = 'none';
+            if (messageEl) {
+              messageEl.textContent = result.data.message || "Thanks — you're on the list.";
+              messageEl.classList.add('text-success');
+            }
+          } else {
+            var firstError = result.data.errors ? Object.values(result.data.errors)[0][0] : 'Something went wrong. Please try again.';
+            if (messageEl) { messageEl.textContent = firstError; }
+            submitBtn.disabled = false;
+          }
+        })
+        .catch(function () {
+          if (messageEl) { messageEl.textContent = 'Something went wrong. Please try again.'; }
+          submitBtn.disabled = false;
+        });
+    });
+  });
+})();
+</script>
 </body>
 </html>

@@ -40,4 +40,15 @@ return [
         'secret' => env('NOCAPTCHA_SECRET'),
     ],
 
+    'newsletter' => [
+        // TODO(Maurice): choose a provider (mailerlite, mailchimp, convertkit)
+        // and supply its API credentials. Until then "null" just stores
+        // signups in the subscribers table with no external sync.
+        'driver' => env('NEWSLETTER_DRIVER', 'null'),
+        'mailerlite' => [
+            'api_key' => env('MAILERLITE_API_KEY'),
+            'group_id' => env('MAILERLITE_GROUP_ID'),
+        ],
+    ],
+
 ];
