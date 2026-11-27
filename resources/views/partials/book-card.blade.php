@@ -6,14 +6,17 @@
         @if ($editionLabel)
             <span class="badge bg-success mb-2 mx-auto" style="width:fit-content;">{{ $editionLabel }}</span>
         @endif
-        <img
-            src="{{ url('/' . $book->cover_image) }}"
-            alt="{{ $book->title }} by Maurice Price — book cover"
-            class="book-cover mb-3"
-            loading="lazy"
-            width="200"
-            height="280"
-        >
+        <picture>
+            <source srcset="{{ $book->webpCoverImageUrl() }}" type="image/webp">
+            <img
+                src="{{ $book->coverImageUrl() }}"
+                alt="{{ $book->title }} by Maurice Price — book cover"
+                class="book-cover mb-3"
+                loading="lazy"
+                width="200"
+                height="280"
+            >
+        </picture>
         <h3 class="h4 mt-1 mb-1">{{ $book->title }}</h3>
         @if ($book->subtitle)
             <p class="book-card-subtitle mb-2">{{ $book->subtitle }}</p>

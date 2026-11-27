@@ -9,7 +9,7 @@
     <meta property="og:title" content="Maurice Price – Spiritual Author" />
     <meta property="og:site_name" content="Maurice Price" />
     <meta property="og:description" content="Discover books and teachings to help you awaken, heal, and remember your eternal self." />
-    <meta property="og:image" content="{{ url('/' . $featuredBook->cover_image) }}" />
+    <meta property="og:image" content="{{ $featuredBook->coverImageUrl() }}" />
     <meta property="og:url" content="https://mauriceprice.net/" />
     <meta property="og:type" content="website" />
 
@@ -18,7 +18,7 @@
     <meta name="twitter:site" content="@MauricePriceNet" />
     <meta name="twitter:title" content="Maurice Price – Spiritual Author" />
     <meta name="twitter:description" content="Books and teachings to guide you back to the truth within." />
-    <meta name="twitter:image" content="{{ url('/' . $featuredBook->cover_image) }}" />
+    <meta name="twitter:image" content="{{ $featuredBook->coverImageUrl() }}" />
 
     <script type="application/ld+json">
     {
@@ -48,7 +48,7 @@
         "url": "https://mauriceprice.net"
       },
       "url": "https://mauriceprice.net{{ $featuredBook->url }}",
-      "image": "{{ url('/' . $featuredBook->cover_image) }}",
+      "image": "{{ $featuredBook->coverImageUrl() }}",
       "inLanguage": "en",
       "publisher": "Maurice Price"
     }
@@ -134,6 +134,7 @@
 
 @include('partials.navigation')
 
+<main>
 {{-- 2.1 Hero: single banner driven by the featured book --}}
 <section class="mp-hero">
   <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between">
@@ -146,13 +147,16 @@
       @if ($featuredBook->tagline)
         <p class="mb-4" style="color:#cccccc;">{{ $featuredBook->tagline }}</p>
       @endif
-      <a href="{{ $featuredBook->url }}" class="btn btn-primary me-2">Learn More</a>
+      <a href="{{ $featuredBook->url }}" class="btn btn-primary me-2">Learn More <span class="visually-hidden">about {{ $featuredBook->title }}</span></a>
       @if ($featuredBook->amazonUrl($cc))
         <a href="{{ $featuredBook->amazonUrl($cc) }}" target="_blank" rel="noopener" class="btn btn-outline-light">Order on Amazon</a>
       @endif
     </div>
     <div class="col-12 col-md-5 text-center mt-4 mt-md-0">
-      <img src="{{ url('/' . $featuredBook->cover_image) }}" alt="{{ $featuredBook->title }} by Maurice Price — book cover" class="img-fluid">
+      <picture>
+        <source srcset="{{ $featuredBook->webpCoverImageUrl() }}" type="image/webp">
+        <img src="{{ $featuredBook->coverImageUrl() }}" alt="{{ $featuredBook->title }} by Maurice Price — book cover" class="img-fluid" width="420" height="420">
+      </picture>
     </div>
   </div>
 </section>
@@ -161,7 +165,10 @@
 <section class="container my-5">
   <div class="row align-items-center">
     <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
-      <img src="{{ url('/images/MauricePrice.jpg') }}" alt="Maurice Price – spiritual author, mystic, and teacher" class="img-fluid author-image" loading="lazy" width="300" height="320">
+      <picture>
+        <source srcset="{{ url('/images/MauricePrice.webp') }}" type="image/webp">
+        <img src="{{ url('/images/MauricePrice.jpg') }}" alt="Maurice Price – spiritual author, mystic, and teacher" class="img-fluid author-image" loading="lazy" width="300" height="320">
+      </picture>
     </div>
     <div class="col-12 col-md-8">
       <h2>Welcome to MauricePrice.Net</h2>
@@ -218,10 +225,12 @@
         <x-honeypot />
         <input type="hidden" name="source" value="homepage-main">
         <div class="col-12 col-sm-5">
-          <input type="text" name="name" class="form-control" placeholder="First name (optional)" autocomplete="given-name">
+          <label for="newsletter-name-main" class="visually-hidden">First name (optional)</label>
+          <input id="newsletter-name-main" type="text" name="name" class="form-control" placeholder="First name (optional)" autocomplete="given-name">
         </div>
         <div class="col-12 col-sm-5">
-          <input type="email" name="email" class="form-control" placeholder="Your email" required autocomplete="email">
+          <label for="newsletter-email-main" class="visually-hidden">Your email</label>
+          <input id="newsletter-email-main" type="email" name="email" class="form-control" placeholder="Your email" required autocomplete="email">
         </div>
         <div class="col-12 col-sm-2">
           <button type="submit" class="btn btn-primary w-100">Subscribe</button>
@@ -230,7 +239,7 @@
     @endif
     <p class="small mt-3 mb-0 mp-newsletter-message" style="color:#aaaaaa;" role="status"></p>
     <p class="small mt-3 mb-0" style="color:#aaaaaa;">
-      By subscribing you agree to our <a href="/privacy" style="color:#d4af37;">privacy policy</a>.
+      By subscribing you agree to our <a href="/privacy" style="color:#d4af37; text-decoration: underline;">privacy policy</a>.
     </p>
   </div>
 </section>
@@ -246,7 +255,7 @@
           <h3 class="h5">{{ $article->title }}</h3>
           <p class="small text-muted mb-2">{{ $article->published_at->format('F j, Y') }}</p>
           <p class="tj flex-grow-1">{{ $article->excerpt }}</p>
-          <a href="{{ $article->url }}" class="mt-2">Read &rarr;</a>
+          <a href="{{ $article->url }}" class="mt-2">Read <span class="visually-hidden">{{ $article->title }}</span> &rarr;</a>
         </div>
       </div>
     @endforeach
@@ -277,6 +286,8 @@
 </section>
 @endif
 
+</main>
+
 {{-- 2.8 Footer: nav links + a repeat of the signup, then the shared copyright footer --}}
 <section class="py-5" style="background:#f8f9fa;">
   <div class="container text-center">
@@ -295,7 +306,8 @@
         <x-honeypot />
         <input type="hidden" name="source" value="homepage-footer">
         <div class="col-8">
-          <input type="email" name="email" class="form-control" placeholder="Join the mailing list" required autocomplete="email">
+          <label for="newsletter-email-footer" class="visually-hidden">Your email</label>
+          <input id="newsletter-email-footer" type="email" name="email" class="form-control" placeholder="Join the mailing list" required autocomplete="email">
         </div>
         <div class="col-4">
           <button type="submit" class="btn btn-primary w-100">Subscribe</button>

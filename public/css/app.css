@@ -55,13 +55,13 @@ h3 {
    Links & Buttons
 ==================================== */
 a {
-  color: #3498db;
+  color: #2a6496;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 a:hover {
-  color: #2980b9;
+  color: var(--mp-dark-brown);
   text-decoration: none;
 }
 

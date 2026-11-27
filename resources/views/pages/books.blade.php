@@ -47,7 +47,7 @@
             "@type": "Book",
             "name": {!! json_encode($book->title) !!},
             "author": { "@type": "Person", "name": "Maurice Price" },
-            "image": {!! json_encode(url('/' . $book->cover_image)) !!},
+            "image": {!! json_encode($book->coverImageUrl()) !!},
             "url": {!! json_encode(url($book->url)) !!}
           }
         }{{ $loop->last ? '' : ',' }}
@@ -81,6 +81,7 @@
 
 @include('partials.navigation')
 
+<main>
 <section class="books-hero">
     <div class="container">
         <h1 class="display-4">Books by Maurice Price</h1>
@@ -110,6 +111,7 @@
     @endif
 
 </section>
+</main>
 
 @include('partials.footer')
 <script src="{{ url('js/site-enhancements.js') }}"></script>

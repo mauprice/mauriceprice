@@ -77,7 +77,7 @@ src="https://www.facebook.com/tr?id=2207982119340635&ev=PageView&noscript=1"
 </style>
 <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container">
-        <img src="{{ url('/images/mp-logo.png') }}" class="mp-logo">
+        <img src="{{ url('/images/mp-logo.png') }}" class="mp-logo" alt="Maurice Price">
         <a class="navbar-brand" href="/">MauricePrice.Net</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

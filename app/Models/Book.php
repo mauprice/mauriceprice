@@ -40,6 +40,34 @@ class Book extends Model
         return $query->where('theme', $theme);
     }
 
+    public function webpCoverImage(): string
+    {
+        return preg_replace('/\.(png|jpe?g)$/i', '.webp', $this->cover_image);
+    }
+
+    /**
+     * Some cover filenames contain spaces/unicode. That's tolerated in a
+     * plain src="" attribute but breaks srcset parsing, which treats
+     * unencoded spaces as a candidate separator — so these are used
+     * anywhere a path is placed inside a <picture>/srcset.
+     */
+    public function coverImageUrl(): string
+    {
+        return self::encodeImagePath($this->cover_image);
+    }
+
+    public function webpCoverImageUrl(): string
+    {
+        return self::encodeImagePath($this->webpCoverImage());
+    }
+
+    public static function encodeImagePath(string $relativePath): string
+    {
+        $encoded = implode('/', array_map('rawurlencode', explode('/', $relativePath)));
+
+        return url('/' . $encoded);
+    }
+
     public function editionLabel(): ?string
     {
         return match ($this->type) {
